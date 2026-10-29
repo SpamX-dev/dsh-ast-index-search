@@ -23,3 +23,8 @@ mobile-tools/
 .glm-cli/
 npm/platforms/*/bin/ast-index
 npm/platforms/*/bin/ast-index.exe
+
+# Prebuilt CLI downloaded for the examples demo (see examples/README.md)
+examples/ast-index-bin/
+# Compiled classes under the example project
+examples/spring-demo/target/
