@@ -1,0 +1,30 @@
+{
+  "name": "@deepseek-ai/dsh-tool-ast-index",
+  "description": "Model-facing structural code-navigation tools (explore, search, usages, callers, implementations, graph) over the ast-index CLI",
+  "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpamX-dev/dsh-ast-index-search.git",
+    "directory": "dsh-plugin"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib/index.js",
+    "README.md"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@deepseek-ai/schemastery": "~3.18.5"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-llm": "0.2.1-rc.3",
+    "@deepseek-ai/dsh-subprocess": "0.2.1-rc.3",
+    "@deepseek-ai/dsh-tools": "0.2.1-rc.3",
+    "@deepseek-ai/dsh-working-directory": "0.2.1-rc.3",
+    "@deepseek-ai/cordis": "~4.0.5"
+  }
+}
