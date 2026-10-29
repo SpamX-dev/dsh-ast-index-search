@@ -30,6 +30,15 @@ const PROTOCOL_VERSION: &str = "2024-11-05";
 const SERVER_NAME: &str = "ast-index-mcp";
 const SERVER_VERSION: &str = env!("CARGO_PKG_VERSION");
 
+// The single static skill resource this server serves. The client-side adapter
+// (dsh) maps `skill://` MCP resources onto agent skills, so the skill lives
+// next to the tools it documents instead of being shipped separately.
+const SKILL_URI: &str = "skill://ast-index";
+const SKILL_NAME: &str = "ast-index";
+const SKILL_MIME: &str = "text/markdown";
+const SKILL_DESCRIPTION: &str = "Structural code search over the project index: find classes, symbols, usages, callers, implementations, class hierarchy, module dependencies and the dependency graph. Prefer these tools over grep for any code search.";
+const SKILL_CONTENT: &str = include_str!("../skill/SKILL.md");
+
 fn main() -> Result<()> {
     let ast_index_bin = env::var("AST_INDEX_BIN").unwrap_or_else(|_| "ast-index".to_string());
     let default_root = env::var("AST_INDEX_ROOT")
@@ -161,7 +170,7 @@ fn handle_request(
             id,
             json!({
                 "protocolVersion": PROTOCOL_VERSION,
-                "capabilities": { "tools": {} },
+                "capabilities": { "tools": {}, "resources": {} },
                 "serverInfo": {
                     "name": SERVER_NAME,
                     "version": SERVER_VERSION
@@ -185,6 +194,11 @@ fn handle_request(
                     "isError": true
                 }),
             ),
+        },
+        "resources/list" => ok(id, json!({ "resources": resource_descriptors() })),
+        "resources/read" => match read_resource(&req.params) {
+            Some(content) => ok(id, json!({ "contents": [content] })),
+            None => err(id, -32002, "resource not found"),
         },
         "ping" => ok(id, json!({})),
         "shutdown" => ok(id, json!({})),
@@ -613,6 +627,30 @@ fn tool_descriptors() -> Vec<Value> {
             }
         }),
     ]
+}
+
+/// The static skill resource advertised by `resources/list`.
+fn resource_descriptors() -> Vec<Value> {
+    vec![json!({
+        "uri": SKILL_URI,
+        "name": SKILL_NAME,
+        "description": SKILL_DESCRIPTION,
+        "mimeType": SKILL_MIME
+    })]
+}
+
+/// Resolve a `resources/read` request to the single served resource, if the
+/// requested URI matches the skill.
+fn read_resource(params: &Value) -> Option<Value> {
+    let uri = params.get("uri").and_then(Value::as_str)?;
+    if uri != SKILL_URI {
+        return None;
+    }
+    Some(json!({
+        "uri": SKILL_URI,
+        "mimeType": SKILL_MIME,
+        "text": SKILL_CONTENT
+    }))
 }
 
 fn call_tool(params: Value, ast_index_bin: &str, default_root: &PathBuf) -> Result<String> {
@@ -1065,6 +1103,32 @@ fn string_list(args: &Value, key: &str) -> Vec<String> {
 mod tests {
     use super::*;
     use std::collections::HashSet;
+
+    // --- resources ---
+
+    #[test]
+    fn resources_list_exposes_the_skill() {
+        let resources = resource_descriptors();
+        assert_eq!(resources.len(), 1, "MCP must expose one skill resource");
+        assert_eq!(resources[0]["uri"], json!(SKILL_URI));
+        assert_eq!(resources[0]["name"], json!(SKILL_NAME));
+        assert_eq!(resources[0]["mimeType"], json!(SKILL_MIME));
+        assert!(!resources[0]["description"].as_str().unwrap().is_empty());
+    }
+
+    #[test]
+    fn resources_read_returns_the_embedded_skill() {
+        let content = read_resource(&json!({ "uri": SKILL_URI })).unwrap();
+        assert_eq!(content["uri"], json!(SKILL_URI));
+        assert_eq!(content["mimeType"], json!(SKILL_MIME));
+        assert_eq!(content["text"].as_str().unwrap(), SKILL_CONTENT);
+    }
+
+    #[test]
+    fn resources_read_unknown_uri_is_none() {
+        assert!(read_resource(&json!({ "uri": "skill://nope" })).is_none());
+        assert!(read_resource(&json!({})).is_none());
+    }
 
     // --- tool_descriptors metadata ---
 
@@ -1770,6 +1834,14 @@ mod tests {
         assert_ne!(render_tool_output("changed", "text", raw.clone()), raw);
     }
 
+    // A child that exits non-zero on the current platform: `false` on Unix;
+    // on Windows `where` exits 1 because the `changed` argument the tool call
+    // appends is not on PATH, exercising the same non-zero-exit error path.
+    #[cfg(unix)]
+    const FAILING_COMMAND: &str = "false";
+    #[cfg(windows)]
+    const FAILING_COMMAND: &str = "where";
+
     #[test]
     fn nonzero_child_exit_remains_an_mcp_tool_error() {
         let request = JsonRpcRequest {
@@ -1778,7 +1850,7 @@ mod tests {
             method: "tools/call".into(),
             params: json!({"name": "changed", "arguments": {}}),
         };
-        let response = handle_request(request, "false", &PathBuf::from(".")).unwrap();
+        let response = handle_request(request, FAILING_COMMAND, &PathBuf::from(".")).unwrap();
         let result = response.result.unwrap();
         assert_eq!(result["isError"], true);
         assert!(result["content"][0]["text"]
