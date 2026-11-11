@@ -216,6 +216,19 @@ structural navigation, outline before reading large files, and pass the same
 instructions to subagents. Adapt before dropping into your project's
 `.claude/rules/`.
 
+### DeepSeek Harness plugin
+
+Once `dsh-ast-index` is published to your npm registry, install it in the
+Harness profile:
+
+```sh
+dsh plugin --profile desktop add dsh-ast-index
+```
+
+The plugin delivers the shared skill and its references. The package manager
+installs the native CLI for the host OS and CPU. See the
+[build, verification and Nexus instructions](plugin/README.md#deepseek-harness).
+
 ### Codex Skill / Plugin
 
 Codex can use the shared `ast-index` skill directly. For local development,

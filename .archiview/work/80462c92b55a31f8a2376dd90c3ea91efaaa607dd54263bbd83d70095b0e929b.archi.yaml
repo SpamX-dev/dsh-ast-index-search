@@ -1,0 +1,429 @@
+schema_version: 2
+kind: archi
+module_id: directory:plugin/hooks
+project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+check_hash: b490c0c1767bd863f85a64ebedcc834a0795a51c7ff195c9ae76abfdd2a83caa
+input_manifest:
+  domain: archiview/module-check/v1
+  project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+  module_id: directory:plugin/hooks
+  baseline:
+    identity:
+      kind: git
+      id: 39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+    state:
+      exists: true
+      directory: plugin/hooks
+      self_digest: sha256:d30cb409529c2b37f5607815bbb6ca28e49325e601759faebc63e21b8c037dd6
+      subtree_digest: sha256:331badc127855a426b38ad38f6a2541d1706c2223d8f2002f5f727351168cd7f
+  current:
+    exists: true
+    directory: plugin/hooks
+    self_digest: sha256:63f9d8e5e95b42a5d4d92f7d71403d4edacc9e518e856e6b1237ec3852f2e5c2
+    subtree_digest: sha256:25c6225295bd6c08c4b74dc0ab2174cd9cdb98bc4f826231099fb8e946e0ca1b
+  analyzer:
+    name: archiview-structure
+    version: 1.0.2
+    config_digest: sha256:d4208fd53122193eb2daea0c208071c378c8d7635a8b73431fec88a63f5cd518
+baseline:
+  module_id: directory:plugin/hooks
+  directory: plugin/hooks
+  parent_id: directory:plugin
+  children:
+    - directory:plugin/hooks/scripts
+  technical:
+    normalization: archiview/module-state/v1
+    module_id: directory:plugin/hooks
+    directory: plugin/hooks
+    own_files:
+      - path: plugin/hooks/hooks.json
+        digest: sha256:022d6652ad74149b0704f2fa1c56183987803496fb95d7d0e6a9b1669566a1a7
+        normalization: text-lf/v1
+    contract: null
+    document_state: missing
+    inherited: []
+  technical_digest: sha256:d30cb409529c2b37f5607815bbb6ca28e49325e601759faebc63e21b8c037dd6
+  complete: false
+  self:
+    normalization: archiview/module-state/v1
+    module_id: directory:plugin/hooks
+    directory: plugin/hooks
+    own_files:
+      - path: plugin/hooks/hooks.json
+        digest: sha256:022d6652ad74149b0704f2fa1c56183987803496fb95d7d0e6a9b1669566a1a7
+        normalization: text-lf/v1
+    contract: null
+    inherited: []
+    children:
+      - module_id: directory:plugin/hooks/scripts
+        directory: plugin/hooks/scripts
+        contract: null
+        document_state: missing
+  self_digest: sha256:c01d9110212274c3a86d202daa8fb541d77f235630969f70d3afb2d0adb75d6c
+  subtree:
+    self: sha256:d30cb409529c2b37f5607815bbb6ca28e49325e601759faebc63e21b8c037dd6
+    children:
+      - module_id: directory:plugin/hooks/scripts
+        digest: sha256:d7f32b076df8e5731d7b9dc0487fac1b25eb13bb2a056ca8c9abc3ba23d55233
+  subtree_digest: sha256:331badc127855a426b38ad38f6a2541d1706c2223d8f2002f5f727351168cd7f
+  semantic_subtree:
+    self: sha256:c01d9110212274c3a86d202daa8fb541d77f235630969f70d3afb2d0adb75d6c
+    children:
+      - module_id: directory:plugin/hooks/scripts
+        digest: sha256:9f1ffa9b6deb033ebf8d9407917fbe1720694534eb837288741be1cba9e6c047
+  semantic_subtree_digest: sha256:baf6647ddf5bbb3a5db11402b2d7cc00fd6d89aa064ad51f183f74cc591108bf
+current:
+  module_id: directory:plugin/hooks
+  directory: plugin/hooks
+  parent_id: ast-index-agent-integrations
+  children:
+    - directory:plugin/hooks/scripts
+  technical:
+    normalization: archiview/module-state/v1
+    module_id: directory:plugin/hooks
+    directory: plugin/hooks
+    own_files:
+      - path: plugin/hooks/hooks.json
+        digest: sha256:022d6652ad74149b0704f2fa1c56183987803496fb95d7d0e6a9b1669566a1a7
+        normalization: text-lf/v1
+    contract: null
+    document_state: missing
+    inherited:
+      - module_id: ast-index-agent-integrations
+        section: boundaries
+        id: B1
+        text: The CLI owns code navigation and index storage.
+      - module_id: ast-index-agent-integrations
+        section: invariants
+        id: I1
+        text: Integrations that distribute the shared skill take its instructions and
+          references from the same source tree.
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+  technical_digest: sha256:63f9d8e5e95b42a5d4d92f7d71403d4edacc9e518e856e6b1237ec3852f2e5c2
+  complete: false
+  self:
+    normalization: archiview/module-state/v1
+    module_id: directory:plugin/hooks
+    directory: plugin/hooks
+    own_files:
+      - path: plugin/hooks/hooks.json
+        digest: sha256:022d6652ad74149b0704f2fa1c56183987803496fb95d7d0e6a9b1669566a1a7
+        normalization: text-lf/v1
+    contract: null
+    inherited:
+      - module_id: ast-index-agent-integrations
+        section: boundaries
+        id: B1
+        text: The CLI owns code navigation and index storage.
+      - module_id: ast-index-agent-integrations
+        section: invariants
+        id: I1
+        text: Integrations that distribute the shared skill take its instructions and
+          references from the same source tree.
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+    children:
+      - module_id: directory:plugin/hooks/scripts
+        directory: plugin/hooks/scripts
+        contract: null
+        document_state: missing
+  self_digest: sha256:a23e24fb2b710aca38858e3d8214e80bad4bbf1840e9800448523ce72effe025
+  subtree:
+    self: sha256:63f9d8e5e95b42a5d4d92f7d71403d4edacc9e518e856e6b1237ec3852f2e5c2
+    children:
+      - module_id: directory:plugin/hooks/scripts
+        digest: sha256:24e780f51606a19db57735f4746eb1a54bd0440b89c623c32237624686152384
+  subtree_digest: sha256:25c6225295bd6c08c4b74dc0ab2174cd9cdb98bc4f826231099fb8e946e0ca1b
+  semantic_subtree:
+    self: sha256:a23e24fb2b710aca38858e3d8214e80bad4bbf1840e9800448523ce72effe025
+    children:
+      - module_id: directory:plugin/hooks/scripts
+        digest: sha256:8238c3a24c29c4c3193067d6dd4571a8e5b2015cb968c8cc9d55c10f9ce04462
+  semantic_subtree_digest: sha256:b1d30fcbd51635e26267b73052908948baadafd9a2e94c36bc62890ae3b99918
+change:
+  existence: retained
+  own: false
+  own_code: false
+  own_contract: false
+  inherited_constraints: true
+  descendants: true
+  child_composition: false
+  moved: false
+structure:
+  complete: false
+  diagnostics: []
+  document_state: missing
+publication:
+  generation: 1
+  comparison_key: sha256:dc98b7ce48b2d042cf3c49393d0e9b7ee428318f00b8320bf7aa097e0e220040
+  baseline:
+    metadata:
+      schema_version: 2
+      root: D:\projects\dsh.plugins\dsh-ast-index-search
+      capturedAt: 2026-11-11T20:51:58.911Z
+      kind: git
+      revision: 39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+      label: HEAD
+      fingerprint: ce875f581e3068454f564722f01dcb32cacfc836460278bc610500f4bb86657c
+      complete: true
+      diagnostics: []
+      evidenceLimitations:
+        - "src/db.rs: текст недоступен или превышен лимит доказательств"
+        - "tree-sitter-bsl/src/parser.c: текст недоступен или превышен лимит
+          доказательств"
+      digest: sha256:54c9f4b0a85ec24ae29f73bfc639059b3951d61af510b95989587b970b4ca995
+      id: git-39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+      isHead: true
+    module_index: 7
+    module:
+      directory: plugin/hooks
+      documentPath: plugin/hooks/arch.yaml
+      document:
+        state: missing
+        text: null
+      files:
+        - path: plugin/hooks/hooks.json
+          hash: be9c5fd0eaaee94eb481b48af72c59d10b7053a4
+      sourceFiles: 0
+      fingerprint: 238518e1df64c1e217ee04bff0d49b9e007decae2181a557e93866b191dd27ba
+    facts:
+      - index: 99
+        fact:
+          id: sha256:92b86aa68eb1ebfdea9c7ef3595a75ac7601cf3fd1b1303ebe41d781fd50cfb2
+          kind: file
+          path: plugin/hooks/hooks.json
+          start_line: 1
+          end_line: 44
+          text: >
+            {
+              "description": "Keep the ast-index search index in sync with file edits and session events, and nudge symbol searches toward ast-index.",
+              "hooks": {
+                "PreToolUse": [
+                  {
+                    "matcher": "Grep",
+                    "hooks": [
+                      {
+                        "type": "command",
+                        "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/grep-reminder.sh",
+                        "timeout": 5
+                      }
+                    ]
+                  }
+                ],
+                "PostToolUse": [
+                  {
+                    "matcher": "Edit|Write|MultiEdit|NotebookEdit",
+                    "hooks": [
+                      {
+                        "type": "command",
+                        "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/post-edit-update.sh",
+                        "timeout": 20
+                      }
+                    ]
+                  }
+                ],
+                "SessionStart": [
+                  {
+                    "matcher": "*",
+                    "hooks": [
+                      {
+                        "type": "command",
+                        "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/session-start-refresh.sh",
+                        "timeout": 90,
+                        "statusMessage": "Queuing the ast-index project refresh...",
+                        "async": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+      - index: 309
+        fact:
+          id: sha256:d435476cbc2ac6fa66b6e340e80b13b31c011dc37ffe9a42706aa3cbf5e0fc35
+          kind: module
+          path: plugin/hooks
+          text: '{"contract":"missing","sources":[]}'
+  current:
+    metadata:
+      schema_version: 2
+      root: D:\projects\dsh.plugins\dsh-ast-index-search
+      capturedAt: 2026-11-11T20:51:59.431Z
+      kind: launch
+      label: Начальное состояние
+      fingerprint: 1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+      complete: true
+      diagnostics: []
+      evidenceLimitations:
+        - "src/db.rs: текст недоступен или превышен лимит доказательств"
+        - "tree-sitter-bsl/src/parser.c: текст недоступен или превышен лимит
+          доказательств"
+      digest: sha256:00610d9df42de3a0b358e79b8957e32e2dfd11bf4ad05190981cd441988c99bd
+      id: launch-1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+    module_index: 8
+    module:
+      directory: plugin/hooks
+      documentPath: plugin/hooks/arch.yaml
+      document:
+        state: missing
+        text: null
+      files:
+        - path: plugin/hooks/hooks.json
+          hash: be9c5fd0eaaee94eb481b48af72c59d10b7053a4
+      sourceFiles: 0
+      fingerprint: 238518e1df64c1e217ee04bff0d49b9e007decae2181a557e93866b191dd27ba
+    facts:
+      - index: 108
+        fact:
+          id: sha256:92b86aa68eb1ebfdea9c7ef3595a75ac7601cf3fd1b1303ebe41d781fd50cfb2
+          kind: file
+          path: plugin/hooks/hooks.json
+          start_line: 1
+          end_line: 44
+          text: >
+            {
+              "description": "Keep the ast-index search index in sync with file edits and session events, and nudge symbol searches toward ast-index.",
+              "hooks": {
+                "PreToolUse": [
+                  {
+                    "matcher": "Grep",
+                    "hooks": [
+                      {
+                        "type": "command",
+                        "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/grep-reminder.sh",
+                        "timeout": 5
+                      }
+                    ]
+                  }
+                ],
+                "PostToolUse": [
+                  {
+                    "matcher": "Edit|Write|MultiEdit|NotebookEdit",
+                    "hooks": [
+                      {
+                        "type": "command",
+                        "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/post-edit-update.sh",
+                        "timeout": 20
+                      }
+                    ]
+                  }
+                ],
+                "SessionStart": [
+                  {
+                    "matcher": "*",
+                    "hooks": [
+                      {
+                        "type": "command",
+                        "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/session-start-refresh.sh",
+                        "timeout": 90,
+                        "statusMessage": "Queuing the ast-index project refresh...",
+                        "async": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+      - index: 322
+        fact:
+          id: sha256:d435476cbc2ac6fa66b6e340e80b13b31c011dc37ffe9a42706aa3cbf5e0fc35
+          kind: module
+          path: plugin/hooks
+          text: '{"contract":"missing","sources":[]}'
+review_status:
+  self:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    conflict: false
+    coverage:
+      current:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+      change:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+  subtree:
+    current:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 2
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+    change:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 2
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+  explicit_subtree:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.

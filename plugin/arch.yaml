@@ -1,0 +1,12 @@
+schema_version: 1
+id: ast-index-agent-integrations
+title: Agent integrations
+kind: group
+purpose: Make ast-index available in supported agent hosts.
+responsibilities:
+  R1: Maintain shared ast-index instructions and language reference files for consuming agents.
+  R2: Provide host-specific manifests, commands, hooks and packaging where required.
+boundaries:
+  B1: The CLI owns code navigation and index storage.
+invariants:
+  I1: Integrations that distribute the shared skill take its instructions and references from the same source tree.

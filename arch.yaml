@@ -1,0 +1,12 @@
+schema_version: 1
+id: ast-index-project
+title: Structural code navigation
+kind: group
+purpose: Provide local structural navigation for source projects and distribute it to people and coding agents.
+responsibilities:
+  R1: Build, update and query an index of source files, definitions and references through the ast-index CLI.
+  R2: Supply client integrations, platform distributions and verification for the CLI.
+boundaries:
+  B1: Language parsing and index storage belong to the Rust engine. Client integration packages consume the public CLI.
+invariants:
+  I1: Project indexes are scoped to the project being queried.

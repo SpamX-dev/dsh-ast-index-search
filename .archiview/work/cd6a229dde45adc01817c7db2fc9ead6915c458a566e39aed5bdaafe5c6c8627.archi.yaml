@@ -1,0 +1,2597 @@
+schema_version: 2
+kind: archi
+module_id: directory:scripts
+project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+check_hash: 050bdecd4302e18cc2d562e06dbcff7383ae464bcf8319da0287614aafd2298c
+input_manifest:
+  domain: archiview/module-check/v1
+  project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+  module_id: directory:scripts
+  baseline:
+    identity:
+      kind: git
+      id: 39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+    state:
+      exists: true
+      directory: scripts
+      self_digest: sha256:cef0f33f9a350d9fe9666c235c2ccc74aba37569c9718261ffc4adc0b42f53f3
+      subtree_digest: sha256:d20f49bb6226425ba821492f06b76c8298df9efbcdf1f70ded6929f6b77cb570
+  current:
+    exists: true
+    directory: scripts
+    self_digest: sha256:6a15ad478aee27f0859bfbc97d945ba431f6b5ee5f5b1ece7b9b1d1066b11e56
+    subtree_digest: sha256:4f90ab9251138d08cfff3a18b6832aa94018b87fe6fdd48800bfae6f52bab7b2
+  analyzer:
+    name: archiview-structure
+    version: 1.0.2
+    config_digest: sha256:d4208fd53122193eb2daea0c208071c378c8d7635a8b73431fec88a63f5cd518
+baseline:
+  module_id: directory:scripts
+  directory: scripts
+  parent_id: directory:.
+  children: []
+  technical:
+    normalization: archiview/module-state/v1
+    module_id: directory:scripts
+    directory: scripts
+    own_files:
+      - path: scripts/bump.sh
+        digest: sha256:2fec97872dd440b655d7cb5522732fb761ccf2afbde4092878bff49fc8aec1b4
+        normalization: text-lf/v1
+      - path: scripts/check-pr.sh
+        digest: sha256:1ea4483224b3ec15584d9c02f529867aab169ad2e3348041f208ef510b4c0934
+        normalization: text-lf/v1
+      - path: scripts/smoke.sh
+        digest: sha256:73b517a0a4e292f9691d74e50c3491b7ae3427fcfad6134ef6c1e7cc674b4d18
+        normalization: text-lf/v1
+      - path: scripts/validate-agent-plugins.sh
+        digest: sha256:5ce6cd67bf53f12f487c6b28eda1c4525564a4ba76c286ba666b099d5b65a134
+        normalization: text-lf/v1
+    contract: null
+    document_state: missing
+    inherited: []
+  technical_digest: sha256:cef0f33f9a350d9fe9666c235c2ccc74aba37569c9718261ffc4adc0b42f53f3
+  complete: false
+  self:
+    normalization: archiview/module-state/v1
+    module_id: directory:scripts
+    directory: scripts
+    own_files:
+      - path: scripts/bump.sh
+        digest: sha256:2fec97872dd440b655d7cb5522732fb761ccf2afbde4092878bff49fc8aec1b4
+        normalization: text-lf/v1
+      - path: scripts/check-pr.sh
+        digest: sha256:1ea4483224b3ec15584d9c02f529867aab169ad2e3348041f208ef510b4c0934
+        normalization: text-lf/v1
+      - path: scripts/smoke.sh
+        digest: sha256:73b517a0a4e292f9691d74e50c3491b7ae3427fcfad6134ef6c1e7cc674b4d18
+        normalization: text-lf/v1
+      - path: scripts/validate-agent-plugins.sh
+        digest: sha256:5ce6cd67bf53f12f487c6b28eda1c4525564a4ba76c286ba666b099d5b65a134
+        normalization: text-lf/v1
+    contract: null
+    inherited: []
+    children: []
+  self_digest: sha256:c281f13733e278d83c58fc678714a7ca533a2c56c7cca825fefb1dbefae8e59a
+  subtree:
+    self: sha256:cef0f33f9a350d9fe9666c235c2ccc74aba37569c9718261ffc4adc0b42f53f3
+    children: []
+  subtree_digest: sha256:d20f49bb6226425ba821492f06b76c8298df9efbcdf1f70ded6929f6b77cb570
+  semantic_subtree:
+    self: sha256:c281f13733e278d83c58fc678714a7ca533a2c56c7cca825fefb1dbefae8e59a
+    children: []
+  semantic_subtree_digest: sha256:ec12c611882c232f54187d804098f951917fb3ffe2ae07aae0d20b767c8947b2
+current:
+  module_id: directory:scripts
+  directory: scripts
+  parent_id: ast-index-project
+  children: []
+  technical:
+    normalization: archiview/module-state/v1
+    module_id: directory:scripts
+    directory: scripts
+    own_files:
+      - path: scripts/bump.sh
+        digest: sha256:2fec97872dd440b655d7cb5522732fb761ccf2afbde4092878bff49fc8aec1b4
+        normalization: text-lf/v1
+      - path: scripts/check-pr.sh
+        digest: sha256:1ea4483224b3ec15584d9c02f529867aab169ad2e3348041f208ef510b4c0934
+        normalization: text-lf/v1
+      - path: scripts/smoke.sh
+        digest: sha256:73b517a0a4e292f9691d74e50c3491b7ae3427fcfad6134ef6c1e7cc674b4d18
+        normalization: text-lf/v1
+      - path: scripts/validate-agent-plugins.sh
+        digest: sha256:5ce6cd67bf53f12f487c6b28eda1c4525564a4ba76c286ba666b099d5b65a134
+        normalization: text-lf/v1
+    contract: null
+    document_state: missing
+    inherited:
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+  technical_digest: sha256:6a15ad478aee27f0859bfbc97d945ba431f6b5ee5f5b1ece7b9b1d1066b11e56
+  complete: false
+  self:
+    normalization: archiview/module-state/v1
+    module_id: directory:scripts
+    directory: scripts
+    own_files:
+      - path: scripts/bump.sh
+        digest: sha256:2fec97872dd440b655d7cb5522732fb761ccf2afbde4092878bff49fc8aec1b4
+        normalization: text-lf/v1
+      - path: scripts/check-pr.sh
+        digest: sha256:1ea4483224b3ec15584d9c02f529867aab169ad2e3348041f208ef510b4c0934
+        normalization: text-lf/v1
+      - path: scripts/smoke.sh
+        digest: sha256:73b517a0a4e292f9691d74e50c3491b7ae3427fcfad6134ef6c1e7cc674b4d18
+        normalization: text-lf/v1
+      - path: scripts/validate-agent-plugins.sh
+        digest: sha256:5ce6cd67bf53f12f487c6b28eda1c4525564a4ba76c286ba666b099d5b65a134
+        normalization: text-lf/v1
+    contract: null
+    inherited:
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+    children: []
+  self_digest: sha256:44ec13fe7b30e29e3254bcf2ed1f9c7c6e5e446904f867705374980e86e9f868
+  subtree:
+    self: sha256:6a15ad478aee27f0859bfbc97d945ba431f6b5ee5f5b1ece7b9b1d1066b11e56
+    children: []
+  subtree_digest: sha256:4f90ab9251138d08cfff3a18b6832aa94018b87fe6fdd48800bfae6f52bab7b2
+  semantic_subtree:
+    self: sha256:44ec13fe7b30e29e3254bcf2ed1f9c7c6e5e446904f867705374980e86e9f868
+    children: []
+  semantic_subtree_digest: sha256:1ab04b013900ce646af72ab23ee33eb3dc716673e2ba59c63365d7e0406b4639
+change:
+  existence: retained
+  own: false
+  own_code: false
+  own_contract: false
+  inherited_constraints: true
+  descendants: false
+  child_composition: false
+  moved: false
+structure:
+  complete: false
+  diagnostics: []
+  document_state: missing
+publication:
+  generation: 1
+  comparison_key: sha256:dc98b7ce48b2d042cf3c49393d0e9b7ee428318f00b8320bf7aa097e0e220040
+  baseline:
+    metadata:
+      schema_version: 2
+      root: D:\projects\dsh.plugins\dsh-ast-index-search
+      capturedAt: 2026-11-11T20:51:58.911Z
+      kind: git
+      revision: 39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+      label: HEAD
+      fingerprint: ce875f581e3068454f564722f01dcb32cacfc836460278bc610500f4bb86657c
+      complete: true
+      diagnostics: []
+      evidenceLimitations:
+        - "src/db.rs: текст недоступен или превышен лимит доказательств"
+        - "tree-sitter-bsl/src/parser.c: текст недоступен или превышен лимит
+          доказательств"
+      digest: sha256:54c9f4b0a85ec24ae29f73bfc639059b3951d61af510b95989587b970b4ca995
+      id: git-39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+      isHead: true
+    module_index: 9
+    module:
+      directory: scripts
+      documentPath: scripts/arch.yaml
+      document:
+        state: missing
+        text: null
+      files:
+        - path: scripts/bump.sh
+          hash: 763b343931b75841b30c0369872afe96a2a23015
+        - path: scripts/check-pr.sh
+          hash: 8192a1e17e2a149aba8dfe8405d46dab2732ddc5
+        - path: scripts/smoke.sh
+          hash: abfb7267a62aa56ee2a5076ea3c3fc3e18e2bd30
+        - path: scripts/validate-agent-plugins.sh
+          hash: 3143595837178f2ae4e6b1b34843c54585152d81
+      sourceFiles: 4
+      fingerprint: e6d41b6aeb3043d64c33c7e87924db5f8cc3ee0ed2b4429c64c648ea1f2c2d9f
+    facts:
+      - index: 120
+        fact:
+          id: sha256:43647ec48be79e2e0f06e07b0ea8d9d100a2d04c7ebbba4544c6d23a6d5775f7
+          kind: file
+          path: scripts/bump.sh
+          start_line: 1
+          end_line: 103
+          text: >
+            #!/usr/bin/env bash
+
+            set -euo pipefail
+
+
+            # Usage: ./scripts/bump.sh 3.32.0
+
+            # Updates version in all files, commits, tags, and pushes.
+
+            # Write changelog in README.md BEFORE running this script.
+
+
+            VERSION="${1:-}"
+
+
+            if [ -z "$VERSION" ]; then
+                echo "Usage: $0 <version>"
+                echo "Example: $0 3.32.0"
+                echo ""
+                echo "Write changelog in README.md first, then run this script."
+                exit 1
+            fi
+
+
+            # Validate version format
+
+            if ! echo "$VERSION" | grep -qE '^[0-9]+\.[0-9]+\.[0-9]+$'; then
+                echo "Error: version must be in format X.Y.Z (got: $VERSION)"
+                exit 1
+            fi
+
+
+            ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+
+            cd "$ROOT"
+
+
+            # Detect current version from Cargo.toml
+
+            CURRENT=$(grep '^version' Cargo.toml | head -1 | sed
+            's/.*"\(.*\)".*/\1/')
+
+            echo "Bumping $CURRENT → $VERSION"
+
+
+            # 1. Cargo.toml
+
+            sed -i '' "s/^version = \"$CURRENT\"/version = \"$VERSION\"/"
+            Cargo.toml
+
+            echo "  ✓ Cargo.toml"
+
+
+            # 2. README.md title
+
+            sed -i '' "s/# ast-index v$CURRENT/# ast-index v$VERSION/" README.md
+
+            echo "  ✓ README.md"
+
+
+            # 3. plugin/.claude-plugin/plugin.json
+
+            sed -i '' "s/\"version\": \"$CURRENT\"/\"version\": \"$VERSION\"/"
+            plugin/.claude-plugin/plugin.json
+
+            echo "  ✓ plugin/.claude-plugin/plugin.json"
+
+
+            # 4. plugin/.codex-plugin/plugin.json
+
+            sed -i '' "s/\"version\": \"$CURRENT\"/\"version\": \"$VERSION\"/"
+            plugin/.codex-plugin/plugin.json
+
+            echo "  ✓ plugin/.codex-plugin/plugin.json"
+
+
+            # 5. plugin/.cursor-plugin/plugin.json
+
+            sed -i '' "s/\"version\": \"$CURRENT\"/\"version\": \"$VERSION\"/"
+            plugin/.cursor-plugin/plugin.json
+
+            echo "  ✓ plugin/.cursor-plugin/plugin.json"
+
+
+            # 6. .claude-plugin/plugin.json
+
+            sed -i '' "s/\"version\": \"$CURRENT\"/\"version\": \"$VERSION\"/"
+            .claude-plugin/plugin.json
+
+            echo "  ✓ .claude-plugin/plugin.json"
+
+
+            # 7. .claude-plugin/marketplace.json
+
+            sed -i '' "s/\"version\": \"$CURRENT\"/\"version\": \"$VERSION\"/"
+            .claude-plugin/marketplace.json
+
+            echo "  ✓ .claude-plugin/marketplace.json"
+
+
+            # 8. npm/package.json (version + optionalDependencies)
+
+            if [ -f npm/package.json ]; then
+                sed -i '' "s/$CURRENT/$VERSION/g" npm/package.json
+                echo "  ✓ npm/package.json"
+            fi
+
+
+            # 9. npm platform packages
+
+            for pkg in npm/platforms/*/package.json; do
+                if [ -f "$pkg" ]; then
+                    sed -i '' "s/$CURRENT/$VERSION/g" "$pkg"
+                    echo "  ✓ $pkg"
+                fi
+            done
+
+
+            # 8. Build and test
+
+            echo ""
+
+            echo "Building release..."
+
+            cargo build --release
+
+            echo ""
+
+            echo "Running tests..."
+
+            cargo test --quiet
+
+
+            # Verify version
+
+            BUILT_VERSION=$(./target/release/ast-index version 2>&1)
+
+            echo ""
+
+            echo "Built: $BUILT_VERSION"
+
+
+            # 9. Commit, tag, push
+
+            echo ""
+
+            echo "Committing..."
+
+            git add Cargo.toml Cargo.lock README.md \
+                plugin/.claude-plugin/plugin.json \
+                plugin/.codex-plugin/plugin.json \
+                plugin/.cursor-plugin/plugin.json \
+                .claude-plugin/plugin.json \
+                .claude-plugin/marketplace.json \
+                npm/package.json npm/platforms/*/package.json 2>/dev/null || true
+            git commit -m "Bump to v$VERSION"
+
+            git tag "v$VERSION"
+
+            git push origin main --tags
+
+
+            echo ""
+
+            echo "Done! v$VERSION released."
+
+            echo "GitHub Actions will build and publish the release."
+      - index: 121
+        fact:
+          id: sha256:b114cb86d3f693924812e2ae6d2f439a2e1e570fa5dfc741a2f3f6e167ce92d6
+          kind: file
+          path: scripts/check-pr.sh
+          start_line: 1
+          end_line: 75
+          text: |
+            #!/usr/bin/env bash
+            # ============================================================================
+            # scripts/check-pr.sh
+            #
+            # Single entrypoint that runs every gate a PR has to pass before review:
+            #   1. cargo build --release --workspace        (compiles the entire workspace)
+            #   2. cargo test  --release --workspace        (unit + integration + proptest)
+            #   3. scripts/smoke.sh                         (6 CLI end-to-end scenarios)
+            #   4. scripts/validate-agent-plugins.sh        (plugin payload + command contract)
+            #   5. cargo bench --no-run                     (benches compile, not run)
+            #
+            # Prints a single combined summary at the end. Exits non-zero if any step
+            # fails. Intended to be the one command both contributors and the CI run.
+            #
+            # Usage:
+            #   bash scripts/check-pr.sh                # default: 4 steps above
+            #   RUN_BENCHES=1 bash scripts/check-pr.sh  # also run `cargo bench` in --quick mode
+            #
+            # Environment overrides for the smoke step are forwarded — see scripts/smoke.sh.
+            # ============================================================================
+
+            set -uo pipefail
+
+            ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+            cd "$ROOT"
+
+            PASS=0
+            FAIL=0
+            RESULTS=()
+            START=$(date +%s)
+
+            run_step() {
+                local name="$1"; shift
+                local t0 t1
+                echo
+                echo "==================== $name ===================="
+                t0=$(date +%s)
+                if "$@"; then
+                    t1=$(date +%s)
+                    RESULTS+=("PASS  $name  ($((t1-t0))s)")
+                    PASS=$((PASS+1))
+                else
+                    t1=$(date +%s)
+                    RESULTS+=("FAIL  $name  ($((t1-t0))s)")
+                    FAIL=$((FAIL+1))
+                fi
+            }
+
+            run_step "cargo build --release --workspace" \
+                cargo build --release --workspace
+
+            run_step "cargo test  --release --workspace" \
+                cargo test --release --workspace
+
+            run_step "scripts/smoke.sh (6 CLI scenarios)" \
+                bash "$ROOT/scripts/smoke.sh"
+
+            run_step "scripts/validate-agent-plugins.sh" \
+                bash "$ROOT/scripts/validate-agent-plugins.sh"
+
+            if [ "${RUN_BENCHES:-0}" = "1" ]; then
+                run_step "cargo bench --bench parser -- --quick" \
+                    cargo bench --bench parser -- --quick
+            else
+                run_step "cargo bench --no-run (compile only)" \
+                    cargo bench --no-run
+            fi
+
+            END=$(date +%s)
+            echo
+            echo "==================== check-pr summary ===================="
+            for r in "${RESULTS[@]}"; do echo "  $r"; done
+            echo "  total: $PASS passed, $FAIL failed in $((END-START))s"
+            exit "$FAIL"
+      - index: 122
+        fact:
+          id: sha256:ada5bddb68df02a87574eea0e32098c0268c2ecafe354abb017146dc57bd9d61
+          kind: file
+          path: scripts/smoke.sh
+          start_line: 1
+          end_line: 615
+          text: |
+            #!/usr/bin/env bash
+            # ============================================================================
+            # scripts/smoke.sh — end-to-end CLI smoke tests for ast-index
+            # ============================================================================
+            #
+            # WHAT
+            #   The CLI equivalent of a Playwright suite. Six independent scenarios
+            #   exercise the real release binary against synthetic Rust projects, then
+            #   assert on stdout / stderr / exit code / SQLite state.
+            #
+            # WHY
+            #   Catches regressions in real user flows that unit tests miss: project
+            #   detection, incremental update, extra-root path resolution (PathResolver
+            #   regression), JSON output schema, and MCP stdio handshake.
+            #
+            # SCENARIOS
+            #   1. fresh-project      Rebuild a tiny Rust project, search a known symbol,
+            #                         verify project=Rust + file count + symbol present.
+            #   2. incremental-update After rebuild, add a new .rs file, run update,
+            #                         verify both new and existing symbols are searchable.
+            #   3. extra-roots        Rebuild primary, add-root pointing at a sibling
+            #                         tempdir, update, verify search returns an absolute
+            #                         path resolved against the extra root (PathResolver
+            #                         regression).
+            #   4. json-format        `search --format json` and `stats --format json`
+            #                         must be parseable JSON with expected top-level keys.
+            #   5. mcp-stdio          Spawn ast-index-mcp with AST_INDEX_ROOT, send a
+            #                         JSON-RPC `initialize` then a `tools/call stats`,
+            #                         verify well-formed JSON-RPC responses.
+            #   6. perf-budget        Index a copy of this repo's `src/`, then verify
+            #                         rebuild, search, and no-op update stay within loose
+            #                         latency budgets.
+            #
+            # OUTPUT
+            #   On failure, the offending command + output is printed and a per-scenario
+            #   log is written under $WORKDIR/logs/<scenario>.log. Final line is
+            #   "N/6 scenarios passed". Exit 0 iff N == 6.
+            #
+            # USAGE
+            #   bash scripts/smoke.sh                 # run all scenarios
+            #   SMOKE_KEEP=1 bash scripts/smoke.sh    # do not delete $WORKDIR on exit
+            #   SMOKE_BIN_DIR=path bash scripts/smoke.sh   # use prebuilt binaries here
+            #
+            # ADDING A NEW SCENARIO
+            #   1. Define a function `scenario_<name>` that takes one arg (its workdir).
+            #      Inside it: create fixtures, run `$AST_INDEX` commands, assert with
+            #      the helpers `assert_eq`, `assert_contains`, `assert_json_key`, etc.
+            #      Return 0 on success, non-zero on failure. Use `fail "msg"` to abort.
+            #   2. Append the function name to the SCENARIOS array near the bottom.
+            #   3. Re-run `bash scripts/smoke.sh` and confirm `N+1/N+1 scenarios passed`.
+            #
+            # REQUIREMENTS
+            #   bash, python3 (for JSON validation), sqlite3 (optional — only for the
+            #   sqlite probe in fresh-project; gracefully skipped if missing).
+            # ============================================================================
+
+            set -euo pipefail
+
+            # ---------------------------------------------------------------------------
+            # Globals
+            # ---------------------------------------------------------------------------
+            ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+            SMOKE_BIN_DIR="${SMOKE_BIN_DIR:-$ROOT/target/release}"
+            AST_INDEX="$SMOKE_BIN_DIR/ast-index"
+            AST_INDEX_MCP="$SMOKE_BIN_DIR/ast-index-mcp"
+
+            WORKDIR="${TMPDIR:-/tmp}/ast-index-smoke-$$"
+            LOGDIR="$WORKDIR/logs"
+            mkdir -p "$LOGDIR"
+
+            CURRENT_LOG=""   # set per scenario by run_scenario
+            PASSED=0
+            FAILED=0
+            TOTAL=0
+            FAILED_NAMES=()
+
+            # ---------------------------------------------------------------------------
+            # Cleanup
+            # ---------------------------------------------------------------------------
+            cleanup() {
+                local exit_code=$?
+                # Kill any leftover background processes (mcp scenario)
+                if [ -n "${MCP_PID:-}" ] && kill -0 "$MCP_PID" 2>/dev/null; then
+                    kill "$MCP_PID" 2>/dev/null || true
+                    wait "$MCP_PID" 2>/dev/null || true
+                fi
+                # Clear ast-index project caches we created so we don't pollute
+                # ~/Library/Caches/ast-index/ for the user.
+                if [ -d "$WORKDIR" ]; then
+                    for proj in "$WORKDIR"/scenario-*/primary "$WORKDIR"/scenario-*/extra; do
+                        [ -d "$proj" ] || continue
+                        (cd "$proj" && "$AST_INDEX" clear >/dev/null 2>&1) || true
+                    done
+                fi
+                if [ "${SMOKE_KEEP:-0}" = "1" ]; then
+                    echo "[smoke] keeping $WORKDIR (SMOKE_KEEP=1)"
+                elif [ -d "$WORKDIR" ]; then
+                    rm -rf "$WORKDIR"
+                fi
+                exit "$exit_code"
+            }
+            trap cleanup EXIT INT TERM
+
+            # ---------------------------------------------------------------------------
+            # Logging / assertion helpers
+            # ---------------------------------------------------------------------------
+            log() { printf '%s\n' "$*" | tee -a "$CURRENT_LOG" >&2; }
+
+            # Run a command in a given directory, tee its combined output to the scenario
+            # log, and return its exit code. First arg is the cwd; rest is the command.
+            # Sets LAST_OUTPUT for assertions. Avoids subshells so LAST_OUTPUT propagates.
+            LAST_OUTPUT=""
+            run_in() {
+                local cwd="$1"; shift
+                local out rc
+                out=$(cd "$cwd" && "$@" 2>&1) ; rc=$?
+                LAST_OUTPUT="$out"
+                {
+                    printf '$ (cd %s && %s)\n' "$cwd" "$*"
+                    printf '%s\n' "$out"
+                    printf '[exit %d]\n\n' "$rc"
+                } >> "$CURRENT_LOG"
+                return $rc
+            }
+
+            fail() {
+                log "FAIL: $*"
+                log "----- last output -----"
+                log "$LAST_OUTPUT"
+                log "-----------------------"
+                return 1
+            }
+
+            assert_eq() {
+                local actual="$1" expected="$2" what="$3"
+                if [ "$actual" != "$expected" ]; then
+                    fail "$what: expected '$expected', got '$actual'"
+                    return 1
+                fi
+            }
+
+            assert_contains() {
+                local haystack="$1" needle="$2" what="$3"
+                case "$haystack" in
+                    *"$needle"*) : ;;
+                    *) fail "$what: expected to contain '$needle'"; return 1 ;;
+                esac
+            }
+
+            assert_not_contains() {
+                local haystack="$1" needle="$2" what="$3"
+                case "$haystack" in
+                    *"$needle"*) fail "$what: expected NOT to contain '$needle'"; return 1 ;;
+                    *) : ;;
+                esac
+            }
+
+            assert_json_valid() {
+                local payload="$1" what="$2"
+                if ! printf '%s' "$payload" | python3 -m json.tool >/dev/null 2>&1; then
+                    fail "$what: not valid JSON"
+                    return 1
+                fi
+            }
+
+            assert_json_key() {
+                local payload="$1" key="$2" what="$3"
+                local present
+                present=$(printf '%s' "$payload" | python3 -c "
+            import json, sys
+            try:
+                obj = json.load(sys.stdin)
+            except Exception as e:
+                print('PARSE_ERR'); sys.exit(0)
+            print('YES' if '$key' in obj else 'NO')
+            ") || true
+                if [ "$present" != "YES" ]; then
+                    fail "$what: missing top-level key '$key' (probe=$present)"
+                    return 1
+                fi
+            }
+
+            # ---------------------------------------------------------------------------
+            # Build (once)
+            # ---------------------------------------------------------------------------
+            ensure_binaries() {
+                if [ -x "$AST_INDEX" ] && [ -x "$AST_INDEX_MCP" ]; then
+                    echo "[smoke] using existing binaries in $SMOKE_BIN_DIR"
+                    return
+                fi
+                echo "[smoke] building release binaries (cargo build --release --workspace)"
+                (cd "$ROOT" && cargo build --release --workspace) >&2
+                if [ ! -x "$AST_INDEX" ] || [ ! -x "$AST_INDEX_MCP" ]; then
+                    echo "[smoke] FATAL: binaries not present after build" >&2
+                    exit 2
+                fi
+            }
+
+            # ---------------------------------------------------------------------------
+            # Scenario 1: fresh-project
+            # ---------------------------------------------------------------------------
+            scenario_fresh_project() {
+                local dir="$1/primary"
+                mkdir -p "$dir/src"
+                cat > "$dir/Cargo.toml" <<'EOF'
+            [package]
+            name = "smoke_fresh"
+            version = "0.1.0"
+            edition = "2021"
+            EOF
+                cat > "$dir/src/main.rs" <<'EOF'
+            fn smoke_fresh_marker() {
+                println!("hello smoke");
+            }
+
+            struct SmokeFreshStruct {
+                field: i32,
+            }
+
+            fn main() {
+                smoke_fresh_marker();
+                let _ = SmokeFreshStruct { field: 0 };
+            }
+            EOF
+                cat > "$dir/src/lib.rs" <<'EOF'
+            pub fn library_marker() -> i32 { 42 }
+            EOF
+
+                run_in "$dir" "$AST_INDEX" rebuild || { fail "rebuild exited non-zero"; return 1; }
+                assert_contains "$LAST_OUTPUT" "Indexed 2 files" "rebuild file count" || return 1
+
+                run_in "$dir" "$AST_INDEX" detect-stacks || { fail "detect-stacks exited non-zero"; return 1; }
+                assert_contains "$LAST_OUTPUT" "Rust (rust)" "detected project stack" || return 1
+
+                run_in "$dir" "$AST_INDEX" search smoke_fresh_marker || { fail "search exited non-zero"; return 1; }
+                assert_contains "$LAST_OUTPUT" "smoke_fresh_marker" "search result" || return 1
+                assert_contains "$LAST_OUTPUT" "src/main.rs" "search file path" || return 1
+
+                run_in "$dir" "$AST_INDEX" stats --format json || { fail "stats --format json exited non-zero"; return 1; }
+                assert_json_valid "$LAST_OUTPUT" "stats json" || return 1
+                local files
+                files=$(printf '%s' "$LAST_OUTPUT" | python3 -c "import json,sys; print(json.load(sys.stdin)['stats']['file_count'])")
+                assert_eq "$files" "2" "stats.file_count" || return 1
+
+                # Optional sqlite probe — symbols table must contain our marker.
+                if command -v sqlite3 >/dev/null 2>&1; then
+                    local db_path
+                    db_path=$(cd "$dir" && "$AST_INDEX" db-path 2>/dev/null)
+                    if [ -n "$db_path" ] && [ -f "$db_path" ]; then
+                        local count
+                        count=$(sqlite3 "$db_path" "SELECT COUNT(*) FROM symbols WHERE name='smoke_fresh_marker';" 2>/dev/null || echo "0")
+                        if [ "$count" -lt 1 ]; then
+                            fail "sqlite probe: symbols table has no smoke_fresh_marker (got $count)"
+                            return 1
+                        fi
+                    fi
+                fi
+                return 0
+            }
+
+            # ---------------------------------------------------------------------------
+            # Scenario 2: incremental-update
+            # ---------------------------------------------------------------------------
+            scenario_incremental_update() {
+                local dir="$1/primary"
+                mkdir -p "$dir/src"
+                cat > "$dir/Cargo.toml" <<'EOF'
+            [package]
+            name = "smoke_incremental"
+            version = "0.1.0"
+            edition = "2021"
+            EOF
+                cat > "$dir/src/main.rs" <<'EOF'
+            fn original_marker() {
+                println!("original");
+            }
+
+            fn main() { original_marker(); }
+            EOF
+
+                run_in "$dir" "$AST_INDEX" rebuild || { fail "initial rebuild"; return 1; }
+                assert_contains "$LAST_OUTPUT" "Indexed 1 files" "initial file count" || return 1
+
+                # Add a new .rs file
+                cat > "$dir/src/added.rs" <<'EOF'
+            pub fn newly_added_marker() {
+                println!("added");
+            }
+            EOF
+
+                run_in "$dir" "$AST_INDEX" update || { fail "update exited non-zero"; return 1; }
+                assert_contains "$LAST_OUTPUT" "1 changed" "update should report 1 changed file" || return 1
+
+                run_in "$dir" "$AST_INDEX" search newly_added_marker || { fail "search new symbol"; return 1; }
+                assert_contains "$LAST_OUTPUT" "newly_added_marker" "new symbol present" || return 1
+
+                run_in "$dir" "$AST_INDEX" search original_marker || { fail "search original symbol"; return 1; }
+                assert_contains "$LAST_OUTPUT" "original_marker" "existing symbol still present" || return 1
+
+                return 0
+            }
+
+            # ---------------------------------------------------------------------------
+            # Scenario 3: extra-roots (PathResolver regression)
+            # ---------------------------------------------------------------------------
+            scenario_extra_roots() {
+                local primary="$1/primary"
+                local extra="$1/extra"
+                mkdir -p "$primary/src" "$extra/src"
+                local extra_canonical
+                extra_canonical=$(cd "$extra" && pwd -P)
+
+                cat > "$primary/Cargo.toml" <<'EOF'
+            [package]
+            name = "smoke_primary"
+            version = "0.1.0"
+            edition = "2021"
+            EOF
+                cat > "$primary/src/main.rs" <<'EOF'
+            fn primary_marker() {}
+            fn main() { primary_marker(); }
+            EOF
+
+                cat > "$extra/Cargo.toml" <<'EOF'
+            [package]
+            name = "smoke_extra"
+            version = "0.1.0"
+            edition = "2021"
+            EOF
+                cat > "$extra/src/lib.rs" <<'EOF'
+            pub fn extra_root_unique_marker() -> i32 { 7 }
+            EOF
+
+                run_in "$primary" "$AST_INDEX" rebuild || { fail "primary rebuild"; return 1; }
+
+                run_in "$primary" "$AST_INDEX" add-root "$extra" || { fail "add-root exited non-zero"; return 1; }
+                assert_contains "$LAST_OUTPUT" "Added source root" "add-root confirmation" || return 1
+
+                run_in "$primary" "$AST_INDEX" update || { fail "update after add-root"; return 1; }
+
+                run_in "$primary" "$AST_INDEX" search extra_root_unique_marker || { fail "search extra-root symbol"; return 1; }
+                assert_contains "$LAST_OUTPUT" "extra_root_unique_marker" "extra-root symbol present" || return 1
+                # Regression: the path MUST be absolute (resolved against extra root),
+                # not a bare 'src/lib.rs' which would be ambiguous.
+                assert_contains "$LAST_OUTPUT" "$extra_canonical/src/lib.rs" "extra-root path is absolute" || return 1
+
+                # The primary symbol should still be searchable.
+                run_in "$primary" "$AST_INDEX" search primary_marker || { fail "search primary symbol"; return 1; }
+                assert_contains "$LAST_OUTPUT" "primary_marker" "primary symbol still present" || return 1
+
+                return 0
+            }
+
+            # ---------------------------------------------------------------------------
+            # Scenario 4: json-format
+            # ---------------------------------------------------------------------------
+            scenario_json_format() {
+                local dir="$1/primary"
+                mkdir -p "$dir/src"
+                cat > "$dir/Cargo.toml" <<'EOF'
+            [package]
+            name = "smoke_json"
+            version = "0.1.0"
+            edition = "2021"
+            EOF
+                cat > "$dir/src/main.rs" <<'EOF'
+            fn json_marker() {}
+            fn main() { json_marker(); }
+            EOF
+
+                run_in "$dir" "$AST_INDEX" rebuild || { fail "rebuild"; return 1; }
+
+                run_in "$dir" "$AST_INDEX" search --format json json_marker || { fail "search --format json"; return 1; }
+                assert_json_valid "$LAST_OUTPUT" "search json output" || return 1
+                for key in symbols files content_matches references; do
+                    assert_json_key "$LAST_OUTPUT" "$key" "search json" || return 1
+                done
+                # Sanity: at least one symbol entry with name=json_marker.
+                local found
+                found=$(printf '%s' "$LAST_OUTPUT" | python3 -c "
+            import json,sys
+            obj = json.load(sys.stdin)
+            syms = obj.get('symbols', [])
+            print('YES' if any(s.get('name') == 'json_marker' for s in syms) else 'NO')
+            ")
+                assert_eq "$found" "YES" "json symbols contains json_marker" || return 1
+
+                run_in "$dir" "$AST_INDEX" stats --format json || { fail "stats --format json"; return 1; }
+                assert_json_valid "$LAST_OUTPUT" "stats json output" || return 1
+                for key in stats db_path db_size_bytes; do
+                    assert_json_key "$LAST_OUTPUT" "$key" "stats json" || return 1
+                done
+
+                return 0
+            }
+
+            # ---------------------------------------------------------------------------
+            # Scenario 5: mcp-stdio
+            # ---------------------------------------------------------------------------
+            scenario_mcp_stdio() {
+                local dir="$1/primary"
+                mkdir -p "$dir/src"
+                cat > "$dir/Cargo.toml" <<'EOF'
+            [package]
+            name = "smoke_mcp"
+            version = "0.1.0"
+            edition = "2021"
+            EOF
+                cat > "$dir/src/main.rs" <<'EOF'
+            fn mcp_marker() {}
+            fn main() { mcp_marker(); }
+            EOF
+
+                run_in "$dir" "$AST_INDEX" rebuild || { fail "rebuild for mcp"; return 1; }
+
+                local in_fifo="$1/mcp-in.jsonl"
+                local out_file="$1/mcp-out.jsonl"
+                cat > "$in_fifo" <<EOF
+            {"jsonrpc":"2.0","id":1,"method":"initialize","params":{}}
+            {"jsonrpc":"2.0","id":2,"method":"tools/call","params":{"name":"stats","arguments":{}}}
+            EOF
+
+                # Spawn MCP server in background, feeding it our requests via stdin redirect.
+                AST_INDEX_ROOT="$dir" AST_INDEX_BIN="$AST_INDEX" \
+                    "$AST_INDEX_MCP" < "$in_fifo" > "$out_file" 2>> "$CURRENT_LOG" &
+                MCP_PID=$!
+
+                # Wait up to 15s for two response lines to appear (initialize + tools/call).
+                local waited=0
+                while [ "$waited" -lt 15 ]; do
+                    if [ -f "$out_file" ]; then
+                        local lines
+                        lines=$(wc -l < "$out_file" 2>/dev/null | tr -d ' ')
+                        if [ "${lines:-0}" -ge 2 ]; then
+                            break
+                        fi
+                    fi
+                    sleep 1
+                    waited=$((waited+1))
+                done
+
+                # Server should have exited on its own once stdin closed; clean up regardless.
+                if kill -0 "$MCP_PID" 2>/dev/null; then
+                    kill "$MCP_PID" 2>/dev/null || true
+                fi
+                wait "$MCP_PID" 2>/dev/null || true
+                MCP_PID=""
+
+                if [ ! -s "$out_file" ]; then
+                    LAST_OUTPUT="(mcp produced no output within ${waited}s)"
+                    fail "mcp server returned no output"
+                    return 1
+                fi
+
+                # Validate response 1: initialize.
+                local init_line
+                init_line=$(sed -n '1p' "$out_file")
+                LAST_OUTPUT="$init_line"
+                assert_json_valid "$init_line" "mcp initialize response" || return 1
+                local probe
+                probe=$(printf '%s' "$init_line" | python3 -c "
+            import json,sys
+            obj = json.load(sys.stdin)
+            ok = (obj.get('jsonrpc') == '2.0'
+                  and obj.get('id') == 1
+                  and 'result' in obj
+                  and obj['result'].get('serverInfo', {}).get('name') == 'ast-index-mcp')
+            print('YES' if ok else 'NO')
+            ")
+                assert_eq "$probe" "YES" "mcp initialize shape" || return 1
+
+                # Validate response 2: tools/call stats.
+                local call_line
+                call_line=$(sed -n '2p' "$out_file")
+                LAST_OUTPUT="$call_line"
+                assert_json_valid "$call_line" "mcp tools/call response" || return 1
+                local probe2
+                probe2=$(printf '%s' "$call_line" | python3 -c "
+            import json,sys
+            obj = json.load(sys.stdin)
+            ok = (obj.get('jsonrpc') == '2.0'
+                  and obj.get('id') == 2
+                  and 'result' in obj
+                  and isinstance(obj['result'].get('content'), list)
+                  and obj['result'].get('isError') == False)
+            print('YES' if ok else 'NO')
+            ")
+                assert_eq "$probe2" "YES" "mcp tools/call shape" || return 1
+
+                return 0
+            }
+
+            # ---------------------------------------------------------------------------
+            # Scenario 6: perf-budget
+            # ---------------------------------------------------------------------------
+            # Indexes a real-world corpus (this very repo's `src/`) and asserts that
+            # `rebuild`, a typical `search`, and a no-op `update` finish under loose
+            # budgets. The budgets are deliberately permissive — meant to catch
+            # catastrophic regressions (10× slowdown), not microbench drift. Override
+            # with environment variables if you want to tighten them in CI:
+            #
+            #   PERF_REBUILD_MS_MAX  default 30000
+            #   PERF_SEARCH_MS_MAX   default 500
+            #   PERF_UPDATE_MS_MAX   default 1000
+            #
+            # Uses python3 for sub-second timing because `date +%N` is GNU-only.
+            ms_now() { python3 -c 'import time; print(int(time.time()*1000))'; }
+
+            scenario_perf_budget() {
+                local dir="$1/perfproject"
+                mkdir -p "$dir"
+                # Real-world corpus = the repo's own src/. Copy so the scenario doesn't
+                # touch the working tree's index cache.
+                cp -R "$ROOT/src" "$dir/src"
+
+                local rebuild_max="${PERF_REBUILD_MS_MAX:-30000}"
+                local search_max="${PERF_SEARCH_MS_MAX:-500}"
+                local update_max="${PERF_UPDATE_MS_MAX:-1000}"
+
+                local t0 t1 elapsed
+
+                # 1. Rebuild
+                t0=$(ms_now)
+                run_in "$dir" "$AST_INDEX" rebuild || { fail "rebuild exited non-zero"; return 1; }
+                t1=$(ms_now); elapsed=$((t1 - t0))
+                log "[perf] rebuild: ${elapsed}ms (budget ${rebuild_max}ms)"
+                if [ "$elapsed" -gt "$rebuild_max" ]; then
+                    fail "rebuild took ${elapsed}ms, exceeds budget ${rebuild_max}ms"
+                    return 1
+                fi
+
+                # 2. Search × 5, take max latency. Queries chosen to hit varied paths.
+                local max_search=0
+                for q in PathResolver search rebuild SymbolKind ParsedSymbol; do
+                    t0=$(ms_now)
+                    run_in "$dir" "$AST_INDEX" search "$q" --format json || { fail "search '$q' failed"; return 1; }
+                    t1=$(ms_now); elapsed=$((t1 - t0))
+                    [ "$elapsed" -gt "$max_search" ] && max_search=$elapsed
+                done
+                log "[perf] search max-latency over 5 queries: ${max_search}ms (budget ${search_max}ms)"
+                if [ "$max_search" -gt "$search_max" ]; then
+                    fail "max search latency ${max_search}ms exceeds budget ${search_max}ms"
+                    return 1
+                fi
+
+                # 3. No-op update — should be near-instant since nothing changed.
+                t0=$(ms_now)
+                run_in "$dir" "$AST_INDEX" update || { fail "update exited non-zero"; return 1; }
+                t1=$(ms_now); elapsed=$((t1 - t0))
+                log "[perf] noop update: ${elapsed}ms (budget ${update_max}ms)"
+                if [ "$elapsed" -gt "$update_max" ]; then
+                    fail "noop update took ${elapsed}ms, exceeds budget ${update_max}ms"
+                    return 1
+                fi
+                assert_contains "$LAST_OUTPUT" "Index is up to date" "noop update message" || return 1
+
+                return 0
+            }
+
+            # ---------------------------------------------------------------------------
+            # Scenario runner
+            # ---------------------------------------------------------------------------
+            run_scenario() {
+                local name="$1"
+                local fn="scenario_${name//-/_}"
+                local sdir="$WORKDIR/scenario-$name"
+                mkdir -p "$sdir"
+                CURRENT_LOG="$LOGDIR/$name.log"
+                : > "$CURRENT_LOG"
+
+                TOTAL=$((TOTAL+1))
+                printf '[smoke] %-22s ... ' "$name"
+                if "$fn" "$sdir" >>"$CURRENT_LOG" 2>&1; then
+                    printf 'PASS\n'
+                    PASSED=$((PASSED+1))
+                else
+                    printf 'FAIL\n'
+                    FAILED=$((FAILED+1))
+                    FAILED_NAMES+=("$name")
+                    echo "       log: $CURRENT_LOG"
+                    # Print last 20 lines of the log inline to aid debugging.
+                    echo "       --- last 20 lines ---"
+                    tail -n 20 "$CURRENT_LOG" | sed 's/^/       | /'
+                    echo "       ---------------------"
+                fi
+            }
+
+            # ---------------------------------------------------------------------------
+            # Main
+            # ---------------------------------------------------------------------------
+            echo "[smoke] workdir: $WORKDIR"
+            ensure_binaries
+            echo "[smoke] binary:  $AST_INDEX ($("$AST_INDEX" version))"
+
+            SCENARIOS=(
+                fresh-project
+                incremental-update
+                extra-roots
+                json-format
+                mcp-stdio
+                perf-budget
+            )
+
+            for s in "${SCENARIOS[@]}"; do
+                run_scenario "$s"
+            done
+
+            echo
+            echo "[smoke] $PASSED/$TOTAL scenarios passed"
+            if [ "$FAILED" -gt 0 ]; then
+                echo "[smoke] failed: ${FAILED_NAMES[*]}"
+                exit 1
+            fi
+            exit 0
+      - index: 123
+        fact:
+          id: sha256:291168a6765133fa1b1803ecfa910ac87ce2eb9d1dde8dce207966ee5dc9a4b3
+          kind: file
+          path: scripts/validate-agent-plugins.sh
+          start_line: 1
+          end_line: 212
+          text: >
+            #!/usr/bin/env bash
+
+            set -euo pipefail
+
+
+            ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+
+            cd "$ROOT"
+
+
+            python3 - <<'PY'
+
+            import json
+
+            import pathlib
+
+            import re
+
+
+            root = pathlib.Path.cwd()
+
+            errors = []
+
+
+
+            def load_json(path: str):
+                try:
+                    with (root / path).open("r", encoding="utf-8") as fh:
+                        return json.load(fh)
+                except Exception as exc:
+                    errors.append(f"{path}: invalid JSON: {exc}")
+                    return {}
+
+
+            def require_file(path: str):
+                if not (root / path).is_file():
+                    errors.append(f"{path}: missing file")
+
+
+            def require_dir(path: str):
+                if not (root / path).is_dir():
+                    errors.append(f"{path}: missing directory")
+
+
+            def require_text(path: str) -> str:
+                try:
+                    return (root / path).read_text(encoding="utf-8")
+                except Exception as exc:
+                    errors.append(f"{path}: unreadable text file: {exc}")
+                    return ""
+
+
+            cargo_toml = (root / "Cargo.toml").read_text(encoding="utf-8")
+
+            match = re.search(r'(?m)^version\s*=\s*"([^"]+)"', cargo_toml)
+
+            if not match:
+                errors.append("Cargo.toml: could not find package version")
+                cargo_version = ""
+            else:
+                cargo_version = match.group(1)
+
+            plugin_name_re = re.compile(r"^[a-z0-9]([a-z0-9.-]*[a-z0-9])?$")
+
+            cursor_allowed = {
+                "name",
+                "displayName",
+                "description",
+                "version",
+                "author",
+                "publisher",
+                "homepage",
+                "repository",
+                "license",
+                "logo",
+                "keywords",
+                "category",
+                "tags",
+                "commands",
+                "agents",
+                "skills",
+                "rules",
+                "hooks",
+                "mcpServers",
+            }
+
+
+            shared_plugin_files = [
+                "plugin/.claude-plugin/plugin.json",
+                "plugin/.codex-plugin/plugin.json",
+                "plugin/.cursor-plugin/plugin.json",
+            ]
+
+
+            for path in shared_plugin_files:
+                manifest = load_json(path)
+                if manifest.get("name") != "ast-index":
+                    errors.append(f"{path}: name must be ast-index")
+                if manifest.get("version") != cargo_version:
+                    errors.append(f"{path}: version {manifest.get('version')!r} != Cargo.toml {cargo_version!r}")
+                if not plugin_name_re.match(manifest.get("name", "")):
+                    errors.append(f"{path}: invalid plugin name")
+
+            claude_manifest = load_json("plugin/.claude-plugin/plugin.json")
+
+            manifest_hooks = claude_manifest.get("hooks", [])
+
+            if isinstance(manifest_hooks, str):
+                manifest_hooks = [manifest_hooks]
+            normalized_manifest_hooks = []
+
+            for hook_path in manifest_hooks:
+                hook_path = str(hook_path).replace("\\", "/")
+                if hook_path.startswith("./"):
+                    hook_path = hook_path[2:]
+                normalized_manifest_hooks.append(hook_path)
+            if "hooks/hooks.json" in normalized_manifest_hooks:
+                errors.append(
+                    "plugin/.claude-plugin/plugin.json: hooks/hooks.json is auto-loaded; "
+                    "manifest.hooks must only reference additional hook files"
+                )
+
+            cursor_manifest = load_json("plugin/.cursor-plugin/plugin.json")
+
+            extra = sorted(set(cursor_manifest) - cursor_allowed)
+
+            if extra:
+                errors.append(f"plugin/.cursor-plugin/plugin.json: unsupported fields: {', '.join(extra)}")
+
+            for path in [
+                "plugin/commands/initialize.md",
+                "plugin/commands/initialize-android.md",
+                "plugin/commands/initialize-csharp.md",
+                "plugin/commands/initialize-ios.md",
+                "plugin/commands/initialize-ruby.md",
+                "plugin/commands/initialize-rust.md",
+                "plugin/commands/initialize-web.md",
+                "plugin/skills/ast-index/SKILL.md",
+                "plugin/rules/ast-index.mdc",
+                "plugin/commands-cursor/initialize-ast-index.md",
+            ]:
+                require_file(path)
+
+            require_dir("plugin/commands")
+
+            require_dir("plugin/skills")
+
+
+            codex_marketplace = load_json(".agents/plugins/marketplace.json")
+
+            codex_plugins = codex_marketplace.get("plugins", [])
+
+            if len(codex_plugins) != 1:
+                errors.append(".agents/plugins/marketplace.json: expected exactly one plugin entry")
+            else:
+                entry = codex_plugins[0]
+                if entry.get("name") != "ast-index":
+                    errors.append(".agents/plugins/marketplace.json: plugin name must be ast-index")
+                source = entry.get("source", {})
+                if source.get("source") != "local" or source.get("path") != "./plugin":
+                    errors.append(".agents/plugins/marketplace.json: source must be local ./plugin")
+                policy = entry.get("policy", {})
+                for key in ("installation", "authentication"):
+                    if key not in policy:
+                        errors.append(f".agents/plugins/marketplace.json: missing policy.{key}")
+                if "category" not in entry:
+                    errors.append(".agents/plugins/marketplace.json: missing category")
+
+            cursor_marketplace = load_json(".cursor-plugin/marketplace.json")
+
+            cursor_plugins = cursor_marketplace.get("plugins", [])
+
+            if len(cursor_plugins) != 1:
+                errors.append(".cursor-plugin/marketplace.json: expected exactly one plugin entry")
+            else:
+                entry = cursor_plugins[0]
+                if entry.get("name") != "ast-index" or entry.get("source") != "plugin":
+                    errors.append(".cursor-plugin/marketplace.json: plugin entry must point ast-index to plugin")
+
+            initialize_md = require_text("plugin/commands/initialize.md")
+
+            if initialize_md:
+                required_snippets = {
+                    "frontmatter name": "name: initialize",
+                    "mentions KMP": "Kotlin Multiplatform (KMP)",
+                    "mentions polyglot": "polyglot/monorepo",
+                    "settings path": ".claude/settings.json",
+                    "rules path": ".claude/rules/ast-index.md",
+                    "rebuild step": "ast-index rebuild",
+                    "stats step": "ast-index stats",
+                    "android source command": "plugin/commands/initialize-android.md",
+                    "ios source command": "plugin/commands/initialize-ios.md",
+                    "web source command": "plugin/commands/initialize-web.md",
+                    "rust source command": "plugin/commands/initialize-rust.md",
+                    "csharp source command": "plugin/commands/initialize-csharp.md",
+                    "ruby source command": "plugin/commands/initialize-ruby.md",
+                    "python fallback": "Python/Go/Dart/PHP/Scala",
+                    "kmp marker commonMain": "commonMain",
+                    "kmp marker androidMain": "androidMain",
+                    "kmp marker iosMain": "iosMain",
+                }
+                for label, snippet in required_snippets.items():
+                    if snippet not in initialize_md:
+                        errors.append(f"plugin/commands/initialize.md: missing {label} snippet {snippet!r}")
+
+                if "set of stacks" not in initialize_md or "not a single label" not in initialize_md:
+                    errors.append(
+                        "plugin/commands/initialize.md: must instruct Claude to detect a set of stacks, not a single label"
+                    )
+
+            manual_override_files = [
+                "plugin/commands/initialize-android.md",
+                "plugin/commands/initialize-csharp.md",
+                "plugin/commands/initialize-ios.md",
+                "plugin/commands/initialize-ruby.md",
+                "plugin/commands/initialize-rust.md",
+                "plugin/commands/initialize-web.md",
+            ]
+
+            for path in manual_override_files:
+                content = require_text(path)
+                if content and "Manual override:" not in content:
+                    errors.append(f"{path}: description must be marked as Manual override")
+
+            readme = require_text("README.md")
+
+            if readme and "/initialize" not in readme:
+                errors.append("README.md: must mention /initialize as the default Claude setup command")
+
+            plugin_readme = require_text("plugin/README.md")
+
+            if plugin_readme and "/initialize" not in plugin_readme:
+                errors.append("plugin/README.md: must mention /initialize for Claude plugin testing")
+
+            if errors:
+                for error in errors:
+                    print(f"ERROR: {error}")
+                raise SystemExit(1)
+
+            print("agent plugin validation ok")
+
+            PY
+      - index: 311
+        fact:
+          id: sha256:d92651b553fc8603808a4bfe1085fbe90618e51950b19a8ee54f0736a6269b23
+          kind: module
+          path: scripts
+          text: '{"contract":"missing","sources":["scripts/bump.sh","scripts/check-pr.sh","scripts/smoke.sh","scripts/validate-agent-plugins.sh"]}'
+  current:
+    metadata:
+      schema_version: 2
+      root: D:\projects\dsh.plugins\dsh-ast-index-search
+      capturedAt: 2026-11-11T20:51:59.431Z
+      kind: launch
+      label: Начальное состояние
+      fingerprint: 1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+      complete: true
+      diagnostics: []
+      evidenceLimitations:
+        - "src/db.rs: текст недоступен или превышен лимит доказательств"
+        - "tree-sitter-bsl/src/parser.c: текст недоступен или превышен лимит
+          доказательств"
+      digest: sha256:00610d9df42de3a0b358e79b8957e32e2dfd11bf4ad05190981cd441988c99bd
+      id: launch-1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+    module_index: 12
+    module:
+      directory: scripts
+      documentPath: scripts/arch.yaml
+      document:
+        state: missing
+        text: null
+      files:
+        - path: scripts/bump.sh
+          hash: 763b343931b75841b30c0369872afe96a2a23015
+        - path: scripts/check-pr.sh
+          hash: 8192a1e17e2a149aba8dfe8405d46dab2732ddc5
+        - path: scripts/smoke.sh
+          hash: abfb7267a62aa56ee2a5076ea3c3fc3e18e2bd30
+        - path: scripts/validate-agent-plugins.sh
+          hash: 3143595837178f2ae4e6b1b34843c54585152d81
+      sourceFiles: 4
+      fingerprint: e6d41b6aeb3043d64c33c7e87924db5f8cc3ee0ed2b4429c64c648ea1f2c2d9f
+    facts:
+      - index: 132
+        fact:
+          id: sha256:43647ec48be79e2e0f06e07b0ea8d9d100a2d04c7ebbba4544c6d23a6d5775f7
+          kind: file
+          path: scripts/bump.sh
+          start_line: 1
+          end_line: 103
+          text: >
+            #!/usr/bin/env bash
+
+            set -euo pipefail
+
+
+            # Usage: ./scripts/bump.sh 3.32.0
+
+            # Updates version in all files, commits, tags, and pushes.
+
+            # Write changelog in README.md BEFORE running this script.
+
+
+            VERSION="${1:-}"
+
+
+            if [ -z "$VERSION" ]; then
+                echo "Usage: $0 <version>"
+                echo "Example: $0 3.32.0"
+                echo ""
+                echo "Write changelog in README.md first, then run this script."
+                exit 1
+            fi
+
+
+            # Validate version format
+
+            if ! echo "$VERSION" | grep -qE '^[0-9]+\.[0-9]+\.[0-9]+$'; then
+                echo "Error: version must be in format X.Y.Z (got: $VERSION)"
+                exit 1
+            fi
+
+
+            ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+
+            cd "$ROOT"
+
+
+            # Detect current version from Cargo.toml
+
+            CURRENT=$(grep '^version' Cargo.toml | head -1 | sed
+            's/.*"\(.*\)".*/\1/')
+
+            echo "Bumping $CURRENT → $VERSION"
+
+
+            # 1. Cargo.toml
+
+            sed -i '' "s/^version = \"$CURRENT\"/version = \"$VERSION\"/"
+            Cargo.toml
+
+            echo "  ✓ Cargo.toml"
+
+
+            # 2. README.md title
+
+            sed -i '' "s/# ast-index v$CURRENT/# ast-index v$VERSION/" README.md
+
+            echo "  ✓ README.md"
+
+
+            # 3. plugin/.claude-plugin/plugin.json
+
+            sed -i '' "s/\"version\": \"$CURRENT\"/\"version\": \"$VERSION\"/"
+            plugin/.claude-plugin/plugin.json
+
+            echo "  ✓ plugin/.claude-plugin/plugin.json"
+
+
+            # 4. plugin/.codex-plugin/plugin.json
+
+            sed -i '' "s/\"version\": \"$CURRENT\"/\"version\": \"$VERSION\"/"
+            plugin/.codex-plugin/plugin.json
+
+            echo "  ✓ plugin/.codex-plugin/plugin.json"
+
+
+            # 5. plugin/.cursor-plugin/plugin.json
+
+            sed -i '' "s/\"version\": \"$CURRENT\"/\"version\": \"$VERSION\"/"
+            plugin/.cursor-plugin/plugin.json
+
+            echo "  ✓ plugin/.cursor-plugin/plugin.json"
+
+
+            # 6. .claude-plugin/plugin.json
+
+            sed -i '' "s/\"version\": \"$CURRENT\"/\"version\": \"$VERSION\"/"
+            .claude-plugin/plugin.json
+
+            echo "  ✓ .claude-plugin/plugin.json"
+
+
+            # 7. .claude-plugin/marketplace.json
+
+            sed -i '' "s/\"version\": \"$CURRENT\"/\"version\": \"$VERSION\"/"
+            .claude-plugin/marketplace.json
+
+            echo "  ✓ .claude-plugin/marketplace.json"
+
+
+            # 8. npm/package.json (version + optionalDependencies)
+
+            if [ -f npm/package.json ]; then
+                sed -i '' "s/$CURRENT/$VERSION/g" npm/package.json
+                echo "  ✓ npm/package.json"
+            fi
+
+
+            # 9. npm platform packages
+
+            for pkg in npm/platforms/*/package.json; do
+                if [ -f "$pkg" ]; then
+                    sed -i '' "s/$CURRENT/$VERSION/g" "$pkg"
+                    echo "  ✓ $pkg"
+                fi
+            done
+
+
+            # 8. Build and test
+
+            echo ""
+
+            echo "Building release..."
+
+            cargo build --release
+
+            echo ""
+
+            echo "Running tests..."
+
+            cargo test --quiet
+
+
+            # Verify version
+
+            BUILT_VERSION=$(./target/release/ast-index version 2>&1)
+
+            echo ""
+
+            echo "Built: $BUILT_VERSION"
+
+
+            # 9. Commit, tag, push
+
+            echo ""
+
+            echo "Committing..."
+
+            git add Cargo.toml Cargo.lock README.md \
+                plugin/.claude-plugin/plugin.json \
+                plugin/.codex-plugin/plugin.json \
+                plugin/.cursor-plugin/plugin.json \
+                .claude-plugin/plugin.json \
+                .claude-plugin/marketplace.json \
+                npm/package.json npm/platforms/*/package.json 2>/dev/null || true
+            git commit -m "Bump to v$VERSION"
+
+            git tag "v$VERSION"
+
+            git push origin main --tags
+
+
+            echo ""
+
+            echo "Done! v$VERSION released."
+
+            echo "GitHub Actions will build and publish the release."
+      - index: 133
+        fact:
+          id: sha256:b114cb86d3f693924812e2ae6d2f439a2e1e570fa5dfc741a2f3f6e167ce92d6
+          kind: file
+          path: scripts/check-pr.sh
+          start_line: 1
+          end_line: 75
+          text: |
+            #!/usr/bin/env bash
+            # ============================================================================
+            # scripts/check-pr.sh
+            #
+            # Single entrypoint that runs every gate a PR has to pass before review:
+            #   1. cargo build --release --workspace        (compiles the entire workspace)
+            #   2. cargo test  --release --workspace        (unit + integration + proptest)
+            #   3. scripts/smoke.sh                         (6 CLI end-to-end scenarios)
+            #   4. scripts/validate-agent-plugins.sh        (plugin payload + command contract)
+            #   5. cargo bench --no-run                     (benches compile, not run)
+            #
+            # Prints a single combined summary at the end. Exits non-zero if any step
+            # fails. Intended to be the one command both contributors and the CI run.
+            #
+            # Usage:
+            #   bash scripts/check-pr.sh                # default: 4 steps above
+            #   RUN_BENCHES=1 bash scripts/check-pr.sh  # also run `cargo bench` in --quick mode
+            #
+            # Environment overrides for the smoke step are forwarded — see scripts/smoke.sh.
+            # ============================================================================
+
+            set -uo pipefail
+
+            ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+            cd "$ROOT"
+
+            PASS=0
+            FAIL=0
+            RESULTS=()
+            START=$(date +%s)
+
+            run_step() {
+                local name="$1"; shift
+                local t0 t1
+                echo
+                echo "==================== $name ===================="
+                t0=$(date +%s)
+                if "$@"; then
+                    t1=$(date +%s)
+                    RESULTS+=("PASS  $name  ($((t1-t0))s)")
+                    PASS=$((PASS+1))
+                else
+                    t1=$(date +%s)
+                    RESULTS+=("FAIL  $name  ($((t1-t0))s)")
+                    FAIL=$((FAIL+1))
+                fi
+            }
+
+            run_step "cargo build --release --workspace" \
+                cargo build --release --workspace
+
+            run_step "cargo test  --release --workspace" \
+                cargo test --release --workspace
+
+            run_step "scripts/smoke.sh (6 CLI scenarios)" \
+                bash "$ROOT/scripts/smoke.sh"
+
+            run_step "scripts/validate-agent-plugins.sh" \
+                bash "$ROOT/scripts/validate-agent-plugins.sh"
+
+            if [ "${RUN_BENCHES:-0}" = "1" ]; then
+                run_step "cargo bench --bench parser -- --quick" \
+                    cargo bench --bench parser -- --quick
+            else
+                run_step "cargo bench --no-run (compile only)" \
+                    cargo bench --no-run
+            fi
+
+            END=$(date +%s)
+            echo
+            echo "==================== check-pr summary ===================="
+            for r in "${RESULTS[@]}"; do echo "  $r"; done
+            echo "  total: $PASS passed, $FAIL failed in $((END-START))s"
+            exit "$FAIL"
+      - index: 134
+        fact:
+          id: sha256:ada5bddb68df02a87574eea0e32098c0268c2ecafe354abb017146dc57bd9d61
+          kind: file
+          path: scripts/smoke.sh
+          start_line: 1
+          end_line: 615
+          text: |
+            #!/usr/bin/env bash
+            # ============================================================================
+            # scripts/smoke.sh — end-to-end CLI smoke tests for ast-index
+            # ============================================================================
+            #
+            # WHAT
+            #   The CLI equivalent of a Playwright suite. Six independent scenarios
+            #   exercise the real release binary against synthetic Rust projects, then
+            #   assert on stdout / stderr / exit code / SQLite state.
+            #
+            # WHY
+            #   Catches regressions in real user flows that unit tests miss: project
+            #   detection, incremental update, extra-root path resolution (PathResolver
+            #   regression), JSON output schema, and MCP stdio handshake.
+            #
+            # SCENARIOS
+            #   1. fresh-project      Rebuild a tiny Rust project, search a known symbol,
+            #                         verify project=Rust + file count + symbol present.
+            #   2. incremental-update After rebuild, add a new .rs file, run update,
+            #                         verify both new and existing symbols are searchable.
+            #   3. extra-roots        Rebuild primary, add-root pointing at a sibling
+            #                         tempdir, update, verify search returns an absolute
+            #                         path resolved against the extra root (PathResolver
+            #                         regression).
+            #   4. json-format        `search --format json` and `stats --format json`
+            #                         must be parseable JSON with expected top-level keys.
+            #   5. mcp-stdio          Spawn ast-index-mcp with AST_INDEX_ROOT, send a
+            #                         JSON-RPC `initialize` then a `tools/call stats`,
+            #                         verify well-formed JSON-RPC responses.
+            #   6. perf-budget        Index a copy of this repo's `src/`, then verify
+            #                         rebuild, search, and no-op update stay within loose
+            #                         latency budgets.
+            #
+            # OUTPUT
+            #   On failure, the offending command + output is printed and a per-scenario
+            #   log is written under $WORKDIR/logs/<scenario>.log. Final line is
+            #   "N/6 scenarios passed". Exit 0 iff N == 6.
+            #
+            # USAGE
+            #   bash scripts/smoke.sh                 # run all scenarios
+            #   SMOKE_KEEP=1 bash scripts/smoke.sh    # do not delete $WORKDIR on exit
+            #   SMOKE_BIN_DIR=path bash scripts/smoke.sh   # use prebuilt binaries here
+            #
+            # ADDING A NEW SCENARIO
+            #   1. Define a function `scenario_<name>` that takes one arg (its workdir).
+            #      Inside it: create fixtures, run `$AST_INDEX` commands, assert with
+            #      the helpers `assert_eq`, `assert_contains`, `assert_json_key`, etc.
+            #      Return 0 on success, non-zero on failure. Use `fail "msg"` to abort.
+            #   2. Append the function name to the SCENARIOS array near the bottom.
+            #   3. Re-run `bash scripts/smoke.sh` and confirm `N+1/N+1 scenarios passed`.
+            #
+            # REQUIREMENTS
+            #   bash, python3 (for JSON validation), sqlite3 (optional — only for the
+            #   sqlite probe in fresh-project; gracefully skipped if missing).
+            # ============================================================================
+
+            set -euo pipefail
+
+            # ---------------------------------------------------------------------------
+            # Globals
+            # ---------------------------------------------------------------------------
+            ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+            SMOKE_BIN_DIR="${SMOKE_BIN_DIR:-$ROOT/target/release}"
+            AST_INDEX="$SMOKE_BIN_DIR/ast-index"
+            AST_INDEX_MCP="$SMOKE_BIN_DIR/ast-index-mcp"
+
+            WORKDIR="${TMPDIR:-/tmp}/ast-index-smoke-$$"
+            LOGDIR="$WORKDIR/logs"
+            mkdir -p "$LOGDIR"
+
+            CURRENT_LOG=""   # set per scenario by run_scenario
+            PASSED=0
+            FAILED=0
+            TOTAL=0
+            FAILED_NAMES=()
+
+            # ---------------------------------------------------------------------------
+            # Cleanup
+            # ---------------------------------------------------------------------------
+            cleanup() {
+                local exit_code=$?
+                # Kill any leftover background processes (mcp scenario)
+                if [ -n "${MCP_PID:-}" ] && kill -0 "$MCP_PID" 2>/dev/null; then
+                    kill "$MCP_PID" 2>/dev/null || true
+                    wait "$MCP_PID" 2>/dev/null || true
+                fi
+                # Clear ast-index project caches we created so we don't pollute
+                # ~/Library/Caches/ast-index/ for the user.
+                if [ -d "$WORKDIR" ]; then
+                    for proj in "$WORKDIR"/scenario-*/primary "$WORKDIR"/scenario-*/extra; do
+                        [ -d "$proj" ] || continue
+                        (cd "$proj" && "$AST_INDEX" clear >/dev/null 2>&1) || true
+                    done
+                fi
+                if [ "${SMOKE_KEEP:-0}" = "1" ]; then
+                    echo "[smoke] keeping $WORKDIR (SMOKE_KEEP=1)"
+                elif [ -d "$WORKDIR" ]; then
+                    rm -rf "$WORKDIR"
+                fi
+                exit "$exit_code"
+            }
+            trap cleanup EXIT INT TERM
+
+            # ---------------------------------------------------------------------------
+            # Logging / assertion helpers
+            # ---------------------------------------------------------------------------
+            log() { printf '%s\n' "$*" | tee -a "$CURRENT_LOG" >&2; }
+
+            # Run a command in a given directory, tee its combined output to the scenario
+            # log, and return its exit code. First arg is the cwd; rest is the command.
+            # Sets LAST_OUTPUT for assertions. Avoids subshells so LAST_OUTPUT propagates.
+            LAST_OUTPUT=""
+            run_in() {
+                local cwd="$1"; shift
+                local out rc
+                out=$(cd "$cwd" && "$@" 2>&1) ; rc=$?
+                LAST_OUTPUT="$out"
+                {
+                    printf '$ (cd %s && %s)\n' "$cwd" "$*"
+                    printf '%s\n' "$out"
+                    printf '[exit %d]\n\n' "$rc"
+                } >> "$CURRENT_LOG"
+                return $rc
+            }
+
+            fail() {
+                log "FAIL: $*"
+                log "----- last output -----"
+                log "$LAST_OUTPUT"
+                log "-----------------------"
+                return 1
+            }
+
+            assert_eq() {
+                local actual="$1" expected="$2" what="$3"
+                if [ "$actual" != "$expected" ]; then
+                    fail "$what: expected '$expected', got '$actual'"
+                    return 1
+                fi
+            }
+
+            assert_contains() {
+                local haystack="$1" needle="$2" what="$3"
+                case "$haystack" in
+                    *"$needle"*) : ;;
+                    *) fail "$what: expected to contain '$needle'"; return 1 ;;
+                esac
+            }
+
+            assert_not_contains() {
+                local haystack="$1" needle="$2" what="$3"
+                case "$haystack" in
+                    *"$needle"*) fail "$what: expected NOT to contain '$needle'"; return 1 ;;
+                    *) : ;;
+                esac
+            }
+
+            assert_json_valid() {
+                local payload="$1" what="$2"
+                if ! printf '%s' "$payload" | python3 -m json.tool >/dev/null 2>&1; then
+                    fail "$what: not valid JSON"
+                    return 1
+                fi
+            }
+
+            assert_json_key() {
+                local payload="$1" key="$2" what="$3"
+                local present
+                present=$(printf '%s' "$payload" | python3 -c "
+            import json, sys
+            try:
+                obj = json.load(sys.stdin)
+            except Exception as e:
+                print('PARSE_ERR'); sys.exit(0)
+            print('YES' if '$key' in obj else 'NO')
+            ") || true
+                if [ "$present" != "YES" ]; then
+                    fail "$what: missing top-level key '$key' (probe=$present)"
+                    return 1
+                fi
+            }
+
+            # ---------------------------------------------------------------------------
+            # Build (once)
+            # ---------------------------------------------------------------------------
+            ensure_binaries() {
+                if [ -x "$AST_INDEX" ] && [ -x "$AST_INDEX_MCP" ]; then
+                    echo "[smoke] using existing binaries in $SMOKE_BIN_DIR"
+                    return
+                fi
+                echo "[smoke] building release binaries (cargo build --release --workspace)"
+                (cd "$ROOT" && cargo build --release --workspace) >&2
+                if [ ! -x "$AST_INDEX" ] || [ ! -x "$AST_INDEX_MCP" ]; then
+                    echo "[smoke] FATAL: binaries not present after build" >&2
+                    exit 2
+                fi
+            }
+
+            # ---------------------------------------------------------------------------
+            # Scenario 1: fresh-project
+            # ---------------------------------------------------------------------------
+            scenario_fresh_project() {
+                local dir="$1/primary"
+                mkdir -p "$dir/src"
+                cat > "$dir/Cargo.toml" <<'EOF'
+            [package]
+            name = "smoke_fresh"
+            version = "0.1.0"
+            edition = "2021"
+            EOF
+                cat > "$dir/src/main.rs" <<'EOF'
+            fn smoke_fresh_marker() {
+                println!("hello smoke");
+            }
+
+            struct SmokeFreshStruct {
+                field: i32,
+            }
+
+            fn main() {
+                smoke_fresh_marker();
+                let _ = SmokeFreshStruct { field: 0 };
+            }
+            EOF
+                cat > "$dir/src/lib.rs" <<'EOF'
+            pub fn library_marker() -> i32 { 42 }
+            EOF
+
+                run_in "$dir" "$AST_INDEX" rebuild || { fail "rebuild exited non-zero"; return 1; }
+                assert_contains "$LAST_OUTPUT" "Indexed 2 files" "rebuild file count" || return 1
+
+                run_in "$dir" "$AST_INDEX" detect-stacks || { fail "detect-stacks exited non-zero"; return 1; }
+                assert_contains "$LAST_OUTPUT" "Rust (rust)" "detected project stack" || return 1
+
+                run_in "$dir" "$AST_INDEX" search smoke_fresh_marker || { fail "search exited non-zero"; return 1; }
+                assert_contains "$LAST_OUTPUT" "smoke_fresh_marker" "search result" || return 1
+                assert_contains "$LAST_OUTPUT" "src/main.rs" "search file path" || return 1
+
+                run_in "$dir" "$AST_INDEX" stats --format json || { fail "stats --format json exited non-zero"; return 1; }
+                assert_json_valid "$LAST_OUTPUT" "stats json" || return 1
+                local files
+                files=$(printf '%s' "$LAST_OUTPUT" | python3 -c "import json,sys; print(json.load(sys.stdin)['stats']['file_count'])")
+                assert_eq "$files" "2" "stats.file_count" || return 1
+
+                # Optional sqlite probe — symbols table must contain our marker.
+                if command -v sqlite3 >/dev/null 2>&1; then
+                    local db_path
+                    db_path=$(cd "$dir" && "$AST_INDEX" db-path 2>/dev/null)
+                    if [ -n "$db_path" ] && [ -f "$db_path" ]; then
+                        local count
+                        count=$(sqlite3 "$db_path" "SELECT COUNT(*) FROM symbols WHERE name='smoke_fresh_marker';" 2>/dev/null || echo "0")
+                        if [ "$count" -lt 1 ]; then
+                            fail "sqlite probe: symbols table has no smoke_fresh_marker (got $count)"
+                            return 1
+                        fi
+                    fi
+                fi
+                return 0
+            }
+
+            # ---------------------------------------------------------------------------
+            # Scenario 2: incremental-update
+            # ---------------------------------------------------------------------------
+            scenario_incremental_update() {
+                local dir="$1/primary"
+                mkdir -p "$dir/src"
+                cat > "$dir/Cargo.toml" <<'EOF'
+            [package]
+            name = "smoke_incremental"
+            version = "0.1.0"
+            edition = "2021"
+            EOF
+                cat > "$dir/src/main.rs" <<'EOF'
+            fn original_marker() {
+                println!("original");
+            }
+
+            fn main() { original_marker(); }
+            EOF
+
+                run_in "$dir" "$AST_INDEX" rebuild || { fail "initial rebuild"; return 1; }
+                assert_contains "$LAST_OUTPUT" "Indexed 1 files" "initial file count" || return 1
+
+                # Add a new .rs file
+                cat > "$dir/src/added.rs" <<'EOF'
+            pub fn newly_added_marker() {
+                println!("added");
+            }
+            EOF
+
+                run_in "$dir" "$AST_INDEX" update || { fail "update exited non-zero"; return 1; }
+                assert_contains "$LAST_OUTPUT" "1 changed" "update should report 1 changed file" || return 1
+
+                run_in "$dir" "$AST_INDEX" search newly_added_marker || { fail "search new symbol"; return 1; }
+                assert_contains "$LAST_OUTPUT" "newly_added_marker" "new symbol present" || return 1
+
+                run_in "$dir" "$AST_INDEX" search original_marker || { fail "search original symbol"; return 1; }
+                assert_contains "$LAST_OUTPUT" "original_marker" "existing symbol still present" || return 1
+
+                return 0
+            }
+
+            # ---------------------------------------------------------------------------
+            # Scenario 3: extra-roots (PathResolver regression)
+            # ---------------------------------------------------------------------------
+            scenario_extra_roots() {
+                local primary="$1/primary"
+                local extra="$1/extra"
+                mkdir -p "$primary/src" "$extra/src"
+                local extra_canonical
+                extra_canonical=$(cd "$extra" && pwd -P)
+
+                cat > "$primary/Cargo.toml" <<'EOF'
+            [package]
+            name = "smoke_primary"
+            version = "0.1.0"
+            edition = "2021"
+            EOF
+                cat > "$primary/src/main.rs" <<'EOF'
+            fn primary_marker() {}
+            fn main() { primary_marker(); }
+            EOF
+
+                cat > "$extra/Cargo.toml" <<'EOF'
+            [package]
+            name = "smoke_extra"
+            version = "0.1.0"
+            edition = "2021"
+            EOF
+                cat > "$extra/src/lib.rs" <<'EOF'
+            pub fn extra_root_unique_marker() -> i32 { 7 }
+            EOF
+
+                run_in "$primary" "$AST_INDEX" rebuild || { fail "primary rebuild"; return 1; }
+
+                run_in "$primary" "$AST_INDEX" add-root "$extra" || { fail "add-root exited non-zero"; return 1; }
+                assert_contains "$LAST_OUTPUT" "Added source root" "add-root confirmation" || return 1
+
+                run_in "$primary" "$AST_INDEX" update || { fail "update after add-root"; return 1; }
+
+                run_in "$primary" "$AST_INDEX" search extra_root_unique_marker || { fail "search extra-root symbol"; return 1; }
+                assert_contains "$LAST_OUTPUT" "extra_root_unique_marker" "extra-root symbol present" || return 1
+                # Regression: the path MUST be absolute (resolved against extra root),
+                # not a bare 'src/lib.rs' which would be ambiguous.
+                assert_contains "$LAST_OUTPUT" "$extra_canonical/src/lib.rs" "extra-root path is absolute" || return 1
+
+                # The primary symbol should still be searchable.
+                run_in "$primary" "$AST_INDEX" search primary_marker || { fail "search primary symbol"; return 1; }
+                assert_contains "$LAST_OUTPUT" "primary_marker" "primary symbol still present" || return 1
+
+                return 0
+            }
+
+            # ---------------------------------------------------------------------------
+            # Scenario 4: json-format
+            # ---------------------------------------------------------------------------
+            scenario_json_format() {
+                local dir="$1/primary"
+                mkdir -p "$dir/src"
+                cat > "$dir/Cargo.toml" <<'EOF'
+            [package]
+            name = "smoke_json"
+            version = "0.1.0"
+            edition = "2021"
+            EOF
+                cat > "$dir/src/main.rs" <<'EOF'
+            fn json_marker() {}
+            fn main() { json_marker(); }
+            EOF
+
+                run_in "$dir" "$AST_INDEX" rebuild || { fail "rebuild"; return 1; }
+
+                run_in "$dir" "$AST_INDEX" search --format json json_marker || { fail "search --format json"; return 1; }
+                assert_json_valid "$LAST_OUTPUT" "search json output" || return 1
+                for key in symbols files content_matches references; do
+                    assert_json_key "$LAST_OUTPUT" "$key" "search json" || return 1
+                done
+                # Sanity: at least one symbol entry with name=json_marker.
+                local found
+                found=$(printf '%s' "$LAST_OUTPUT" | python3 -c "
+            import json,sys
+            obj = json.load(sys.stdin)
+            syms = obj.get('symbols', [])
+            print('YES' if any(s.get('name') == 'json_marker' for s in syms) else 'NO')
+            ")
+                assert_eq "$found" "YES" "json symbols contains json_marker" || return 1
+
+                run_in "$dir" "$AST_INDEX" stats --format json || { fail "stats --format json"; return 1; }
+                assert_json_valid "$LAST_OUTPUT" "stats json output" || return 1
+                for key in stats db_path db_size_bytes; do
+                    assert_json_key "$LAST_OUTPUT" "$key" "stats json" || return 1
+                done
+
+                return 0
+            }
+
+            # ---------------------------------------------------------------------------
+            # Scenario 5: mcp-stdio
+            # ---------------------------------------------------------------------------
+            scenario_mcp_stdio() {
+                local dir="$1/primary"
+                mkdir -p "$dir/src"
+                cat > "$dir/Cargo.toml" <<'EOF'
+            [package]
+            name = "smoke_mcp"
+            version = "0.1.0"
+            edition = "2021"
+            EOF
+                cat > "$dir/src/main.rs" <<'EOF'
+            fn mcp_marker() {}
+            fn main() { mcp_marker(); }
+            EOF
+
+                run_in "$dir" "$AST_INDEX" rebuild || { fail "rebuild for mcp"; return 1; }
+
+                local in_fifo="$1/mcp-in.jsonl"
+                local out_file="$1/mcp-out.jsonl"
+                cat > "$in_fifo" <<EOF
+            {"jsonrpc":"2.0","id":1,"method":"initialize","params":{}}
+            {"jsonrpc":"2.0","id":2,"method":"tools/call","params":{"name":"stats","arguments":{}}}
+            EOF
+
+                # Spawn MCP server in background, feeding it our requests via stdin redirect.
+                AST_INDEX_ROOT="$dir" AST_INDEX_BIN="$AST_INDEX" \
+                    "$AST_INDEX_MCP" < "$in_fifo" > "$out_file" 2>> "$CURRENT_LOG" &
+                MCP_PID=$!
+
+                # Wait up to 15s for two response lines to appear (initialize + tools/call).
+                local waited=0
+                while [ "$waited" -lt 15 ]; do
+                    if [ -f "$out_file" ]; then
+                        local lines
+                        lines=$(wc -l < "$out_file" 2>/dev/null | tr -d ' ')
+                        if [ "${lines:-0}" -ge 2 ]; then
+                            break
+                        fi
+                    fi
+                    sleep 1
+                    waited=$((waited+1))
+                done
+
+                # Server should have exited on its own once stdin closed; clean up regardless.
+                if kill -0 "$MCP_PID" 2>/dev/null; then
+                    kill "$MCP_PID" 2>/dev/null || true
+                fi
+                wait "$MCP_PID" 2>/dev/null || true
+                MCP_PID=""
+
+                if [ ! -s "$out_file" ]; then
+                    LAST_OUTPUT="(mcp produced no output within ${waited}s)"
+                    fail "mcp server returned no output"
+                    return 1
+                fi
+
+                # Validate response 1: initialize.
+                local init_line
+                init_line=$(sed -n '1p' "$out_file")
+                LAST_OUTPUT="$init_line"
+                assert_json_valid "$init_line" "mcp initialize response" || return 1
+                local probe
+                probe=$(printf '%s' "$init_line" | python3 -c "
+            import json,sys
+            obj = json.load(sys.stdin)
+            ok = (obj.get('jsonrpc') == '2.0'
+                  and obj.get('id') == 1
+                  and 'result' in obj
+                  and obj['result'].get('serverInfo', {}).get('name') == 'ast-index-mcp')
+            print('YES' if ok else 'NO')
+            ")
+                assert_eq "$probe" "YES" "mcp initialize shape" || return 1
+
+                # Validate response 2: tools/call stats.
+                local call_line
+                call_line=$(sed -n '2p' "$out_file")
+                LAST_OUTPUT="$call_line"
+                assert_json_valid "$call_line" "mcp tools/call response" || return 1
+                local probe2
+                probe2=$(printf '%s' "$call_line" | python3 -c "
+            import json,sys
+            obj = json.load(sys.stdin)
+            ok = (obj.get('jsonrpc') == '2.0'
+                  and obj.get('id') == 2
+                  and 'result' in obj
+                  and isinstance(obj['result'].get('content'), list)
+                  and obj['result'].get('isError') == False)
+            print('YES' if ok else 'NO')
+            ")
+                assert_eq "$probe2" "YES" "mcp tools/call shape" || return 1
+
+                return 0
+            }
+
+            # ---------------------------------------------------------------------------
+            # Scenario 6: perf-budget
+            # ---------------------------------------------------------------------------
+            # Indexes a real-world corpus (this very repo's `src/`) and asserts that
+            # `rebuild`, a typical `search`, and a no-op `update` finish under loose
+            # budgets. The budgets are deliberately permissive — meant to catch
+            # catastrophic regressions (10× slowdown), not microbench drift. Override
+            # with environment variables if you want to tighten them in CI:
+            #
+            #   PERF_REBUILD_MS_MAX  default 30000
+            #   PERF_SEARCH_MS_MAX   default 500
+            #   PERF_UPDATE_MS_MAX   default 1000
+            #
+            # Uses python3 for sub-second timing because `date +%N` is GNU-only.
+            ms_now() { python3 -c 'import time; print(int(time.time()*1000))'; }
+
+            scenario_perf_budget() {
+                local dir="$1/perfproject"
+                mkdir -p "$dir"
+                # Real-world corpus = the repo's own src/. Copy so the scenario doesn't
+                # touch the working tree's index cache.
+                cp -R "$ROOT/src" "$dir/src"
+
+                local rebuild_max="${PERF_REBUILD_MS_MAX:-30000}"
+                local search_max="${PERF_SEARCH_MS_MAX:-500}"
+                local update_max="${PERF_UPDATE_MS_MAX:-1000}"
+
+                local t0 t1 elapsed
+
+                # 1. Rebuild
+                t0=$(ms_now)
+                run_in "$dir" "$AST_INDEX" rebuild || { fail "rebuild exited non-zero"; return 1; }
+                t1=$(ms_now); elapsed=$((t1 - t0))
+                log "[perf] rebuild: ${elapsed}ms (budget ${rebuild_max}ms)"
+                if [ "$elapsed" -gt "$rebuild_max" ]; then
+                    fail "rebuild took ${elapsed}ms, exceeds budget ${rebuild_max}ms"
+                    return 1
+                fi
+
+                # 2. Search × 5, take max latency. Queries chosen to hit varied paths.
+                local max_search=0
+                for q in PathResolver search rebuild SymbolKind ParsedSymbol; do
+                    t0=$(ms_now)
+                    run_in "$dir" "$AST_INDEX" search "$q" --format json || { fail "search '$q' failed"; return 1; }
+                    t1=$(ms_now); elapsed=$((t1 - t0))
+                    [ "$elapsed" -gt "$max_search" ] && max_search=$elapsed
+                done
+                log "[perf] search max-latency over 5 queries: ${max_search}ms (budget ${search_max}ms)"
+                if [ "$max_search" -gt "$search_max" ]; then
+                    fail "max search latency ${max_search}ms exceeds budget ${search_max}ms"
+                    return 1
+                fi
+
+                # 3. No-op update — should be near-instant since nothing changed.
+                t0=$(ms_now)
+                run_in "$dir" "$AST_INDEX" update || { fail "update exited non-zero"; return 1; }
+                t1=$(ms_now); elapsed=$((t1 - t0))
+                log "[perf] noop update: ${elapsed}ms (budget ${update_max}ms)"
+                if [ "$elapsed" -gt "$update_max" ]; then
+                    fail "noop update took ${elapsed}ms, exceeds budget ${update_max}ms"
+                    return 1
+                fi
+                assert_contains "$LAST_OUTPUT" "Index is up to date" "noop update message" || return 1
+
+                return 0
+            }
+
+            # ---------------------------------------------------------------------------
+            # Scenario runner
+            # ---------------------------------------------------------------------------
+            run_scenario() {
+                local name="$1"
+                local fn="scenario_${name//-/_}"
+                local sdir="$WORKDIR/scenario-$name"
+                mkdir -p "$sdir"
+                CURRENT_LOG="$LOGDIR/$name.log"
+                : > "$CURRENT_LOG"
+
+                TOTAL=$((TOTAL+1))
+                printf '[smoke] %-22s ... ' "$name"
+                if "$fn" "$sdir" >>"$CURRENT_LOG" 2>&1; then
+                    printf 'PASS\n'
+                    PASSED=$((PASSED+1))
+                else
+                    printf 'FAIL\n'
+                    FAILED=$((FAILED+1))
+                    FAILED_NAMES+=("$name")
+                    echo "       log: $CURRENT_LOG"
+                    # Print last 20 lines of the log inline to aid debugging.
+                    echo "       --- last 20 lines ---"
+                    tail -n 20 "$CURRENT_LOG" | sed 's/^/       | /'
+                    echo "       ---------------------"
+                fi
+            }
+
+            # ---------------------------------------------------------------------------
+            # Main
+            # ---------------------------------------------------------------------------
+            echo "[smoke] workdir: $WORKDIR"
+            ensure_binaries
+            echo "[smoke] binary:  $AST_INDEX ($("$AST_INDEX" version))"
+
+            SCENARIOS=(
+                fresh-project
+                incremental-update
+                extra-roots
+                json-format
+                mcp-stdio
+                perf-budget
+            )
+
+            for s in "${SCENARIOS[@]}"; do
+                run_scenario "$s"
+            done
+
+            echo
+            echo "[smoke] $PASSED/$TOTAL scenarios passed"
+            if [ "$FAILED" -gt 0 ]; then
+                echo "[smoke] failed: ${FAILED_NAMES[*]}"
+                exit 1
+            fi
+            exit 0
+      - index: 135
+        fact:
+          id: sha256:291168a6765133fa1b1803ecfa910ac87ce2eb9d1dde8dce207966ee5dc9a4b3
+          kind: file
+          path: scripts/validate-agent-plugins.sh
+          start_line: 1
+          end_line: 212
+          text: >
+            #!/usr/bin/env bash
+
+            set -euo pipefail
+
+
+            ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+
+            cd "$ROOT"
+
+
+            python3 - <<'PY'
+
+            import json
+
+            import pathlib
+
+            import re
+
+
+            root = pathlib.Path.cwd()
+
+            errors = []
+
+
+
+            def load_json(path: str):
+                try:
+                    with (root / path).open("r", encoding="utf-8") as fh:
+                        return json.load(fh)
+                except Exception as exc:
+                    errors.append(f"{path}: invalid JSON: {exc}")
+                    return {}
+
+
+            def require_file(path: str):
+                if not (root / path).is_file():
+                    errors.append(f"{path}: missing file")
+
+
+            def require_dir(path: str):
+                if not (root / path).is_dir():
+                    errors.append(f"{path}: missing directory")
+
+
+            def require_text(path: str) -> str:
+                try:
+                    return (root / path).read_text(encoding="utf-8")
+                except Exception as exc:
+                    errors.append(f"{path}: unreadable text file: {exc}")
+                    return ""
+
+
+            cargo_toml = (root / "Cargo.toml").read_text(encoding="utf-8")
+
+            match = re.search(r'(?m)^version\s*=\s*"([^"]+)"', cargo_toml)
+
+            if not match:
+                errors.append("Cargo.toml: could not find package version")
+                cargo_version = ""
+            else:
+                cargo_version = match.group(1)
+
+            plugin_name_re = re.compile(r"^[a-z0-9]([a-z0-9.-]*[a-z0-9])?$")
+
+            cursor_allowed = {
+                "name",
+                "displayName",
+                "description",
+                "version",
+                "author",
+                "publisher",
+                "homepage",
+                "repository",
+                "license",
+                "logo",
+                "keywords",
+                "category",
+                "tags",
+                "commands",
+                "agents",
+                "skills",
+                "rules",
+                "hooks",
+                "mcpServers",
+            }
+
+
+            shared_plugin_files = [
+                "plugin/.claude-plugin/plugin.json",
+                "plugin/.codex-plugin/plugin.json",
+                "plugin/.cursor-plugin/plugin.json",
+            ]
+
+
+            for path in shared_plugin_files:
+                manifest = load_json(path)
+                if manifest.get("name") != "ast-index":
+                    errors.append(f"{path}: name must be ast-index")
+                if manifest.get("version") != cargo_version:
+                    errors.append(f"{path}: version {manifest.get('version')!r} != Cargo.toml {cargo_version!r}")
+                if not plugin_name_re.match(manifest.get("name", "")):
+                    errors.append(f"{path}: invalid plugin name")
+
+            claude_manifest = load_json("plugin/.claude-plugin/plugin.json")
+
+            manifest_hooks = claude_manifest.get("hooks", [])
+
+            if isinstance(manifest_hooks, str):
+                manifest_hooks = [manifest_hooks]
+            normalized_manifest_hooks = []
+
+            for hook_path in manifest_hooks:
+                hook_path = str(hook_path).replace("\\", "/")
+                if hook_path.startswith("./"):
+                    hook_path = hook_path[2:]
+                normalized_manifest_hooks.append(hook_path)
+            if "hooks/hooks.json" in normalized_manifest_hooks:
+                errors.append(
+                    "plugin/.claude-plugin/plugin.json: hooks/hooks.json is auto-loaded; "
+                    "manifest.hooks must only reference additional hook files"
+                )
+
+            cursor_manifest = load_json("plugin/.cursor-plugin/plugin.json")
+
+            extra = sorted(set(cursor_manifest) - cursor_allowed)
+
+            if extra:
+                errors.append(f"plugin/.cursor-plugin/plugin.json: unsupported fields: {', '.join(extra)}")
+
+            for path in [
+                "plugin/commands/initialize.md",
+                "plugin/commands/initialize-android.md",
+                "plugin/commands/initialize-csharp.md",
+                "plugin/commands/initialize-ios.md",
+                "plugin/commands/initialize-ruby.md",
+                "plugin/commands/initialize-rust.md",
+                "plugin/commands/initialize-web.md",
+                "plugin/skills/ast-index/SKILL.md",
+                "plugin/rules/ast-index.mdc",
+                "plugin/commands-cursor/initialize-ast-index.md",
+            ]:
+                require_file(path)
+
+            require_dir("plugin/commands")
+
+            require_dir("plugin/skills")
+
+
+            codex_marketplace = load_json(".agents/plugins/marketplace.json")
+
+            codex_plugins = codex_marketplace.get("plugins", [])
+
+            if len(codex_plugins) != 1:
+                errors.append(".agents/plugins/marketplace.json: expected exactly one plugin entry")
+            else:
+                entry = codex_plugins[0]
+                if entry.get("name") != "ast-index":
+                    errors.append(".agents/plugins/marketplace.json: plugin name must be ast-index")
+                source = entry.get("source", {})
+                if source.get("source") != "local" or source.get("path") != "./plugin":
+                    errors.append(".agents/plugins/marketplace.json: source must be local ./plugin")
+                policy = entry.get("policy", {})
+                for key in ("installation", "authentication"):
+                    if key not in policy:
+                        errors.append(f".agents/plugins/marketplace.json: missing policy.{key}")
+                if "category" not in entry:
+                    errors.append(".agents/plugins/marketplace.json: missing category")
+
+            cursor_marketplace = load_json(".cursor-plugin/marketplace.json")
+
+            cursor_plugins = cursor_marketplace.get("plugins", [])
+
+            if len(cursor_plugins) != 1:
+                errors.append(".cursor-plugin/marketplace.json: expected exactly one plugin entry")
+            else:
+                entry = cursor_plugins[0]
+                if entry.get("name") != "ast-index" or entry.get("source") != "plugin":
+                    errors.append(".cursor-plugin/marketplace.json: plugin entry must point ast-index to plugin")
+
+            initialize_md = require_text("plugin/commands/initialize.md")
+
+            if initialize_md:
+                required_snippets = {
+                    "frontmatter name": "name: initialize",
+                    "mentions KMP": "Kotlin Multiplatform (KMP)",
+                    "mentions polyglot": "polyglot/monorepo",
+                    "settings path": ".claude/settings.json",
+                    "rules path": ".claude/rules/ast-index.md",
+                    "rebuild step": "ast-index rebuild",
+                    "stats step": "ast-index stats",
+                    "android source command": "plugin/commands/initialize-android.md",
+                    "ios source command": "plugin/commands/initialize-ios.md",
+                    "web source command": "plugin/commands/initialize-web.md",
+                    "rust source command": "plugin/commands/initialize-rust.md",
+                    "csharp source command": "plugin/commands/initialize-csharp.md",
+                    "ruby source command": "plugin/commands/initialize-ruby.md",
+                    "python fallback": "Python/Go/Dart/PHP/Scala",
+                    "kmp marker commonMain": "commonMain",
+                    "kmp marker androidMain": "androidMain",
+                    "kmp marker iosMain": "iosMain",
+                }
+                for label, snippet in required_snippets.items():
+                    if snippet not in initialize_md:
+                        errors.append(f"plugin/commands/initialize.md: missing {label} snippet {snippet!r}")
+
+                if "set of stacks" not in initialize_md or "not a single label" not in initialize_md:
+                    errors.append(
+                        "plugin/commands/initialize.md: must instruct Claude to detect a set of stacks, not a single label"
+                    )
+
+            manual_override_files = [
+                "plugin/commands/initialize-android.md",
+                "plugin/commands/initialize-csharp.md",
+                "plugin/commands/initialize-ios.md",
+                "plugin/commands/initialize-ruby.md",
+                "plugin/commands/initialize-rust.md",
+                "plugin/commands/initialize-web.md",
+            ]
+
+            for path in manual_override_files:
+                content = require_text(path)
+                if content and "Manual override:" not in content:
+                    errors.append(f"{path}: description must be marked as Manual override")
+
+            readme = require_text("README.md")
+
+            if readme and "/initialize" not in readme:
+                errors.append("README.md: must mention /initialize as the default Claude setup command")
+
+            plugin_readme = require_text("plugin/README.md")
+
+            if plugin_readme and "/initialize" not in plugin_readme:
+                errors.append("plugin/README.md: must mention /initialize for Claude plugin testing")
+
+            if errors:
+                for error in errors:
+                    print(f"ERROR: {error}")
+                raise SystemExit(1)
+
+            print("agent plugin validation ok")
+
+            PY
+      - index: 326
+        fact:
+          id: sha256:d92651b553fc8603808a4bfe1085fbe90618e51950b19a8ee54f0736a6269b23
+          kind: module
+          path: scripts
+          text: '{"contract":"missing","sources":["scripts/bump.sh","scripts/check-pr.sh","scripts/smoke.sh","scripts/validate-agent-plugins.sh"]}'
+review_status:
+  self:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    conflict: false
+    coverage:
+      current:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+      change:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+  subtree:
+    current:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 1
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+    change:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 1
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+  explicit_subtree:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.

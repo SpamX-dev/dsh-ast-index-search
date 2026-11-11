@@ -1,0 +1,64 @@
+name: DeepSeek Harness plugin
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/dsh-plugin.yml'
+      - 'plugin/package.json'
+      - 'plugin/LICENSE'
+      - 'plugin/README.md'
+      - 'plugin/dsh/**'
+      - 'plugin/skills/**'
+      - 'npm/platforms/*/package.json'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/dsh-plugin.yml'
+      - 'plugin/package.json'
+      - 'plugin/LICENSE'
+      - 'plugin/README.md'
+      - 'plugin/dsh/**'
+      - 'plugin/skills/**'
+      - 'npm/platforms/*/package.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - run: npm pack ./plugin
+      - uses: actions/upload-artifact@v7
+        with:
+          name: dsh-ast-index
+          path: dsh-ast-index-*.tgz
+          if-no-files-found: error
+
+  verify:
+    needs: pack
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest, ubuntu-24.04-arm, macos-15-intel, macos-15]
+    steps:
+      - name: Preserve packaged line endings on Windows
+        if: runner.os == 'Windows'
+        run: git config --global core.autocrlf false
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - uses: actions/download-artifact@v7
+        with:
+          name: dsh-ast-index
+          path: dist
+      - name: Install and verify the packed plugin
+        shell: bash
+        run: node plugin/dsh/verify.mjs dist/dsh-ast-index-*.tgz

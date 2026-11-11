@@ -1,0 +1,598 @@
+schema_version: 2
+kind: archi
+module_id: ast-index-deepseek-harness
+project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+check_hash: e8da3e5f067feb527aaaf0d2f738d48ff73f3cd320006517c8ac67f606efc575
+input_manifest:
+  domain: archiview/module-check/v1
+  project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+  module_id: ast-index-deepseek-harness
+  baseline:
+    identity:
+      kind: git
+      id: 39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+    state:
+      exists: false
+  current:
+    exists: true
+    directory: plugin/dsh
+    self_digest: sha256:046543b7d837f8fbb15122374c9f9c0d5188ed8156a9d232cb541116ab2cc6b9
+    subtree_digest: sha256:1cd12853a1184cf20d6b53e16a58c1606cf4229726ec35b476a4996214a9f1eb
+  analyzer:
+    name: archiview-structure
+    version: 1.0.2
+    config_digest: sha256:d4208fd53122193eb2daea0c208071c378c8d7635a8b73431fec88a63f5cd518
+baseline: null
+current:
+  module_id: ast-index-deepseek-harness
+  directory: plugin/dsh
+  parent_id: ast-index-agent-integrations
+  children: []
+  technical:
+    normalization: archiview/module-state/v1
+    module_id: ast-index-deepseek-harness
+    directory: plugin/dsh
+    own_files:
+      - path: plugin/dsh/cli.mjs
+        digest: sha256:6d03e4ff51bce1514738d200a59d5dd6e96c2123e7432960b1f48fbe8732e865
+        normalization: text-lf/v1
+      - path: plugin/dsh/cordis.patch.yml
+        digest: sha256:f442a5acf00a4e60e845ba1e59630493961be328c832e38a2e5e374852b31629
+        normalization: text-lf/v1
+      - path: plugin/dsh/index.mjs
+        digest: sha256:d5a2263044f8aaf23a76b082b3d32f22fbd12eb944f49bfe4924af58cbf90ab9
+        normalization: text-lf/v1
+      - path: plugin/dsh/verify.mjs
+        digest: sha256:1ea3c4b6645a0eb75b03089310447769d63fe50ed80d3e495c84d77689c93f84
+        normalization: text-lf/v1
+    contract:
+      schema_version: 1
+      id: ast-index-deepseek-harness
+      title: DeepSeek Harness distribution
+      kind: module
+      purpose: Deliver the shared ast-index skill and native executable to a DeepSeek
+        Harness session.
+      responsibilities:
+        R1: Register the installed skill and its resource directory with the host.
+        R2: Resolve the installed platform dependency and expose its CLI to the agent
+          shell.
+        R3: Verify the published package layout and installation against the shared
+          sources.
+      boundaries:
+        B1: The package consumes native binaries supplied by the platform packages and
+          leaves parsing to the CLI.
+      invariants:
+        I1: Installed resources resolve relative to the installed package, independently
+          of the source checkout and project being queried.
+        I2: The package manager selects the native distribution using OS and CPU
+          metadata.
+    document_state: documented
+    inherited:
+      - module_id: ast-index-agent-integrations
+        section: boundaries
+        id: B1
+        text: The CLI owns code navigation and index storage.
+      - module_id: ast-index-agent-integrations
+        section: invariants
+        id: I1
+        text: Integrations that distribute the shared skill take its instructions and
+          references from the same source tree.
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+  technical_digest: sha256:046543b7d837f8fbb15122374c9f9c0d5188ed8156a9d232cb541116ab2cc6b9
+  complete: true
+  self:
+    normalization: archiview/module-state/v1
+    module_id: ast-index-deepseek-harness
+    directory: plugin/dsh
+    own_files:
+      - path: plugin/dsh/cli.mjs
+        digest: sha256:6d03e4ff51bce1514738d200a59d5dd6e96c2123e7432960b1f48fbe8732e865
+        normalization: text-lf/v1
+      - path: plugin/dsh/cordis.patch.yml
+        digest: sha256:f442a5acf00a4e60e845ba1e59630493961be328c832e38a2e5e374852b31629
+        normalization: text-lf/v1
+      - path: plugin/dsh/index.mjs
+        digest: sha256:d5a2263044f8aaf23a76b082b3d32f22fbd12eb944f49bfe4924af58cbf90ab9
+        normalization: text-lf/v1
+      - path: plugin/dsh/verify.mjs
+        digest: sha256:1ea3c4b6645a0eb75b03089310447769d63fe50ed80d3e495c84d77689c93f84
+        normalization: text-lf/v1
+    contract:
+      id: ast-index-deepseek-harness
+      kind: module
+      purpose: Deliver the shared ast-index skill and native executable to a DeepSeek
+        Harness session.
+      responsibilities:
+        R1: Register the installed skill and its resource directory with the host.
+        R2: Resolve the installed platform dependency and expose its CLI to the agent
+          shell.
+        R3: Verify the published package layout and installation against the shared
+          sources.
+      boundaries:
+        B1: The package consumes native binaries supplied by the platform packages and
+          leaves parsing to the CLI.
+      invariants:
+        I1: Installed resources resolve relative to the installed package, independently
+          of the source checkout and project being queried.
+        I2: The package manager selects the native distribution using OS and CPU
+          metadata.
+    inherited:
+      - module_id: ast-index-agent-integrations
+        section: boundaries
+        id: B1
+        text: The CLI owns code navigation and index storage.
+      - module_id: ast-index-agent-integrations
+        section: invariants
+        id: I1
+        text: Integrations that distribute the shared skill take its instructions and
+          references from the same source tree.
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+    children: []
+  self_digest: sha256:92d288b0c50cc62ac1a38bf8846ec15278ed0ae8b7b2acf82d9549c5f53c95c6
+  subtree:
+    self: sha256:046543b7d837f8fbb15122374c9f9c0d5188ed8156a9d232cb541116ab2cc6b9
+    children: []
+  subtree_digest: sha256:1cd12853a1184cf20d6b53e16a58c1606cf4229726ec35b476a4996214a9f1eb
+  semantic_subtree:
+    self: sha256:92d288b0c50cc62ac1a38bf8846ec15278ed0ae8b7b2acf82d9549c5f53c95c6
+    children: []
+  semantic_subtree_digest: sha256:c3a2e726285875fef90c8d11ba587bcc55bfd7a1d729ff1db3a5d0d021815c9d
+change:
+  existence: added
+  own: true
+  own_code: true
+  own_contract: true
+  inherited_constraints: true
+  descendants: false
+  child_composition: false
+  moved: false
+structure:
+  complete: true
+  diagnostics: []
+  document_state: documented
+publication:
+  generation: 1
+  comparison_key: sha256:dc98b7ce48b2d042cf3c49393d0e9b7ee428318f00b8320bf7aa097e0e220040
+  baseline: null
+  current:
+    metadata:
+      schema_version: 2
+      root: D:\projects\dsh.plugins\dsh-ast-index-search
+      capturedAt: 2026-11-11T20:51:59.431Z
+      kind: launch
+      label: Начальное состояние
+      fingerprint: 1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+      complete: true
+      diagnostics: []
+      evidenceLimitations:
+        - "src/db.rs: текст недоступен или превышен лимит доказательств"
+        - "tree-sitter-bsl/src/parser.c: текст недоступен или превышен лимит
+          доказательств"
+      digest: sha256:00610d9df42de3a0b358e79b8957e32e2dfd11bf4ad05190981cd441988c99bd
+      id: launch-1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+    module_index: 7
+    module:
+      directory: plugin/dsh
+      documentPath: plugin/dsh/arch.yaml
+      document:
+        state: documented
+        text: >
+          schema_version: 1
+
+          id: ast-index-deepseek-harness
+
+          title: DeepSeek Harness distribution
+
+          kind: module
+
+          purpose: Deliver the shared ast-index skill and native executable to a
+          DeepSeek Harness session.
+
+          responsibilities:
+            R1: Register the installed skill and its resource directory with the host.
+            R2: Resolve the installed platform dependency and expose its CLI to the agent shell.
+            R3: Verify the published package layout and installation against the shared sources.
+          boundaries:
+            B1: The package consumes native binaries supplied by the platform packages and leaves parsing to the CLI.
+          invariants:
+            I1: Installed resources resolve relative to the installed package, independently of the source checkout and project being queried.
+            I2: The package manager selects the native distribution using OS and CPU metadata.
+        format: arch.yaml
+        contract:
+          schema_version: 1
+          id: ast-index-deepseek-harness
+          title: DeepSeek Harness distribution
+          kind: module
+          purpose: Deliver the shared ast-index skill and native executable to a DeepSeek
+            Harness session.
+          responsibilities:
+            R1: Register the installed skill and its resource directory with the host.
+            R2: Resolve the installed platform dependency and expose its CLI to the agent
+              shell.
+            R3: Verify the published package layout and installation against the shared
+              sources.
+          boundaries:
+            B1: The package consumes native binaries supplied by the platform packages and
+              leaves parsing to the CLI.
+          invariants:
+            I1: Installed resources resolve relative to the installed package, independently
+              of the source checkout and project being queried.
+            I2: The package manager selects the native distribution using OS and CPU
+              metadata.
+      files:
+        - path: plugin/dsh/arch.yaml
+          hash: a60660f8271005c88f151f75d16664bd2539fdd1
+        - path: plugin/dsh/cli.mjs
+          hash: 5316026a748aeb0c22077b7e5b592987c7dcb4be
+        - path: plugin/dsh/cordis.patch.yml
+          hash: d644c8cf95e270200d10d09eb1df6b8eb277dac1
+        - path: plugin/dsh/index.mjs
+          hash: 0afe0d170126ab34511642c2567d81bc2d56cc01
+        - path: plugin/dsh/verify.mjs
+          hash: 9bccddde20ff4dcb2fa41ea0acbbf06287c77032
+      sourceFiles: 3
+      fingerprint: 42ef333dfc9eecc7148135817c4eef703fa4be2720845b4b46954968eb073dbe
+    facts:
+      - index: 103
+        fact:
+          id: sha256:5e929435d0436389375426e561adefdfcdf30e5d27631c76f4ca1f0666d44e32
+          kind: file
+          path: plugin/dsh/arch.yaml
+          start_line: 1
+          end_line: 15
+          text: >
+            schema_version: 1
+
+            id: ast-index-deepseek-harness
+
+            title: DeepSeek Harness distribution
+
+            kind: module
+
+            purpose: Deliver the shared ast-index skill and native executable to
+            a DeepSeek Harness session.
+
+            responsibilities:
+              R1: Register the installed skill and its resource directory with the host.
+              R2: Resolve the installed platform dependency and expose its CLI to the agent shell.
+              R3: Verify the published package layout and installation against the shared sources.
+            boundaries:
+              B1: The package consumes native binaries supplied by the platform packages and leaves parsing to the CLI.
+            invariants:
+              I1: Installed resources resolve relative to the installed package, independently of the source checkout and project being queried.
+              I2: The package manager selects the native distribution using OS and CPU metadata.
+      - index: 104
+        fact:
+          id: sha256:b0abf665374b065a51a315e3b0937684fb3b622ad190a7737b4df34eb472a0be
+          kind: file
+          path: plugin/dsh/cli.mjs
+          start_line: 1
+          end_line: 36
+          text: >
+            import { accessSync, constants } from 'node:fs'
+
+            import { createRequire } from 'node:module'
+
+            import { dirname, resolve, sep } from 'node:path'
+
+
+            const require = createRequire(import.meta.url)
+
+
+            export function registerCli(ctx) {
+              const packageName = `@ast-index/cli-${process.platform}-${process.arch}`
+              let manifestPath
+              try {
+                manifestPath = require.resolve(`${packageName}/package.json`)
+              } catch (cause) {
+                throw new Error(
+                  `Missing ast-index platform package ${packageName}. Check that your registry provides it and install the plugin with optional dependencies enabled.`,
+                  { cause },
+                )
+              }
+
+              const executable = resolve(dirname(manifestPath), require(manifestPath).bin['ast-index'])
+              try {
+                accessSync(executable, constants.X_OK)
+              } catch (cause) {
+                throw new Error(`Cannot execute the binary from ${packageName}: ${executable}`, { cause })
+              }
+
+              // Forward slashes work in both PowerShell and Git Bash on Windows.
+              const shellPath = executable.split(sep).join('/')
+              return ctx.shellEnv.register({
+                name: 'ast-index',
+                variables: {
+                  DSH_AST_INDEX_BIN: { description: 'Absolute path to the ast-index executable for this shell.' },
+                },
+                resolve: () => ({ DSH_AST_INDEX_BIN: shellPath }),
+              })
+            }
+      - index: 105
+        fact:
+          id: sha256:1846732680588ce59ace27382c0fec18825b52dd574cc7beb22ec1d77699aaf6
+          kind: file
+          path: plugin/dsh/cordis.patch.yml
+          start_line: 1
+          end_line: 4
+          text: |
+            - insert:
+                - id: ast-index
+                  name: dsh-ast-index
+      - index: 106
+        fact:
+          id: sha256:e194236bd1e6fbdaaa484a8453c891b329b0a588fcc415d6b3a55aed33240f3d
+          kind: file
+          path: plugin/dsh/index.mjs
+          start_line: 1
+          end_line: 17
+          text: >
+            import { fileURLToPath } from 'node:url';
+
+            import { FileSystemSkillProvider } from
+            '@deepseek-ai/dsh-skill-filesystem';
+
+            import { registerCli } from './cli.mjs';
+
+
+            export const name = 'dsh-ast-index';
+
+            export const inject = ['skills', 'shellEnv'];
+
+
+            export function apply(ctx) {
+              registerCli(ctx);
+              ctx.skills.registerProvider(control => new FileSystemSkillProvider(ctx, control, {
+                providerName: name,
+                bundledSkillDir: fileURLToPath(new URL('../skills/', import.meta.url)),
+                includeDefaultRoots: false,
+                watch: false,
+              }));
+            }
+      - index: 107
+        fact:
+          id: sha256:f9340651f0e60c79a4abf8622dc89fd2aaf6e622c53f2eecec4b7fa240fe8ca4
+          kind: file
+          path: plugin/dsh/verify.mjs
+          start_line: 1
+          end_line: 109
+          text: >
+            import assert from 'node:assert/strict'
+
+            import { execFileSync, execSync } from 'node:child_process'
+
+            import { copyFileSync, mkdirSync, mkdtempSync, readFileSync,
+            readdirSync, rmSync, writeFileSync } from 'node:fs'
+
+            import { createRequire } from 'node:module'
+
+            import { tmpdir } from 'node:os'
+
+            import { basename, dirname, join, resolve } from 'node:path'
+
+            import { fileURLToPath, pathToFileURL } from 'node:url'
+
+
+            const tarball = process.argv[2]
+
+            assert.ok(tarball, 'Usage: node plugin/dsh/verify.mjs <plugin.tgz>')
+
+            const source = fileURLToPath(new URL('../', import.meta.url))
+
+            const skillDir = 'skills/ast-index'
+
+            const references = readdirSync(join(source, skillDir,
+            'references')).filter(name => name.endsWith('.md')).sort()
+
+            assert.ok(references.length > 0, 'Missing source references')
+
+            const sharedFiles = [`${skillDir}/SKILL.md`, ...references.map(name
+            => `${skillDir}/references/${name}`)]
+
+            const runtimeFiles = ['package.json', 'dsh/index.mjs',
+            'dsh/cli.mjs', 'dsh/cordis.patch.yml', ...sharedFiles]
+
+
+            const entries = execFileSync('tar', ['-tf', resolve(tarball)], {
+            encoding: 'utf8' }).trim().split(/\r?\n/)
+
+            const files = entries.filter(entry =>
+            !entry.endsWith('/')).map(entry => entry.replace(/^package\//, ''))
+
+            assert.deepEqual(files.filter(file =>
+            !/^(?:README(?:\.md)?|LICENSE(?:\.md)?)$/i.test(file)).sort(),
+            runtimeFiles.sort())
+
+
+            const temp = mkdtempSync(join(tmpdir(), 'dsh-ast-index-'))
+
+            try {
+              const profile = join(temp, 'profile with spaces')
+              const project = join(temp, 'sample project')
+              mkdirSync(profile)
+              mkdirSync(project)
+              copyFileSync(tarball, join(profile, 'plugin.tgz'))
+              writeFileSync(join(profile, 'package.json'), JSON.stringify({
+                private: true,
+                dependencies: {
+                  'dsh-ast-index': 'file:./plugin.tgz',
+                  '@deepseek-ai/dsh-shell-env': '0.2.2-rc.1',
+                  '@deepseek-ai/dsh-skill-filesystem': '0.2.2-rc.1',
+                  yaml: '^2.4.2',
+                },
+              }))
+              // Static command so paths and registry credentials never need shell quoting.
+              execSync('npm install --include=optional --ignore-scripts --no-audit --no-fund', { cwd: profile, stdio: 'inherit' })
+              const host = createRequire(join(profile, 'package.json'))
+              const entry = host.resolve('dsh-ast-index')
+              const installed = dirname(host.resolve('dsh-ast-index/package.json'))
+              const plugin = createRequire(entry)
+              const manifest = JSON.parse(readFileSync(join(installed, 'package.json'), 'utf8'))
+
+              // The plugin can stay on a published CLI release while the Rust tree moves on.
+              const platforms = ['darwin-arm64', 'darwin-x64', 'linux-arm64', 'linux-x64', 'win32-x64']
+              const nativeNames = platforms.map(target => {
+                const metadata = JSON.parse(readFileSync(join(source, '../npm/platforms', target, 'package.json'), 'utf8'))
+                return metadata.name
+              })
+              assert.deepEqual(Object.keys(manifest.optionalDependencies).sort(), nativeNames.sort())
+              const versions = [...new Set(Object.values(manifest.optionalDependencies))]
+              assert.equal(versions.length, 1, 'All native binaries must use the same CLI release')
+              assert.match(versions[0], /^\d+\.\d+\.\d+$/, 'Pin a published CLI version')
+              for (const file of sharedFiles) {
+                assert.deepEqual(readFileSync(join(installed, file)), readFileSync(join(source, file)), file)
+              }
+
+              const load = name => import(pathToFileURL(host.resolve(name)))
+              const { Context } = await load('@deepseek-ai/cordis')
+              const { SkillRegistry } = await load('@deepseek-ai/dsh-skill')
+              const shellEnv = await load('@deepseek-ai/dsh-shell-env')
+              const { parse } = await load('yaml')
+              const patch = parse(readFileSync(join(installed, manifest.dsh.bundle.patch), 'utf8'))
+              const registration = patch.flatMap(operation => operation.insert ?? []).find(record => record.name === manifest.name)
+              assert.ok(registration, 'The Harness bundle patch must register this package')
+              const ctx = new Context()
+              await ctx.plugin(SkillRegistry)
+              await ctx.plugin(shellEnv, { dshHome: profile })
+              const fiber = await ctx.plugin(await load(registration.name))
+              try {
+                const skill = await ctx.skills.get('ast-index', { cwd: project })
+                assert.equal(skill?.source, 'bundled', 'Harness could not load the bundled ast-index skill')
+                assert.equal(skill.invocation.modelInvocable, true)
+                assert.equal(skill.invocation.userInvocable, false)
+                assert.equal(skill.resourceBase.kind, 'directory')
+                assert.equal(resolve(skill.resourceBase.path), resolve(installed, skillDir))
+                assert.match(skill.content, /DSH_AST_INDEX_BIN/)
+
+                const shell = ctx.shellEnv.collect({})
+                const nativeName = `@ast-index/cli-${process.platform}-${process.arch}`
+                for (const name of nativeNames.filter(name => name !== nativeName)) {
+                  assert.throws(() => plugin.resolve(`${name}/package.json`), { code: 'MODULE_NOT_FOUND' })
+                }
+                const metadataPath = plugin.resolve(`${nativeName}/package.json`)
+                const metadata = plugin(metadataPath)
+                assert.equal(metadata.version, manifest.optionalDependencies[nativeName])
+                assert.equal(resolve(shell.DSH_AST_INDEX_BIN), resolve(dirname(metadataPath), metadata.bin['ast-index']))
+
+                writeFileSync(join(project, 'package.json'), '{"name":"sample-project","private":true}\n')
+                writeFileSync(join(project, 'sample.ts'), 'export function packagedSymbol() { return 42 }\n')
+                const options = { cwd: project, encoding: 'utf8', env: { ...process.env, ...shell, AST_INDEX_CACHE_DIR: join(temp, 'index-cache') } }
+                const run = args => process.platform === 'win32'
+                  ? execFileSync('powershell.exe', ['-NoProfile', '-NonInteractive', '-Command', `& $env:DSH_AST_INDEX_BIN ${args}; exit $LASTEXITCODE`], options)
+                  : execFileSync('sh', ['-c', `exec "$DSH_AST_INDEX_BIN" ${args}`], options)
+                run('rebuild')
+                const { items } = JSON.parse(run('symbol packagedSymbol --format json'))
+                assert.ok(items.some(item => item.name === 'packagedSymbol' && basename(item.path) === 'sample.ts' && item.line === 1))
+              } finally {
+                await fiber.dispose()
+              }
+              assert.equal(ctx.shellEnv.collect({}).DSH_AST_INDEX_BIN, undefined)
+              assert.equal(await ctx.skills.get('ast-index', { cwd: project }), undefined)
+              console.log(`Verified packaged skill, ${references.length} references and native symbol search on ${process.platform}-${process.arch}.`)
+            } finally {
+              rmSync(temp, { recursive: true, force: true, maxRetries: 3 })
+            }
+      - index: 321
+        fact:
+          id: sha256:8bfbc755107bbd9a03ec0f5027dc04f9f8d1ee8d49f2fa5e7da7a884de933e8c
+          kind: module
+          path: plugin/dsh
+          text: '{"contract":"documented","format":"arch.yaml","sources":["plugin/dsh/cli.mjs","plugin/dsh/index.mjs","plugin/dsh/verify.mjs"]}'
+review_status:
+  self:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    conflict: false
+    coverage:
+      current:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+      change:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+  subtree:
+    current:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 1
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+    change:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 1
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+  explicit_subtree:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.

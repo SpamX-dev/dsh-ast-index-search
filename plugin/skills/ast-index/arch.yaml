@@ -1,0 +1,11 @@
+schema_version: 1
+id: ast-index-search-skill
+title: Code search skill
+kind: module
+purpose: Guide agents in choosing and running ast-index commands on a project.
+responsibilities:
+  R1: Describe CLI prerequisites, search workflows and language-specific commands.
+boundaries:
+  B1: Command execution and index storage belong to the CLI.
+invariants:
+  I1: Examples describe the same CLI across supported agent hosts.

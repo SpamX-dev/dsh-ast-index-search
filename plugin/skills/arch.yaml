@@ -1,0 +1,11 @@
+schema_version: 1
+id: ast-index-shared-skills
+title: Shared agent skills
+kind: group
+purpose: Supply the skill payload used by the agent integrations.
+responsibilities:
+  R1: Keep each skill's entry document and reference files together.
+boundaries:
+  B1: The host integrations own installation and registration.
+invariants:
+  I1: Skills resolve their references within their own directory.

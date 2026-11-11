@@ -1,0 +1,779 @@
+schema_version: 2
+kind: archi
+module_id: directory:plugin/hooks/scripts
+project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+check_hash: 93235f49403e4ab29e15f1332974cd5306f10c376c178021ad56d5e927216b94
+input_manifest:
+  domain: archiview/module-check/v1
+  project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+  module_id: directory:plugin/hooks/scripts
+  baseline:
+    identity:
+      kind: git
+      id: 39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+    state:
+      exists: true
+      directory: plugin/hooks/scripts
+      self_digest: sha256:54d6a23c04af2c4d3b5e109eff74e216be572e112b411fb3eff208131193d3df
+      subtree_digest: sha256:d7f32b076df8e5731d7b9dc0487fac1b25eb13bb2a056ca8c9abc3ba23d55233
+  current:
+    exists: true
+    directory: plugin/hooks/scripts
+    self_digest: sha256:9fb37abb71e6bc5e80ba4ad66ed30be451b48193c7259556596c912798f8803c
+    subtree_digest: sha256:24e780f51606a19db57735f4746eb1a54bd0440b89c623c32237624686152384
+  analyzer:
+    name: archiview-structure
+    version: 1.0.2
+    config_digest: sha256:d4208fd53122193eb2daea0c208071c378c8d7635a8b73431fec88a63f5cd518
+baseline:
+  module_id: directory:plugin/hooks/scripts
+  directory: plugin/hooks/scripts
+  parent_id: directory:plugin/hooks
+  children: []
+  technical:
+    normalization: archiview/module-state/v1
+    module_id: directory:plugin/hooks/scripts
+    directory: plugin/hooks/scripts
+    own_files:
+      - path: plugin/hooks/scripts/grep-reminder.sh
+        digest: sha256:5f3890afab17d7fd3e8f38925d463b96661958ec68bf8e0c5dea5e8b34d293f3
+        normalization: text-lf/v1
+      - path: plugin/hooks/scripts/post-edit-update.sh
+        digest: sha256:1467dc85232eb8cbf83762b607fa3c32949488cdb41b98071e8c8425b6289c3a
+        normalization: text-lf/v1
+      - path: plugin/hooks/scripts/session-start-refresh.sh
+        digest: sha256:2a08e2e3dc90a162848843d30c2fc2797c9a5d5c19ddff971646c156adb8ad83
+        normalization: text-lf/v1
+    contract: null
+    document_state: missing
+    inherited: []
+  technical_digest: sha256:54d6a23c04af2c4d3b5e109eff74e216be572e112b411fb3eff208131193d3df
+  complete: false
+  self:
+    normalization: archiview/module-state/v1
+    module_id: directory:plugin/hooks/scripts
+    directory: plugin/hooks/scripts
+    own_files:
+      - path: plugin/hooks/scripts/grep-reminder.sh
+        digest: sha256:5f3890afab17d7fd3e8f38925d463b96661958ec68bf8e0c5dea5e8b34d293f3
+        normalization: text-lf/v1
+      - path: plugin/hooks/scripts/post-edit-update.sh
+        digest: sha256:1467dc85232eb8cbf83762b607fa3c32949488cdb41b98071e8c8425b6289c3a
+        normalization: text-lf/v1
+      - path: plugin/hooks/scripts/session-start-refresh.sh
+        digest: sha256:2a08e2e3dc90a162848843d30c2fc2797c9a5d5c19ddff971646c156adb8ad83
+        normalization: text-lf/v1
+    contract: null
+    inherited: []
+    children: []
+  self_digest: sha256:b813069dadb2b92d89205e88e368f428f1b2153ea46d067b1b69deebcfb63992
+  subtree:
+    self: sha256:54d6a23c04af2c4d3b5e109eff74e216be572e112b411fb3eff208131193d3df
+    children: []
+  subtree_digest: sha256:d7f32b076df8e5731d7b9dc0487fac1b25eb13bb2a056ca8c9abc3ba23d55233
+  semantic_subtree:
+    self: sha256:b813069dadb2b92d89205e88e368f428f1b2153ea46d067b1b69deebcfb63992
+    children: []
+  semantic_subtree_digest: sha256:9f1ffa9b6deb033ebf8d9407917fbe1720694534eb837288741be1cba9e6c047
+current:
+  module_id: directory:plugin/hooks/scripts
+  directory: plugin/hooks/scripts
+  parent_id: directory:plugin/hooks
+  children: []
+  technical:
+    normalization: archiview/module-state/v1
+    module_id: directory:plugin/hooks/scripts
+    directory: plugin/hooks/scripts
+    own_files:
+      - path: plugin/hooks/scripts/grep-reminder.sh
+        digest: sha256:5f3890afab17d7fd3e8f38925d463b96661958ec68bf8e0c5dea5e8b34d293f3
+        normalization: text-lf/v1
+      - path: plugin/hooks/scripts/post-edit-update.sh
+        digest: sha256:1467dc85232eb8cbf83762b607fa3c32949488cdb41b98071e8c8425b6289c3a
+        normalization: text-lf/v1
+      - path: plugin/hooks/scripts/session-start-refresh.sh
+        digest: sha256:2a08e2e3dc90a162848843d30c2fc2797c9a5d5c19ddff971646c156adb8ad83
+        normalization: text-lf/v1
+    contract: null
+    document_state: missing
+    inherited:
+      - module_id: ast-index-agent-integrations
+        section: boundaries
+        id: B1
+        text: The CLI owns code navigation and index storage.
+      - module_id: ast-index-agent-integrations
+        section: invariants
+        id: I1
+        text: Integrations that distribute the shared skill take its instructions and
+          references from the same source tree.
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+  technical_digest: sha256:9fb37abb71e6bc5e80ba4ad66ed30be451b48193c7259556596c912798f8803c
+  complete: false
+  self:
+    normalization: archiview/module-state/v1
+    module_id: directory:plugin/hooks/scripts
+    directory: plugin/hooks/scripts
+    own_files:
+      - path: plugin/hooks/scripts/grep-reminder.sh
+        digest: sha256:5f3890afab17d7fd3e8f38925d463b96661958ec68bf8e0c5dea5e8b34d293f3
+        normalization: text-lf/v1
+      - path: plugin/hooks/scripts/post-edit-update.sh
+        digest: sha256:1467dc85232eb8cbf83762b607fa3c32949488cdb41b98071e8c8425b6289c3a
+        normalization: text-lf/v1
+      - path: plugin/hooks/scripts/session-start-refresh.sh
+        digest: sha256:2a08e2e3dc90a162848843d30c2fc2797c9a5d5c19ddff971646c156adb8ad83
+        normalization: text-lf/v1
+    contract: null
+    inherited:
+      - module_id: ast-index-agent-integrations
+        section: boundaries
+        id: B1
+        text: The CLI owns code navigation and index storage.
+      - module_id: ast-index-agent-integrations
+        section: invariants
+        id: I1
+        text: Integrations that distribute the shared skill take its instructions and
+          references from the same source tree.
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+    children: []
+  self_digest: sha256:9e0a4b19cf6035ee2d9b492e43d0bb308b23010d9f5bb48df109c4bf647d7497
+  subtree:
+    self: sha256:9fb37abb71e6bc5e80ba4ad66ed30be451b48193c7259556596c912798f8803c
+    children: []
+  subtree_digest: sha256:24e780f51606a19db57735f4746eb1a54bd0440b89c623c32237624686152384
+  semantic_subtree:
+    self: sha256:9e0a4b19cf6035ee2d9b492e43d0bb308b23010d9f5bb48df109c4bf647d7497
+    children: []
+  semantic_subtree_digest: sha256:8238c3a24c29c4c3193067d6dd4571a8e5b2015cb968c8cc9d55c10f9ce04462
+change:
+  existence: retained
+  own: false
+  own_code: false
+  own_contract: false
+  inherited_constraints: true
+  descendants: false
+  child_composition: false
+  moved: false
+structure:
+  complete: false
+  diagnostics: []
+  document_state: missing
+publication:
+  generation: 1
+  comparison_key: sha256:dc98b7ce48b2d042cf3c49393d0e9b7ee428318f00b8320bf7aa097e0e220040
+  baseline:
+    metadata:
+      schema_version: 2
+      root: D:\projects\dsh.plugins\dsh-ast-index-search
+      capturedAt: 2026-11-11T20:51:58.911Z
+      kind: git
+      revision: 39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+      label: HEAD
+      fingerprint: ce875f581e3068454f564722f01dcb32cacfc836460278bc610500f4bb86657c
+      complete: true
+      diagnostics: []
+      evidenceLimitations:
+        - "src/db.rs: текст недоступен или превышен лимит доказательств"
+        - "tree-sitter-bsl/src/parser.c: текст недоступен или превышен лимит
+          доказательств"
+      digest: sha256:54c9f4b0a85ec24ae29f73bfc639059b3951d61af510b95989587b970b4ca995
+      id: git-39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+      isHead: true
+    module_index: 8
+    module:
+      directory: plugin/hooks/scripts
+      documentPath: plugin/hooks/scripts/arch.yaml
+      document:
+        state: missing
+        text: null
+      files:
+        - path: plugin/hooks/scripts/grep-reminder.sh
+          hash: 1268f7ee8321a56a80cd99a4daf91a8eff022ba4
+        - path: plugin/hooks/scripts/post-edit-update.sh
+          hash: 0016d977cc7c1e121b408a61c541101240dce648
+        - path: plugin/hooks/scripts/session-start-refresh.sh
+          hash: 70ccde9324ed962355401c188cad74f38818720c
+      sourceFiles: 3
+      fingerprint: 40194fb84e591047e20251e617a1aec4367ade2512c707c934153b2bc4e18cd7
+    facts:
+      - index: 100
+        fact:
+          id: sha256:7f21639cccdbfda3b8a6d1ffbbc0d822566f3b20b8f8ee04c880c1c59190a5b8
+          kind: file
+          path: plugin/hooks/scripts/grep-reminder.sh
+          start_line: 1
+          end_line: 57
+          text: |
+            #!/usr/bin/env bash
+            # PreToolUse(Grep) hook: gently remind the agent that ast-index exists for
+            # symbol search. NON-BLOCKING — it always allows the Grep call and only injects
+            # a short reminder when the pattern looks like a code symbol (a class / method /
+            # function name), where ast-index is more precise and cheaper than a text grep.
+            #
+            # Design:
+            #   * Never blocks. On any uncertainty it allows silently (exit 0, no output) so
+            #     the normal permission flow applies and the session is never disrupted.
+            #   * Only nudges for symbol-like patterns: a single bare identifier (optionally
+            #     namespaced with `::`), no regex metacharacters, no whitespace. Plain-text
+            #     and regex searches — the legitimate use of Grep — are left alone.
+            #   * No jq dependency: reads the pattern with jq if present, else a sed fallback.
+
+            set -u
+
+            input="$(cat)"
+
+            # --- extract the Grep pattern from the hook input JSON ---
+            pattern=""
+            if command -v jq >/dev/null 2>&1; then
+                pattern="$(printf '%s' "$input" | jq -r '.tool_input.pattern // empty' 2>/dev/null)"
+            fi
+            if [ -z "$pattern" ]; then
+                # Fallback: pull the first "pattern": "..." value. Best-effort; if it fails
+                # we simply do not nudge.
+                pattern="$(printf '%s' "$input" \
+                    | sed -n 's/.*"pattern"[[:space:]]*:[[:space:]]*"\([^"\\]*\)".*/\1/p' \
+                    | head -1)"
+            fi
+
+            # Nothing to judge — allow silently.
+            [ -z "$pattern" ] && exit 0
+
+            # --- heuristic: does the pattern look like a single code symbol? ---
+            # Must be a bare identifier (>=3 chars), optionally namespaced (Foo::Bar),
+            # with no regex metacharacters or whitespace. Anything else is treated as a
+            # legitimate text/regex search and left alone.
+            case "$pattern" in
+                *[!A-Za-z0-9_:]*) exit 0 ;;   # contains a non-identifier char (space, . * [ ] ( ) | \ etc.)
+            esac
+            # Length >= 3 and contains at least one letter.
+            if [ "${#pattern}" -lt 3 ] || ! printf '%s' "$pattern" | grep -q '[A-Za-z]'; then
+                exit 0
+            fi
+
+            # --- symbol-like: inject a non-blocking reminder ---
+            # `pattern` is already constrained to [A-Za-z0-9_:] above, and the text below
+            # contains no double quotes or backslashes, so it is safe to embed directly in
+            # a JSON string without an escaper (no jq/python dependency).
+            reminder="ast-index is indexed for this project. '${pattern}' looks like a code symbol — prefer ast-index over Grep here: 'ast-index usages ${pattern}' (who uses it), 'ast-index refs ${pattern}' (defs+imports+usages), 'ast-index class/symbol ${pattern}' (definition), or 'ast-index explore ${pattern}' (source + callers + tests in one shot). It is precise (no matches inside comments/strings) and cheaper than grep. Grep stays right for plain text, regex, and non-code files."
+
+            # Emit allow + additionalContext (non-blocking).
+            printf '{"hookSpecificOutput":{"hookEventName":"PreToolUse","permissionDecision":"allow","additionalContext":"%s"}}\n' "$reminder"
+
+            exit 0
+      - index: 101
+        fact:
+          id: sha256:11dd7e2f5ce4194ea099c0a4527d1e02465099cb59d8610376a67efced3069c9
+          kind: file
+          path: plugin/hooks/scripts/post-edit-update.sh
+          start_line: 1
+          end_line: 39
+          text: >
+            #!/usr/bin/env bash
+
+            # Post-edit hook: incrementally refresh the ast-index after
+            Edit/Write/MultiEdit.
+
+            #
+
+            # Behaviour:
+
+            #   * No-op when ast-index is not on PATH (plugin must not block
+            sessions).
+
+            #   * No-op when this project's `ast-index watch` daemon is already
+            running.
+
+            #   * Requests a trailing-debounced coordinator update. Bursts and
+            edits that
+
+            #     arrive during an update are not lost.
+
+            #   * Skips when no project index exists yet — the SessionStart hook
+            handles
+
+            #     the cold-start case.
+
+            #   * Returns after the coordinator has safely queued its project
+            worker.
+
+
+            set -u
+
+
+            if ! command -v ast-index >/dev/null 2>&1; then
+              exit 0
+            fi
+
+
+            project_dir="${CLAUDE_PROJECT_DIR:-$PWD}"
+
+
+            if (cd "$project_dir" && ast-index watch-status --quiet >/dev/null
+            2>&1); then
+              exit 0
+            fi
+
+
+            db_path=$(cd "$project_dir" && ast-index db-path 2>/dev/null) ||
+            exit 0
+
+            if [ ! -f "$db_path" ]; then
+              # No index yet — SessionStart will pick this up.
+              exit 0
+            fi
+
+
+            debounce_ms="${AST_INDEX_HOOK_DEBOUNCE_MS:-5000}"
+
+            case "$debounce_ms" in
+              ''|*[!0-9]*) debounce_ms=5000 ;;
+            esac
+
+
+            (cd "$project_dir" && ast-index update --background --debounce-ms
+            "$debounce_ms" >/dev/null)
+
+
+            exit 0
+      - index: 102
+        fact:
+          id: sha256:53fac4a7f766242f0da343fa843a4da55605cb0553c6dd5a2c41ec77fc62edb8
+          kind: file
+          path: plugin/hooks/scripts/session-start-refresh.sh
+          start_line: 1
+          end_line: 47
+          text: >
+            #!/usr/bin/env bash
+
+            # Session-start hook: keep the ast-index fresh between sessions.
+
+            #
+
+            # Behaviour:
+
+            #   * No-op when ast-index is not on PATH.
+
+            #   * Reports when this project's `ast-index watch` daemon is
+            already active.
+
+            #   * If an index exists: queue a coordinated background refresh.
+            Index-reading
+
+            #     commands wait for that generation before returning results.
+
+            #   * If no index exists: print a one-line hint to stderr so the
+            user runs the
+
+            #     initial `ast-index rebuild` themselves; we deliberately don't
+            start
+
+            #     a multi-minute rebuild on session start.
+
+            #   * Bypassable via AST_INDEX_HOOK_SKIP_SESSION_START=1 for
+            opt-out.
+
+
+            set -u
+
+
+            if [ "${AST_INDEX_HOOK_SKIP_SESSION_START:-0}" = "1" ]; then
+              exit 0
+            fi
+
+
+            if ! command -v ast-index >/dev/null 2>&1; then
+              exit 0
+            fi
+
+
+            project_dir="${CLAUDE_PROJECT_DIR:-$PWD}"
+
+
+            if (cd "$project_dir" && ast-index watch-status --quiet >/dev/null
+            2>&1); then
+              echo "ast-index: project watcher is active; the index is already kept fresh." >&2
+              exit 0
+            fi
+
+
+            db_path=$(cd "$project_dir" && ast-index db-path 2>/dev/null) ||
+            exit 0
+
+            if [ -f "$db_path" ]; then
+              debounce_ms="${AST_INDEX_SESSION_DEBOUNCE_MS:-0}"
+              case "$debounce_ms" in
+                ''|*[!0-9]*) debounce_ms=0 ;;
+              esac
+              if (cd "$project_dir" && ast-index update --background --debounce-ms "$debounce_ms" >/dev/null); then
+                echo "ast-index: project index refresh queued; first index read will wait for it." >&2
+              else
+                echo "ast-index: could not queue refresh; see the diagnostic above." >&2
+              fi
+            else
+              echo "ast-index: no index for $project_dir — run 'ast-index rebuild' to enable structural search." >&2
+            fi
+
+
+            exit 0
+      - index: 310
+        fact:
+          id: sha256:426711a6b7a374e16b72700ec88d0d74d76e370115eb178bc237ac03ae6360b4
+          kind: module
+          path: plugin/hooks/scripts
+          text: '{"contract":"missing","sources":["plugin/hooks/scripts/grep-reminder.sh","plugin/hooks/scripts/post-edit-update.sh","plugin/hooks/scripts/session-start-refresh.sh"]}'
+  current:
+    metadata:
+      schema_version: 2
+      root: D:\projects\dsh.plugins\dsh-ast-index-search
+      capturedAt: 2026-11-11T20:51:59.431Z
+      kind: launch
+      label: Начальное состояние
+      fingerprint: 1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+      complete: true
+      diagnostics: []
+      evidenceLimitations:
+        - "src/db.rs: текст недоступен или превышен лимит доказательств"
+        - "tree-sitter-bsl/src/parser.c: текст недоступен или превышен лимит
+          доказательств"
+      digest: sha256:00610d9df42de3a0b358e79b8957e32e2dfd11bf4ad05190981cd441988c99bd
+      id: launch-1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+    module_index: 9
+    module:
+      directory: plugin/hooks/scripts
+      documentPath: plugin/hooks/scripts/arch.yaml
+      document:
+        state: missing
+        text: null
+      files:
+        - path: plugin/hooks/scripts/grep-reminder.sh
+          hash: 1268f7ee8321a56a80cd99a4daf91a8eff022ba4
+        - path: plugin/hooks/scripts/post-edit-update.sh
+          hash: 0016d977cc7c1e121b408a61c541101240dce648
+        - path: plugin/hooks/scripts/session-start-refresh.sh
+          hash: 70ccde9324ed962355401c188cad74f38818720c
+      sourceFiles: 3
+      fingerprint: 40194fb84e591047e20251e617a1aec4367ade2512c707c934153b2bc4e18cd7
+    facts:
+      - index: 109
+        fact:
+          id: sha256:7f21639cccdbfda3b8a6d1ffbbc0d822566f3b20b8f8ee04c880c1c59190a5b8
+          kind: file
+          path: plugin/hooks/scripts/grep-reminder.sh
+          start_line: 1
+          end_line: 57
+          text: |
+            #!/usr/bin/env bash
+            # PreToolUse(Grep) hook: gently remind the agent that ast-index exists for
+            # symbol search. NON-BLOCKING — it always allows the Grep call and only injects
+            # a short reminder when the pattern looks like a code symbol (a class / method /
+            # function name), where ast-index is more precise and cheaper than a text grep.
+            #
+            # Design:
+            #   * Never blocks. On any uncertainty it allows silently (exit 0, no output) so
+            #     the normal permission flow applies and the session is never disrupted.
+            #   * Only nudges for symbol-like patterns: a single bare identifier (optionally
+            #     namespaced with `::`), no regex metacharacters, no whitespace. Plain-text
+            #     and regex searches — the legitimate use of Grep — are left alone.
+            #   * No jq dependency: reads the pattern with jq if present, else a sed fallback.
+
+            set -u
+
+            input="$(cat)"
+
+            # --- extract the Grep pattern from the hook input JSON ---
+            pattern=""
+            if command -v jq >/dev/null 2>&1; then
+                pattern="$(printf '%s' "$input" | jq -r '.tool_input.pattern // empty' 2>/dev/null)"
+            fi
+            if [ -z "$pattern" ]; then
+                # Fallback: pull the first "pattern": "..." value. Best-effort; if it fails
+                # we simply do not nudge.
+                pattern="$(printf '%s' "$input" \
+                    | sed -n 's/.*"pattern"[[:space:]]*:[[:space:]]*"\([^"\\]*\)".*/\1/p' \
+                    | head -1)"
+            fi
+
+            # Nothing to judge — allow silently.
+            [ -z "$pattern" ] && exit 0
+
+            # --- heuristic: does the pattern look like a single code symbol? ---
+            # Must be a bare identifier (>=3 chars), optionally namespaced (Foo::Bar),
+            # with no regex metacharacters or whitespace. Anything else is treated as a
+            # legitimate text/regex search and left alone.
+            case "$pattern" in
+                *[!A-Za-z0-9_:]*) exit 0 ;;   # contains a non-identifier char (space, . * [ ] ( ) | \ etc.)
+            esac
+            # Length >= 3 and contains at least one letter.
+            if [ "${#pattern}" -lt 3 ] || ! printf '%s' "$pattern" | grep -q '[A-Za-z]'; then
+                exit 0
+            fi
+
+            # --- symbol-like: inject a non-blocking reminder ---
+            # `pattern` is already constrained to [A-Za-z0-9_:] above, and the text below
+            # contains no double quotes or backslashes, so it is safe to embed directly in
+            # a JSON string without an escaper (no jq/python dependency).
+            reminder="ast-index is indexed for this project. '${pattern}' looks like a code symbol — prefer ast-index over Grep here: 'ast-index usages ${pattern}' (who uses it), 'ast-index refs ${pattern}' (defs+imports+usages), 'ast-index class/symbol ${pattern}' (definition), or 'ast-index explore ${pattern}' (source + callers + tests in one shot). It is precise (no matches inside comments/strings) and cheaper than grep. Grep stays right for plain text, regex, and non-code files."
+
+            # Emit allow + additionalContext (non-blocking).
+            printf '{"hookSpecificOutput":{"hookEventName":"PreToolUse","permissionDecision":"allow","additionalContext":"%s"}}\n' "$reminder"
+
+            exit 0
+      - index: 110
+        fact:
+          id: sha256:11dd7e2f5ce4194ea099c0a4527d1e02465099cb59d8610376a67efced3069c9
+          kind: file
+          path: plugin/hooks/scripts/post-edit-update.sh
+          start_line: 1
+          end_line: 39
+          text: >
+            #!/usr/bin/env bash
+
+            # Post-edit hook: incrementally refresh the ast-index after
+            Edit/Write/MultiEdit.
+
+            #
+
+            # Behaviour:
+
+            #   * No-op when ast-index is not on PATH (plugin must not block
+            sessions).
+
+            #   * No-op when this project's `ast-index watch` daemon is already
+            running.
+
+            #   * Requests a trailing-debounced coordinator update. Bursts and
+            edits that
+
+            #     arrive during an update are not lost.
+
+            #   * Skips when no project index exists yet — the SessionStart hook
+            handles
+
+            #     the cold-start case.
+
+            #   * Returns after the coordinator has safely queued its project
+            worker.
+
+
+            set -u
+
+
+            if ! command -v ast-index >/dev/null 2>&1; then
+              exit 0
+            fi
+
+
+            project_dir="${CLAUDE_PROJECT_DIR:-$PWD}"
+
+
+            if (cd "$project_dir" && ast-index watch-status --quiet >/dev/null
+            2>&1); then
+              exit 0
+            fi
+
+
+            db_path=$(cd "$project_dir" && ast-index db-path 2>/dev/null) ||
+            exit 0
+
+            if [ ! -f "$db_path" ]; then
+              # No index yet — SessionStart will pick this up.
+              exit 0
+            fi
+
+
+            debounce_ms="${AST_INDEX_HOOK_DEBOUNCE_MS:-5000}"
+
+            case "$debounce_ms" in
+              ''|*[!0-9]*) debounce_ms=5000 ;;
+            esac
+
+
+            (cd "$project_dir" && ast-index update --background --debounce-ms
+            "$debounce_ms" >/dev/null)
+
+
+            exit 0
+      - index: 111
+        fact:
+          id: sha256:53fac4a7f766242f0da343fa843a4da55605cb0553c6dd5a2c41ec77fc62edb8
+          kind: file
+          path: plugin/hooks/scripts/session-start-refresh.sh
+          start_line: 1
+          end_line: 47
+          text: >
+            #!/usr/bin/env bash
+
+            # Session-start hook: keep the ast-index fresh between sessions.
+
+            #
+
+            # Behaviour:
+
+            #   * No-op when ast-index is not on PATH.
+
+            #   * Reports when this project's `ast-index watch` daemon is
+            already active.
+
+            #   * If an index exists: queue a coordinated background refresh.
+            Index-reading
+
+            #     commands wait for that generation before returning results.
+
+            #   * If no index exists: print a one-line hint to stderr so the
+            user runs the
+
+            #     initial `ast-index rebuild` themselves; we deliberately don't
+            start
+
+            #     a multi-minute rebuild on session start.
+
+            #   * Bypassable via AST_INDEX_HOOK_SKIP_SESSION_START=1 for
+            opt-out.
+
+
+            set -u
+
+
+            if [ "${AST_INDEX_HOOK_SKIP_SESSION_START:-0}" = "1" ]; then
+              exit 0
+            fi
+
+
+            if ! command -v ast-index >/dev/null 2>&1; then
+              exit 0
+            fi
+
+
+            project_dir="${CLAUDE_PROJECT_DIR:-$PWD}"
+
+
+            if (cd "$project_dir" && ast-index watch-status --quiet >/dev/null
+            2>&1); then
+              echo "ast-index: project watcher is active; the index is already kept fresh." >&2
+              exit 0
+            fi
+
+
+            db_path=$(cd "$project_dir" && ast-index db-path 2>/dev/null) ||
+            exit 0
+
+            if [ -f "$db_path" ]; then
+              debounce_ms="${AST_INDEX_SESSION_DEBOUNCE_MS:-0}"
+              case "$debounce_ms" in
+                ''|*[!0-9]*) debounce_ms=0 ;;
+              esac
+              if (cd "$project_dir" && ast-index update --background --debounce-ms "$debounce_ms" >/dev/null); then
+                echo "ast-index: project index refresh queued; first index read will wait for it." >&2
+              else
+                echo "ast-index: could not queue refresh; see the diagnostic above." >&2
+              fi
+            else
+              echo "ast-index: no index for $project_dir — run 'ast-index rebuild' to enable structural search." >&2
+            fi
+
+
+            exit 0
+      - index: 323
+        fact:
+          id: sha256:426711a6b7a374e16b72700ec88d0d74d76e370115eb178bc237ac03ae6360b4
+          kind: module
+          path: plugin/hooks/scripts
+          text: '{"contract":"missing","sources":["plugin/hooks/scripts/grep-reminder.sh","plugin/hooks/scripts/post-edit-update.sh","plugin/hooks/scripts/session-start-refresh.sh"]}'
+review_status:
+  self:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    conflict: false
+    coverage:
+      current:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+      change:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+  subtree:
+    current:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 1
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+    change:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 1
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+  explicit_subtree:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.

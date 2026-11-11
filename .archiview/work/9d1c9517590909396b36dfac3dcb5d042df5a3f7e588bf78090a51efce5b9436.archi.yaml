@@ -1,0 +1,757 @@
+schema_version: 2
+kind: archi
+module_id: directory:benches/fixtures
+project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+check_hash: bc72d4bb7d38d5b8f923badd9cc615f766605d4da61a8f4c9530f1a86c3a2a1d
+input_manifest:
+  domain: archiview/module-check/v1
+  project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+  module_id: directory:benches/fixtures
+  baseline:
+    identity:
+      kind: git
+      id: 39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+    state:
+      exists: true
+      directory: benches/fixtures
+      self_digest: sha256:d598c0e7eabe0f65f37f9ef9819a247141a3d5f2438a00aa15da403c15845161
+      subtree_digest: sha256:f50518b9471e90a37c1b4bca4baca8d3705d29539d7b3785aafcb68d1a5214e2
+  current:
+    exists: true
+    directory: benches/fixtures
+    self_digest: sha256:017fa1471155cadb8456358c0e318861c0e0c883b57d35f6d7c69b64a3eec2e6
+    subtree_digest: sha256:c83779dea5aff7cf21f0463814600e253c2c97e78fe0dc6b81412821199c2d9c
+  analyzer:
+    name: archiview-structure
+    version: 1.0.2
+    config_digest: sha256:d4208fd53122193eb2daea0c208071c378c8d7635a8b73431fec88a63f5cd518
+baseline:
+  module_id: directory:benches/fixtures
+  directory: benches/fixtures
+  parent_id: directory:benches
+  children: []
+  technical:
+    normalization: archiview/module-state/v1
+    module_id: directory:benches/fixtures
+    directory: benches/fixtures
+    own_files:
+      - path: benches/fixtures/sample.kt
+        digest: sha256:75b6c4abd89b516d486ede51345c98559af069cce8260a76ba6cff1b0f56bf87
+        normalization: text-lf/v1
+      - path: benches/fixtures/sample.ts
+        digest: sha256:bdd06c95095a00ff650bcb6fba5aa06dc8688d35cfeb5a2b4610bf6e0cb16329
+        normalization: text-lf/v1
+    contract: null
+    document_state: missing
+    inherited: []
+  technical_digest: sha256:d598c0e7eabe0f65f37f9ef9819a247141a3d5f2438a00aa15da403c15845161
+  complete: false
+  self:
+    normalization: archiview/module-state/v1
+    module_id: directory:benches/fixtures
+    directory: benches/fixtures
+    own_files:
+      - path: benches/fixtures/sample.kt
+        digest: sha256:75b6c4abd89b516d486ede51345c98559af069cce8260a76ba6cff1b0f56bf87
+        normalization: text-lf/v1
+      - path: benches/fixtures/sample.ts
+        digest: sha256:bdd06c95095a00ff650bcb6fba5aa06dc8688d35cfeb5a2b4610bf6e0cb16329
+        normalization: text-lf/v1
+    contract: null
+    inherited: []
+    children: []
+  self_digest: sha256:56d3c6fe0416a5632bc50bf3993ac1b432e9d505a0bc8b0184b145090f5977c6
+  subtree:
+    self: sha256:d598c0e7eabe0f65f37f9ef9819a247141a3d5f2438a00aa15da403c15845161
+    children: []
+  subtree_digest: sha256:f50518b9471e90a37c1b4bca4baca8d3705d29539d7b3785aafcb68d1a5214e2
+  semantic_subtree:
+    self: sha256:56d3c6fe0416a5632bc50bf3993ac1b432e9d505a0bc8b0184b145090f5977c6
+    children: []
+  semantic_subtree_digest: sha256:931ebc2eb1393dd2782252ae997e1ef9d45628db565660732173a6685a2f7890
+current:
+  module_id: directory:benches/fixtures
+  directory: benches/fixtures
+  parent_id: directory:benches
+  children: []
+  technical:
+    normalization: archiview/module-state/v1
+    module_id: directory:benches/fixtures
+    directory: benches/fixtures
+    own_files:
+      - path: benches/fixtures/sample.kt
+        digest: sha256:75b6c4abd89b516d486ede51345c98559af069cce8260a76ba6cff1b0f56bf87
+        normalization: text-lf/v1
+      - path: benches/fixtures/sample.ts
+        digest: sha256:bdd06c95095a00ff650bcb6fba5aa06dc8688d35cfeb5a2b4610bf6e0cb16329
+        normalization: text-lf/v1
+    contract: null
+    document_state: missing
+    inherited:
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+  technical_digest: sha256:017fa1471155cadb8456358c0e318861c0e0c883b57d35f6d7c69b64a3eec2e6
+  complete: false
+  self:
+    normalization: archiview/module-state/v1
+    module_id: directory:benches/fixtures
+    directory: benches/fixtures
+    own_files:
+      - path: benches/fixtures/sample.kt
+        digest: sha256:75b6c4abd89b516d486ede51345c98559af069cce8260a76ba6cff1b0f56bf87
+        normalization: text-lf/v1
+      - path: benches/fixtures/sample.ts
+        digest: sha256:bdd06c95095a00ff650bcb6fba5aa06dc8688d35cfeb5a2b4610bf6e0cb16329
+        normalization: text-lf/v1
+    contract: null
+    inherited:
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+    children: []
+  self_digest: sha256:68b5c3638c94503a515782ed93339481dcf2c6ff3f6544435d0d50481bdff0df
+  subtree:
+    self: sha256:017fa1471155cadb8456358c0e318861c0e0c883b57d35f6d7c69b64a3eec2e6
+    children: []
+  subtree_digest: sha256:c83779dea5aff7cf21f0463814600e253c2c97e78fe0dc6b81412821199c2d9c
+  semantic_subtree:
+    self: sha256:68b5c3638c94503a515782ed93339481dcf2c6ff3f6544435d0d50481bdff0df
+    children: []
+  semantic_subtree_digest: sha256:caafbecb41a58ee82d9a41fc412325ea908884b43916ffeff3734af8295db4ea
+change:
+  existence: retained
+  own: false
+  own_code: false
+  own_contract: false
+  inherited_constraints: true
+  descendants: false
+  child_composition: false
+  moved: false
+structure:
+  complete: false
+  diagnostics: []
+  document_state: missing
+publication:
+  generation: 1
+  comparison_key: sha256:dc98b7ce48b2d042cf3c49393d0e9b7ee428318f00b8320bf7aa097e0e220040
+  baseline:
+    metadata:
+      schema_version: 2
+      root: D:\projects\dsh.plugins\dsh-ast-index-search
+      capturedAt: 2026-11-11T20:51:58.911Z
+      kind: git
+      revision: 39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+      label: HEAD
+      fingerprint: ce875f581e3068454f564722f01dcb32cacfc836460278bc610500f4bb86657c
+      complete: true
+      diagnostics: []
+      evidenceLimitations:
+        - "src/db.rs: текст недоступен или превышен лимит доказательств"
+        - "tree-sitter-bsl/src/parser.c: текст недоступен или превышен лимит
+          доказательств"
+      digest: sha256:54c9f4b0a85ec24ae29f73bfc639059b3951d61af510b95989587b970b4ca995
+      id: git-39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+      isHead: true
+    module_index: 2
+    module:
+      directory: benches/fixtures
+      documentPath: benches/fixtures/arch.yaml
+      document:
+        state: missing
+        text: null
+      files:
+        - path: benches/fixtures/sample.kt
+          hash: 434d702749f3b4973f1b11a8a7b3baff4473a9c7
+        - path: benches/fixtures/sample.ts
+          hash: 73aab7b933ac392b775fa23c4605ad31b791cc64
+      sourceFiles: 2
+      fingerprint: 685e82deb616261c38979b73582c09a25ecca86201fda0f46039774d67d0f846
+    facts:
+      - index: 30
+        fact:
+          id: sha256:53e45de25ec1702c9e85168f9e3e2890c3796ffbb3736f28f104a54fcfcb7809
+          kind: file
+          path: benches/fixtures/sample.kt
+          start_line: 1
+          end_line: 86
+          text: >
+            package com.example.payments
+
+
+            import kotlinx.coroutines.flow.Flow
+
+            import kotlinx.coroutines.flow.MutableStateFlow
+
+            import kotlinx.coroutines.flow.asStateFlow
+
+            import javax.inject.Inject
+
+            import javax.inject.Singleton
+
+
+            sealed class PaymentState {
+                object Idle : PaymentState()
+                data class Loading(val orderId: String) : PaymentState()
+                data class Success(val receipt: Receipt) : PaymentState()
+                data class Error(val message: String, val code: Int) : PaymentState()
+            }
+
+
+            data class Receipt(
+                val id: String,
+                val amount: Double,
+                val currency: String,
+                val timestamp: Long,
+            )
+
+
+            interface PaymentRepository {
+                suspend fun processPayment(orderId: String, amount: Double): Result<Receipt>
+                suspend fun getHistory(userId: String): Flow<List<Receipt>>
+                suspend fun cancel(orderId: String): Result<Unit>
+            }
+
+
+            interface PaymentApi {
+                suspend fun charge(orderId: String, amount: Double): Receipt
+                suspend fun refund(orderId: String): Receipt
+            }
+
+
+            interface PaymentCache {
+                suspend fun save(receipt: Receipt)
+                fun getHistory(userId: String): Flow<List<Receipt>>
+                suspend fun clear()
+            }
+
+
+            @Singleton
+
+            class PaymentRepositoryImpl @Inject constructor(
+                private val api: PaymentApi,
+                private val cache: PaymentCache,
+            ) : PaymentRepository {
+
+                private val _state = MutableStateFlow<PaymentState>(PaymentState.Idle)
+                val state = _state.asStateFlow()
+
+                override suspend fun processPayment(orderId: String, amount: Double): Result<Receipt> {
+                    _state.value = PaymentState.Loading(orderId)
+                    return try {
+                        val receipt = api.charge(orderId, amount)
+                        cache.save(receipt)
+                        _state.value = PaymentState.Success(receipt)
+                        Result.success(receipt)
+                    } catch (e: Exception) {
+                        _state.value = PaymentState.Error(e.message ?: "unknown", -1)
+                        Result.failure(e)
+                    }
+                }
+
+                override suspend fun getHistory(userId: String): Flow<List<Receipt>> {
+                    return cache.getHistory(userId)
+                }
+
+                override suspend fun cancel(orderId: String): Result<Unit> {
+                    return try {
+                        api.refund(orderId)
+                        Result.success(Unit)
+                    } catch (e: Exception) {
+                        Result.failure(e)
+                    }
+                }
+
+                companion object {
+                    const val MAX_RETRY = 3
+                    const val DEFAULT_CURRENCY = "USD"
+                }
+            }
+
+
+            class PaymentViewModel(private val repo: PaymentRepository) {
+                suspend fun charge(orderId: String, amount: Double) {
+                    repo.processPayment(orderId, amount)
+                }
+            }
+      - index: 31
+        fact:
+          id: sha256:08766a842a0a9e43cc9848777769bd3f6aecdbab1d0c41a9da10e8d20c4871d0
+          kind: file
+          path: benches/fixtures/sample.ts
+          start_line: 1
+          end_line: 103
+          text: >
+            import { useState, useEffect, useMemo, useCallback } from "react";
+
+            import type { Dispatch, SetStateAction } from "react";
+
+
+            export interface User {
+                id: string;
+                name: string;
+                email: string;
+                createdAt: number;
+            }
+
+
+            export interface Post {
+                id: string;
+                title: string;
+                body: string;
+                authorId: string;
+                tags: string[];
+            }
+
+
+            export type Loadable<T> =
+                | { status: "idle" }
+                | { status: "loading" }
+                | { status: "success"; data: T }
+                | { status: "error"; message: string };
+
+            export class ApiClient {
+                constructor(private baseUrl: string, private token?: string) {}
+
+                private headers(): Record<string, string> {
+                    const h: Record<string, string> = { "Content-Type": "application/json" };
+                    if (this.token) {
+                        h["Authorization"] = `Bearer ${this.token}`;
+                    }
+                    return h;
+                }
+
+                async getUser(id: string): Promise<User> {
+                    const res = await fetch(`${this.baseUrl}/users/${id}`, {
+                        headers: this.headers(),
+                    });
+                    if (!res.ok) {
+                        throw new Error(`HTTP ${res.status}`);
+                    }
+                    return (await res.json()) as User;
+                }
+
+                async listPosts(authorId: string): Promise<Post[]> {
+                    const res = await fetch(`${this.baseUrl}/posts?author=${authorId}`, {
+                        headers: this.headers(),
+                    });
+                    return (await res.json()) as Post[];
+                }
+
+                async createPost(p: Omit<Post, "id">): Promise<Post> {
+                    const res = await fetch(`${this.baseUrl}/posts`, {
+                        method: "POST",
+                        headers: this.headers(),
+                        body: JSON.stringify(p),
+                    });
+                    return (await res.json()) as Post;
+                }
+            }
+
+
+            export function useUser(client: ApiClient, id: string):
+            Loadable<User> {
+                const [state, setState] = useState<Loadable<User>>({ status: "idle" });
+
+                useEffect(() => {
+                    let cancelled = false;
+                    setState({ status: "loading" });
+                    client
+                        .getUser(id)
+                        .then((data) => {
+                            if (!cancelled) setState({ status: "success", data });
+                        })
+                        .catch((err: Error) => {
+                            if (!cancelled) setState({ status: "error", message: err.message });
+                        });
+                    return () => {
+                        cancelled = true;
+                    };
+                }, [client, id]);
+
+                return state;
+            }
+
+
+            export function usePostsByTag(posts: Post[], tag: string): Post[] {
+                return useMemo(() => posts.filter((p) => p.tags.includes(tag)), [posts, tag]);
+            }
+
+
+            export function useCreatePost(
+                client: ApiClient,
+                setPosts: Dispatch<SetStateAction<Post[]>>,
+            ): (p: Omit<Post, "id">) => Promise<void> {
+                return useCallback(
+                    async (p) => {
+                        const created = await client.createPost(p);
+                        setPosts((prev) => [...prev, created]);
+                    },
+                    [client, setPosts],
+                );
+            }
+
+
+            export const DEFAULT_CLIENT = new ApiClient("/api/v1");
+      - index: 304
+        fact:
+          id: sha256:d68a6025a2f8587414f6b9ad225ab5bf205ad65a7de5198e201b4bc28ab30452
+          kind: module
+          path: benches/fixtures
+          text: '{"contract":"missing","sources":["benches/fixtures/sample.kt","benches/fixtures/sample.ts"]}'
+  current:
+    metadata:
+      schema_version: 2
+      root: D:\projects\dsh.plugins\dsh-ast-index-search
+      capturedAt: 2026-11-11T20:51:59.431Z
+      kind: launch
+      label: Начальное состояние
+      fingerprint: 1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+      complete: true
+      diagnostics: []
+      evidenceLimitations:
+        - "src/db.rs: текст недоступен или превышен лимит доказательств"
+        - "tree-sitter-bsl/src/parser.c: текст недоступен или превышен лимит
+          доказательств"
+      digest: sha256:00610d9df42de3a0b358e79b8957e32e2dfd11bf4ad05190981cd441988c99bd
+      id: launch-1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+    module_index: 2
+    module:
+      directory: benches/fixtures
+      documentPath: benches/fixtures/arch.yaml
+      document:
+        state: missing
+        text: null
+      files:
+        - path: benches/fixtures/sample.kt
+          hash: 434d702749f3b4973f1b11a8a7b3baff4473a9c7
+        - path: benches/fixtures/sample.ts
+          hash: 73aab7b933ac392b775fa23c4605ad31b791cc64
+      sourceFiles: 2
+      fingerprint: 685e82deb616261c38979b73582c09a25ecca86201fda0f46039774d67d0f846
+    facts:
+      - index: 32
+        fact:
+          id: sha256:53e45de25ec1702c9e85168f9e3e2890c3796ffbb3736f28f104a54fcfcb7809
+          kind: file
+          path: benches/fixtures/sample.kt
+          start_line: 1
+          end_line: 86
+          text: >
+            package com.example.payments
+
+
+            import kotlinx.coroutines.flow.Flow
+
+            import kotlinx.coroutines.flow.MutableStateFlow
+
+            import kotlinx.coroutines.flow.asStateFlow
+
+            import javax.inject.Inject
+
+            import javax.inject.Singleton
+
+
+            sealed class PaymentState {
+                object Idle : PaymentState()
+                data class Loading(val orderId: String) : PaymentState()
+                data class Success(val receipt: Receipt) : PaymentState()
+                data class Error(val message: String, val code: Int) : PaymentState()
+            }
+
+
+            data class Receipt(
+                val id: String,
+                val amount: Double,
+                val currency: String,
+                val timestamp: Long,
+            )
+
+
+            interface PaymentRepository {
+                suspend fun processPayment(orderId: String, amount: Double): Result<Receipt>
+                suspend fun getHistory(userId: String): Flow<List<Receipt>>
+                suspend fun cancel(orderId: String): Result<Unit>
+            }
+
+
+            interface PaymentApi {
+                suspend fun charge(orderId: String, amount: Double): Receipt
+                suspend fun refund(orderId: String): Receipt
+            }
+
+
+            interface PaymentCache {
+                suspend fun save(receipt: Receipt)
+                fun getHistory(userId: String): Flow<List<Receipt>>
+                suspend fun clear()
+            }
+
+
+            @Singleton
+
+            class PaymentRepositoryImpl @Inject constructor(
+                private val api: PaymentApi,
+                private val cache: PaymentCache,
+            ) : PaymentRepository {
+
+                private val _state = MutableStateFlow<PaymentState>(PaymentState.Idle)
+                val state = _state.asStateFlow()
+
+                override suspend fun processPayment(orderId: String, amount: Double): Result<Receipt> {
+                    _state.value = PaymentState.Loading(orderId)
+                    return try {
+                        val receipt = api.charge(orderId, amount)
+                        cache.save(receipt)
+                        _state.value = PaymentState.Success(receipt)
+                        Result.success(receipt)
+                    } catch (e: Exception) {
+                        _state.value = PaymentState.Error(e.message ?: "unknown", -1)
+                        Result.failure(e)
+                    }
+                }
+
+                override suspend fun getHistory(userId: String): Flow<List<Receipt>> {
+                    return cache.getHistory(userId)
+                }
+
+                override suspend fun cancel(orderId: String): Result<Unit> {
+                    return try {
+                        api.refund(orderId)
+                        Result.success(Unit)
+                    } catch (e: Exception) {
+                        Result.failure(e)
+                    }
+                }
+
+                companion object {
+                    const val MAX_RETRY = 3
+                    const val DEFAULT_CURRENCY = "USD"
+                }
+            }
+
+
+            class PaymentViewModel(private val repo: PaymentRepository) {
+                suspend fun charge(orderId: String, amount: Double) {
+                    repo.processPayment(orderId, amount)
+                }
+            }
+      - index: 33
+        fact:
+          id: sha256:08766a842a0a9e43cc9848777769bd3f6aecdbab1d0c41a9da10e8d20c4871d0
+          kind: file
+          path: benches/fixtures/sample.ts
+          start_line: 1
+          end_line: 103
+          text: >
+            import { useState, useEffect, useMemo, useCallback } from "react";
+
+            import type { Dispatch, SetStateAction } from "react";
+
+
+            export interface User {
+                id: string;
+                name: string;
+                email: string;
+                createdAt: number;
+            }
+
+
+            export interface Post {
+                id: string;
+                title: string;
+                body: string;
+                authorId: string;
+                tags: string[];
+            }
+
+
+            export type Loadable<T> =
+                | { status: "idle" }
+                | { status: "loading" }
+                | { status: "success"; data: T }
+                | { status: "error"; message: string };
+
+            export class ApiClient {
+                constructor(private baseUrl: string, private token?: string) {}
+
+                private headers(): Record<string, string> {
+                    const h: Record<string, string> = { "Content-Type": "application/json" };
+                    if (this.token) {
+                        h["Authorization"] = `Bearer ${this.token}`;
+                    }
+                    return h;
+                }
+
+                async getUser(id: string): Promise<User> {
+                    const res = await fetch(`${this.baseUrl}/users/${id}`, {
+                        headers: this.headers(),
+                    });
+                    if (!res.ok) {
+                        throw new Error(`HTTP ${res.status}`);
+                    }
+                    return (await res.json()) as User;
+                }
+
+                async listPosts(authorId: string): Promise<Post[]> {
+                    const res = await fetch(`${this.baseUrl}/posts?author=${authorId}`, {
+                        headers: this.headers(),
+                    });
+                    return (await res.json()) as Post[];
+                }
+
+                async createPost(p: Omit<Post, "id">): Promise<Post> {
+                    const res = await fetch(`${this.baseUrl}/posts`, {
+                        method: "POST",
+                        headers: this.headers(),
+                        body: JSON.stringify(p),
+                    });
+                    return (await res.json()) as Post;
+                }
+            }
+
+
+            export function useUser(client: ApiClient, id: string):
+            Loadable<User> {
+                const [state, setState] = useState<Loadable<User>>({ status: "idle" });
+
+                useEffect(() => {
+                    let cancelled = false;
+                    setState({ status: "loading" });
+                    client
+                        .getUser(id)
+                        .then((data) => {
+                            if (!cancelled) setState({ status: "success", data });
+                        })
+                        .catch((err: Error) => {
+                            if (!cancelled) setState({ status: "error", message: err.message });
+                        });
+                    return () => {
+                        cancelled = true;
+                    };
+                }, [client, id]);
+
+                return state;
+            }
+
+
+            export function usePostsByTag(posts: Post[], tag: string): Post[] {
+                return useMemo(() => posts.filter((p) => p.tags.includes(tag)), [posts, tag]);
+            }
+
+
+            export function useCreatePost(
+                client: ApiClient,
+                setPosts: Dispatch<SetStateAction<Post[]>>,
+            ): (p: Omit<Post, "id">) => Promise<void> {
+                return useCallback(
+                    async (p) => {
+                        const created = await client.createPost(p);
+                        setPosts((prev) => [...prev, created]);
+                    },
+                    [client, setPosts],
+                );
+            }
+
+
+            export const DEFAULT_CLIENT = new ApiClient("/api/v1");
+      - index: 316
+        fact:
+          id: sha256:d68a6025a2f8587414f6b9ad225ab5bf205ad65a7de5198e201b4bc28ab30452
+          kind: module
+          path: benches/fixtures
+          text: '{"contract":"missing","sources":["benches/fixtures/sample.kt","benches/fixtures/sample.ts"]}'
+review_status:
+  self:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    conflict: false
+    coverage:
+      current:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+      change:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+  subtree:
+    current:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 1
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+    change:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 1
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+  explicit_subtree:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.

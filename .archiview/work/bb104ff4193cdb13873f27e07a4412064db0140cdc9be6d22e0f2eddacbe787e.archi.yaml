@@ -1,0 +1,308 @@
+schema_version: 2
+kind: archi
+module_id: ast-index-shared-skills
+project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+check_hash: bc9a4e0f4039d3968d48e93179f1858442e11edf294437290df333c6985b23b5
+input_manifest:
+  domain: archiview/module-check/v1
+  project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+  module_id: ast-index-shared-skills
+  baseline:
+    identity:
+      kind: git
+      id: 39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+    state:
+      exists: false
+  current:
+    exists: true
+    directory: plugin/skills
+    self_digest: sha256:b56afec7f3d8fd8cb446f99c67c9035ff14b5c362869be2db6ee53a99ebdc9e3
+    subtree_digest: sha256:c58825784c8c244c3a008ec4d3ffe28b09ece8674e513cd3ee1b9395f0d43de7
+  analyzer:
+    name: archiview-structure
+    version: 1.0.2
+    config_digest: sha256:d4208fd53122193eb2daea0c208071c378c8d7635a8b73431fec88a63f5cd518
+baseline: null
+current:
+  module_id: ast-index-shared-skills
+  directory: plugin/skills
+  parent_id: ast-index-agent-integrations
+  children:
+    - ast-index-search-skill
+  technical:
+    normalization: archiview/module-state/v1
+    module_id: ast-index-shared-skills
+    directory: plugin/skills
+    own_files: []
+    contract:
+      schema_version: 1
+      id: ast-index-shared-skills
+      title: Shared agent skills
+      kind: group
+      purpose: Supply the skill payload used by the agent integrations.
+      responsibilities:
+        R1: Keep each skill's entry document and reference files together.
+      boundaries:
+        B1: The host integrations own installation and registration.
+      invariants:
+        I1: Skills resolve their references within their own directory.
+    document_state: documented
+    inherited:
+      - module_id: ast-index-agent-integrations
+        section: boundaries
+        id: B1
+        text: The CLI owns code navigation and index storage.
+      - module_id: ast-index-agent-integrations
+        section: invariants
+        id: I1
+        text: Integrations that distribute the shared skill take its instructions and
+          references from the same source tree.
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+  technical_digest: sha256:b56afec7f3d8fd8cb446f99c67c9035ff14b5c362869be2db6ee53a99ebdc9e3
+  complete: true
+  self:
+    normalization: archiview/module-state/v1
+    module_id: ast-index-shared-skills
+    directory: plugin/skills
+    own_files: []
+    contract:
+      id: ast-index-shared-skills
+      kind: group
+      purpose: Supply the skill payload used by the agent integrations.
+      responsibilities:
+        R1: Keep each skill's entry document and reference files together.
+      boundaries:
+        B1: The host integrations own installation and registration.
+      invariants:
+        I1: Skills resolve their references within their own directory.
+    inherited:
+      - module_id: ast-index-agent-integrations
+        section: boundaries
+        id: B1
+        text: The CLI owns code navigation and index storage.
+      - module_id: ast-index-agent-integrations
+        section: invariants
+        id: I1
+        text: Integrations that distribute the shared skill take its instructions and
+          references from the same source tree.
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+    children:
+      - module_id: ast-index-search-skill
+        directory: plugin/skills/ast-index
+        contract:
+          id: ast-index-search-skill
+          kind: module
+          purpose: Guide agents in choosing and running ast-index commands on a project.
+          responsibilities:
+            R1: Describe CLI prerequisites, search workflows and language-specific commands.
+          boundaries:
+            B1: Command execution and index storage belong to the CLI.
+          invariants:
+            I1: Examples describe the same CLI across supported agent hosts.
+        document_state: documented
+  self_digest: sha256:c85d7a01ac5c08fae0ab64553b7add4352d99688db7d57a2603cf0db6573729b
+  subtree:
+    self: sha256:b56afec7f3d8fd8cb446f99c67c9035ff14b5c362869be2db6ee53a99ebdc9e3
+    children:
+      - module_id: ast-index-search-skill
+        digest: sha256:219d2f8241a549f0f13e25a2173351a59ab3960f16139d48dca786e8ed794151
+  subtree_digest: sha256:c58825784c8c244c3a008ec4d3ffe28b09ece8674e513cd3ee1b9395f0d43de7
+  semantic_subtree:
+    self: sha256:c85d7a01ac5c08fae0ab64553b7add4352d99688db7d57a2603cf0db6573729b
+    children:
+      - module_id: ast-index-search-skill
+        digest: sha256:8ca5292b9bd7949faa5d54392ba9ef57ed4557d8ab14434b4ce97519f2e48ff0
+  semantic_subtree_digest: sha256:1e1567e33e3d41bd0936c153d5f177d9ea5bf5c51c7f86e77c771260248da286
+change:
+  existence: added
+  own: true
+  own_code: true
+  own_contract: true
+  inherited_constraints: true
+  descendants: true
+  child_composition: true
+  moved: false
+structure:
+  complete: true
+  diagnostics: []
+  document_state: documented
+publication:
+  generation: 1
+  comparison_key: sha256:dc98b7ce48b2d042cf3c49393d0e9b7ee428318f00b8320bf7aa097e0e220040
+  baseline: null
+  current:
+    metadata:
+      schema_version: 2
+      root: D:\projects\dsh.plugins\dsh-ast-index-search
+      capturedAt: 2026-11-11T20:51:59.431Z
+      kind: launch
+      label: Начальное состояние
+      fingerprint: 1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+      complete: true
+      diagnostics: []
+      evidenceLimitations:
+        - "src/db.rs: текст недоступен или превышен лимит доказательств"
+        - "tree-sitter-bsl/src/parser.c: текст недоступен или превышен лимит
+          доказательств"
+      digest: sha256:00610d9df42de3a0b358e79b8957e32e2dfd11bf4ad05190981cd441988c99bd
+      id: launch-1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+    module_index: 10
+    module:
+      directory: plugin/skills
+      documentPath: plugin/skills/arch.yaml
+      document:
+        state: documented
+        text: |
+          schema_version: 1
+          id: ast-index-shared-skills
+          title: Shared agent skills
+          kind: group
+          purpose: Supply the skill payload used by the agent integrations.
+          responsibilities:
+            R1: Keep each skill's entry document and reference files together.
+          boundaries:
+            B1: The host integrations own installation and registration.
+          invariants:
+            I1: Skills resolve their references within their own directory.
+        format: arch.yaml
+        contract:
+          schema_version: 1
+          id: ast-index-shared-skills
+          title: Shared agent skills
+          kind: group
+          purpose: Supply the skill payload used by the agent integrations.
+          responsibilities:
+            R1: Keep each skill's entry document and reference files together.
+          boundaries:
+            B1: The host integrations own installation and registration.
+          invariants:
+            I1: Skills resolve their references within their own directory.
+      files:
+        - path: plugin/skills/arch.yaml
+          hash: 3534e40d9cd5f9c005123eb243e7e1b4b920ce55
+      sourceFiles: 0
+      fingerprint: 6b351499cd9f0a932675ca53fd56f13a333917fe65b15c45a0aed231744c0ca9
+    facts:
+      - index: 114
+        fact:
+          id: sha256:c48e4dd35313f3f31f572c0f307e08c585051db4458e0ed9d48ccf51f05ee56a
+          kind: file
+          path: plugin/skills/arch.yaml
+          start_line: 1
+          end_line: 12
+          text: |
+            schema_version: 1
+            id: ast-index-shared-skills
+            title: Shared agent skills
+            kind: group
+            purpose: Supply the skill payload used by the agent integrations.
+            responsibilities:
+              R1: Keep each skill's entry document and reference files together.
+            boundaries:
+              B1: The host integrations own installation and registration.
+            invariants:
+              I1: Skills resolve their references within their own directory.
+      - index: 324
+        fact:
+          id: sha256:2b8f3d1ce1e573eb5733ada8e6c3ddc6eaee9a9afa1049ede73ba863212d341f
+          kind: module
+          path: plugin/skills
+          text: '{"contract":"documented","format":"arch.yaml","sources":[]}'
+review_status:
+  self:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    conflict: false
+    coverage:
+      current:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+      change:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+  subtree:
+    current:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 2
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+    change:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 2
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+  explicit_subtree:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.

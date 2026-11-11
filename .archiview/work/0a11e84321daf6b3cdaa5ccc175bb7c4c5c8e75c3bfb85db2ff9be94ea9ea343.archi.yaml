@@ -1,0 +1,2085 @@
+schema_version: 2
+kind: archi
+module_id: directory:tree-sitter-bsl/src/tree_sitter
+project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+check_hash: 87455baa49cc35cc6fc0542422740637354822f88cc78291e610894b798f041e
+input_manifest:
+  domain: archiview/module-check/v1
+  project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+  module_id: directory:tree-sitter-bsl/src/tree_sitter
+  baseline:
+    identity:
+      kind: git
+      id: 39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+    state:
+      exists: true
+      directory: tree-sitter-bsl/src/tree_sitter
+      self_digest: sha256:cb1ab5e76857449a3d3c11cfed15e58049ecd451be919f47906ebf42445a1220
+      subtree_digest: sha256:aa803e04b10fe42a5c324180944d0cae326084303a3d572f37e3870b3e055474
+  current:
+    exists: true
+    directory: tree-sitter-bsl/src/tree_sitter
+    self_digest: sha256:6b5a1107f97d555703ff27008c6f9a47bfa4bdae3ad2dda1800460e0b66c3758
+    subtree_digest: sha256:1194a069b3aea3bdeb1ee49946e55dda2f4b45a9c70fba77c2145107f6323c31
+  analyzer:
+    name: archiview-structure
+    version: 1.0.2
+    config_digest: sha256:d4208fd53122193eb2daea0c208071c378c8d7635a8b73431fec88a63f5cd518
+baseline:
+  module_id: directory:tree-sitter-bsl/src/tree_sitter
+  directory: tree-sitter-bsl/src/tree_sitter
+  parent_id: directory:tree-sitter-bsl/src
+  children: []
+  technical:
+    normalization: archiview/module-state/v1
+    module_id: directory:tree-sitter-bsl/src/tree_sitter
+    directory: tree-sitter-bsl/src/tree_sitter
+    own_files:
+      - path: tree-sitter-bsl/src/tree_sitter/alloc.h
+        digest: sha256:5ce25b86f5f884aa05ca64215a3f24b13dc2452aec0a010226cbe372cac0dcce
+        normalization: text-lf/v1
+      - path: tree-sitter-bsl/src/tree_sitter/array.h
+        digest: sha256:4777e2dd8616ae916df2f3ece4a62dcd62d7821f20c0cb8990b31cdcac6226bd
+        normalization: text-lf/v1
+      - path: tree-sitter-bsl/src/tree_sitter/parser.h
+        digest: sha256:e9c64e16c2fe8d60fcbc953c45a606e98ca1303a5f94adf50445afb21d3c38f1
+        normalization: text-lf/v1
+    contract: null
+    document_state: missing
+    inherited: []
+  technical_digest: sha256:cb1ab5e76857449a3d3c11cfed15e58049ecd451be919f47906ebf42445a1220
+  complete: false
+  self:
+    normalization: archiview/module-state/v1
+    module_id: directory:tree-sitter-bsl/src/tree_sitter
+    directory: tree-sitter-bsl/src/tree_sitter
+    own_files:
+      - path: tree-sitter-bsl/src/tree_sitter/alloc.h
+        digest: sha256:5ce25b86f5f884aa05ca64215a3f24b13dc2452aec0a010226cbe372cac0dcce
+        normalization: text-lf/v1
+      - path: tree-sitter-bsl/src/tree_sitter/array.h
+        digest: sha256:4777e2dd8616ae916df2f3ece4a62dcd62d7821f20c0cb8990b31cdcac6226bd
+        normalization: text-lf/v1
+      - path: tree-sitter-bsl/src/tree_sitter/parser.h
+        digest: sha256:e9c64e16c2fe8d60fcbc953c45a606e98ca1303a5f94adf50445afb21d3c38f1
+        normalization: text-lf/v1
+    contract: null
+    inherited: []
+    children: []
+  self_digest: sha256:3f29743a1117e05ac565535b0508f16e94a176f8704486757f279494a6432ccf
+  subtree:
+    self: sha256:cb1ab5e76857449a3d3c11cfed15e58049ecd451be919f47906ebf42445a1220
+    children: []
+  subtree_digest: sha256:aa803e04b10fe42a5c324180944d0cae326084303a3d572f37e3870b3e055474
+  semantic_subtree:
+    self: sha256:3f29743a1117e05ac565535b0508f16e94a176f8704486757f279494a6432ccf
+    children: []
+  semantic_subtree_digest: sha256:d493dc2c0791d46da3c51beb823e5ac4dde9c59ed360bf12811abec6505fff81
+current:
+  module_id: directory:tree-sitter-bsl/src/tree_sitter
+  directory: tree-sitter-bsl/src/tree_sitter
+  parent_id: directory:tree-sitter-bsl/src
+  children: []
+  technical:
+    normalization: archiview/module-state/v1
+    module_id: directory:tree-sitter-bsl/src/tree_sitter
+    directory: tree-sitter-bsl/src/tree_sitter
+    own_files:
+      - path: tree-sitter-bsl/src/tree_sitter/alloc.h
+        digest: sha256:5ce25b86f5f884aa05ca64215a3f24b13dc2452aec0a010226cbe372cac0dcce
+        normalization: text-lf/v1
+      - path: tree-sitter-bsl/src/tree_sitter/array.h
+        digest: sha256:4777e2dd8616ae916df2f3ece4a62dcd62d7821f20c0cb8990b31cdcac6226bd
+        normalization: text-lf/v1
+      - path: tree-sitter-bsl/src/tree_sitter/parser.h
+        digest: sha256:e9c64e16c2fe8d60fcbc953c45a606e98ca1303a5f94adf50445afb21d3c38f1
+        normalization: text-lf/v1
+    contract: null
+    document_state: missing
+    inherited:
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+  technical_digest: sha256:6b5a1107f97d555703ff27008c6f9a47bfa4bdae3ad2dda1800460e0b66c3758
+  complete: false
+  self:
+    normalization: archiview/module-state/v1
+    module_id: directory:tree-sitter-bsl/src/tree_sitter
+    directory: tree-sitter-bsl/src/tree_sitter
+    own_files:
+      - path: tree-sitter-bsl/src/tree_sitter/alloc.h
+        digest: sha256:5ce25b86f5f884aa05ca64215a3f24b13dc2452aec0a010226cbe372cac0dcce
+        normalization: text-lf/v1
+      - path: tree-sitter-bsl/src/tree_sitter/array.h
+        digest: sha256:4777e2dd8616ae916df2f3ece4a62dcd62d7821f20c0cb8990b31cdcac6226bd
+        normalization: text-lf/v1
+      - path: tree-sitter-bsl/src/tree_sitter/parser.h
+        digest: sha256:e9c64e16c2fe8d60fcbc953c45a606e98ca1303a5f94adf50445afb21d3c38f1
+        normalization: text-lf/v1
+    contract: null
+    inherited:
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+    children: []
+  self_digest: sha256:2a4aeac23c122fc1efb037acccb20837e186b67e7fe9543255c06ff935d1997c
+  subtree:
+    self: sha256:6b5a1107f97d555703ff27008c6f9a47bfa4bdae3ad2dda1800460e0b66c3758
+    children: []
+  subtree_digest: sha256:1194a069b3aea3bdeb1ee49946e55dda2f4b45a9c70fba77c2145107f6323c31
+  semantic_subtree:
+    self: sha256:2a4aeac23c122fc1efb037acccb20837e186b67e7fe9543255c06ff935d1997c
+    children: []
+  semantic_subtree_digest: sha256:436215c2488f5c5602d24e1fd5dda6e0ebee1db61497c2ac7af4285b14f54e6e
+change:
+  existence: retained
+  own: false
+  own_code: false
+  own_contract: false
+  inherited_constraints: true
+  descendants: false
+  child_composition: false
+  moved: false
+structure:
+  complete: false
+  diagnostics: []
+  document_state: missing
+publication:
+  generation: 1
+  comparison_key: sha256:dc98b7ce48b2d042cf3c49393d0e9b7ee428318f00b8320bf7aa097e0e220040
+  baseline:
+    metadata:
+      schema_version: 2
+      root: D:\projects\dsh.plugins\dsh-ast-index-search
+      capturedAt: 2026-11-11T20:51:58.911Z
+      kind: git
+      revision: 39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+      label: HEAD
+      fingerprint: ce875f581e3068454f564722f01dcb32cacfc836460278bc610500f4bb86657c
+      complete: true
+      diagnostics: []
+      evidenceLimitations:
+        - "src/db.rs: текст недоступен или превышен лимит доказательств"
+        - "tree-sitter-bsl/src/parser.c: текст недоступен или превышен лимит
+          доказательств"
+      digest: sha256:54c9f4b0a85ec24ae29f73bfc639059b3951d61af510b95989587b970b4ca995
+      id: git-39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+      isHead: true
+    module_index: 22
+    module:
+      directory: tree-sitter-bsl/src/tree_sitter
+      documentPath: tree-sitter-bsl/src/tree_sitter/arch.yaml
+      document:
+        state: missing
+        text: null
+      files:
+        - path: tree-sitter-bsl/src/tree_sitter/alloc.h
+          hash: 1abdd1201578605b8d05a3001f01ebc0d58826d9
+        - path: tree-sitter-bsl/src/tree_sitter/array.h
+          hash: 56fc8cd470996ded64a5452be25e26dbd2aa682a
+        - path: tree-sitter-bsl/src/tree_sitter/parser.h
+          hash: 858107deb9e4a1ffcd2ed5e6ffe98a5fcab3e1f6
+      sourceFiles: 3
+      fingerprint: 1b54d6ca6313840ba7567b6027ad5f694f7f5ce1c4cd562800b2a9c1593257ce
+    facts:
+      - index: 298
+        fact:
+          id: sha256:a1353895ab5469098049654b08e23ff53bee00241591bf5761e5ed135fa3e124
+          kind: file
+          path: tree-sitter-bsl/src/tree_sitter/alloc.h
+          start_line: 1
+          end_line: 55
+          text: |
+            #ifndef TREE_SITTER_ALLOC_H_
+            #define TREE_SITTER_ALLOC_H_
+
+            #ifdef __cplusplus
+            extern "C" {
+            #endif
+
+            #include <stdbool.h>
+            #include <stdio.h>
+            #include <stdlib.h>
+
+            // Allow clients to override allocation functions
+            #ifdef TREE_SITTER_REUSE_ALLOCATOR
+
+            extern void *(*ts_current_malloc)(size_t size);
+            extern void *(*ts_current_calloc)(size_t count, size_t size);
+            extern void *(*ts_current_realloc)(void *ptr, size_t size);
+            extern void (*ts_current_free)(void *ptr);
+
+            #ifndef ts_malloc
+            #define ts_malloc  ts_current_malloc
+            #endif
+            #ifndef ts_calloc
+            #define ts_calloc  ts_current_calloc
+            #endif
+            #ifndef ts_realloc
+            #define ts_realloc ts_current_realloc
+            #endif
+            #ifndef ts_free
+            #define ts_free    ts_current_free
+            #endif
+
+            #else
+
+            #ifndef ts_malloc
+            #define ts_malloc  malloc
+            #endif
+            #ifndef ts_calloc
+            #define ts_calloc  calloc
+            #endif
+            #ifndef ts_realloc
+            #define ts_realloc realloc
+            #endif
+            #ifndef ts_free
+            #define ts_free    free
+            #endif
+
+            #endif
+
+            #ifdef __cplusplus
+            }
+            #endif
+
+            #endif // TREE_SITTER_ALLOC_H_
+      - index: 299
+        fact:
+          id: sha256:802d3a64c56f9b86f0f53b224543bd68ba70d9699b23f83e5319c3ca0d6318f0
+          kind: file
+          path: tree-sitter-bsl/src/tree_sitter/array.h
+          start_line: 1
+          end_line: 331
+          text: >
+            #ifndef TREE_SITTER_ARRAY_H_
+
+            #define TREE_SITTER_ARRAY_H_
+
+
+            #ifdef __cplusplus
+
+            extern "C" {
+
+            #endif
+
+
+            #include "./alloc.h"
+
+
+            #include <assert.h>
+
+            #include <stdbool.h>
+
+            #include <stdint.h>
+
+            #include <stdlib.h>
+
+            #include <string.h>
+
+
+            #ifdef _MSC_VER
+
+            #pragma warning(push)
+
+            #pragma warning(disable : 4101)
+
+            #elif defined(__GNUC__) || defined(__clang__)
+
+            #pragma GCC diagnostic push
+
+            #pragma GCC diagnostic ignored "-Wunused-variable"
+
+            #endif
+
+
+            #define Array(T)       \
+              struct {             \
+                T *contents;       \
+                uint32_t size;     \
+                uint32_t capacity; \
+              }
+
+            /// Initialize an array.
+
+            #define array_init(self) \
+              ((self)->size = 0, (self)->capacity = 0, (self)->contents = NULL)
+
+            /// Create an empty array.
+
+            #define array_new() \
+              { NULL, 0, 0 }
+
+            /// Get a pointer to the element at a given `index` in the array.
+
+            #define array_get(self, _index) \
+              (assert((uint32_t)(_index) < (self)->size), &(self)->contents[_index])
+
+            /// Get a pointer to the first element in the array.
+
+            #define array_front(self) array_get(self, 0)
+
+
+            /// Get a pointer to the last element in the array.
+
+            #define array_back(self) array_get(self, (self)->size - 1)
+
+
+            /// Clear the array, setting its size to zero. Note that this does
+            not free any
+
+            /// memory allocated for the array's contents.
+
+            #define array_clear(self) ((self)->size = 0)
+
+
+            /// Reserve `new_capacity` elements of space in the array. If
+            `new_capacity` is
+
+            /// less than the array's current capacity, this function has no
+            effect.
+
+            #define array_reserve(self, new_capacity)        \
+              ((self)->contents = _array__reserve(           \
+                (void *)(self)->contents, &(self)->capacity, \
+                array_elem_size(self), new_capacity)         \
+              )
+
+            /// Free any memory allocated for this array. Note that this does
+            not free any
+
+            /// memory allocated for the array's contents.
+
+            #define array_delete(self)                           \
+              do {                                               \
+                if ((self)->contents) ts_free((self)->contents); \
+                (self)->contents = NULL;                         \
+                (self)->size = 0;                                \
+                (self)->capacity = 0;                            \
+              } while (0)
+
+            /// Push a new `element` onto the end of the array.
+
+            #define array_push(self, element)                                 \
+              do {                                                            \
+                (self)->contents = _array__grow(                              \
+                  (void *)(self)->contents, (self)->size, &(self)->capacity,  \
+                  1, array_elem_size(self)                                    \
+                );                                                            \
+               (self)->contents[(self)->size++] = (element);                  \
+              } while(0)
+
+            /// Increase the array's size by `count` elements.
+
+            /// New elements are zero-initialized.
+
+            #define array_grow_by(self,
+            count)                                               \
+              do {                                                                           \
+                if ((count) == 0) break;                                                     \
+                (self)->contents = _array__grow(                                             \
+                  (self)->contents, (self)->size, &(self)->capacity,                         \
+                  count, array_elem_size(self)                                               \
+                );                                                                           \
+                memset((self)->contents + (self)->size, 0, (count) * array_elem_size(self)); \
+                (self)->size += (count);                                                     \
+              } while (0)
+
+            /// Append all elements from one array to the end of another.
+
+            #define array_push_all(self, other) \
+              array_extend((self), (other)->size, (other)->contents)
+
+            /// Append `count` elements to the end of the array, reading their
+            values from the
+
+            /// `contents` pointer.
+
+            #define array_extend(self, count, other_contents)                 \
+              (self)->contents = _array__splice(                              \
+                (void*)(self)->contents, &(self)->size, &(self)->capacity,    \
+                array_elem_size(self), (self)->size, 0, count, other_contents \
+              )
+
+            /// Remove `old_count` elements from the array starting at the given
+            `index`. At
+
+            /// the same index, insert `new_count` new elements, reading their
+            values from the
+
+            /// `new_contents` pointer.
+
+            #define array_splice(self, _index, old_count, new_count,
+            new_contents) \
+              (self)->contents = _array__splice(                                   \
+                (void *)(self)->contents, &(self)->size, &(self)->capacity,        \
+                array_elem_size(self), _index, old_count, new_count, new_contents  \
+              )
+
+            /// Insert one `element` into the array at the given `index`.
+
+            #define array_insert(self, _index, element)                     \
+              (self)->contents = _array__splice(                            \
+                (void *)(self)->contents, &(self)->size, &(self)->capacity, \
+                array_elem_size(self), _index, 0, 1, &(element)             \
+              )
+
+            /// Remove one element from the array at the given `index`.
+
+            #define array_erase(self, _index) \
+              _array__erase((void *)(self)->contents, &(self)->size, array_elem_size(self), _index)
+
+            /// Pop the last element off the array, returning the element by
+            value.
+
+            #define array_pop(self) ((self)->contents[--(self)->size])
+
+
+            /// Assign the contents of one array to another, reallocating if
+            necessary.
+
+            #define array_assign(self,
+            other)                                   \
+              (self)->contents = _array__assign(                                \
+                (void *)(self)->contents, &(self)->size, &(self)->capacity,     \
+                (const void *)(other)->contents, (other)->size, array_elem_size(self) \
+              )
+
+            /// Swap one array with another
+
+            #define array_swap(self,
+            other)                                     \
+              do {                                                              \
+                void *_array_swap_tmp = (void *)(self)->contents;               \
+                (self)->contents = (other)->contents;                           \
+                (other)->contents = _array_swap_tmp;                            \
+                _array__swap(&(self)->size, &(self)->capacity,                  \
+                             &(other)->size, &(other)->capacity);               \
+              } while (0)
+
+            /// Get the size of the array contents
+
+            #define array_elem_size(self) (sizeof *(self)->contents)
+
+
+            /// Search a sorted array for a given `needle` value, using the
+            given `compare`
+
+            /// callback to determine the order.
+
+            ///
+
+            /// If an existing element is found to be equal to `needle`, then
+            the `index`
+
+            /// out-parameter is set to the existing value's index, and the
+            `exists`
+
+            /// out-parameter is set to true. Otherwise, `index` is set to an
+            index where
+
+            /// `needle` should be inserted in order to preserve the sorting,
+            and `exists`
+
+            /// is set to false.
+
+            #define array_search_sorted_with(self, compare, needle, _index,
+            _exists) \
+              _array__search_sorted(self, 0, compare, , needle, _index, _exists)
+
+            /// Search a sorted array for a given `needle` value, using integer
+            comparisons
+
+            /// of a given struct field (specified with a leading dot) to
+            determine the order.
+
+            ///
+
+            /// See also `array_search_sorted_with`.
+
+            #define array_search_sorted_by(self, field, needle, _index, _exists)
+            \
+              _array__search_sorted(self, 0, _compare_int, field, needle, _index, _exists)
+
+            /// Insert a given `value` into a sorted array, using the given
+            `compare`
+
+            /// callback to determine the order.
+
+            #define array_insert_sorted_with(self, compare, value) \
+              do { \
+                unsigned _index, _exists; \
+                array_search_sorted_with(self, compare, &(value), &_index, &_exists); \
+                if (!_exists) array_insert(self, _index, value); \
+              } while (0)
+
+            /// Insert a given `value` into a sorted array, using integer
+            comparisons of
+
+            /// a given struct field (specified with a leading dot) to determine
+            the order.
+
+            ///
+
+            /// See also `array_search_sorted_by`.
+
+            #define array_insert_sorted_by(self, field, value) \
+              do { \
+                unsigned _index, _exists; \
+                array_search_sorted_by(self, field, (value) field, &_index, &_exists); \
+                if (!_exists) array_insert(self, _index, value); \
+              } while (0)
+
+            // Private
+
+
+            // Pointers to individual `Array` fields (rather than the entire
+            `Array` itself)
+
+            // are passed to the various `_array__*` functions below to address
+            strict aliasing
+
+            // violations that arises when the _entire_ `Array` struct is passed
+            as `Array(void)*`.
+
+            //
+
+            // The `Array` type itself was not altered as a solution in order to
+            avoid breakage
+
+            // with existing consumers (in particular, parsers with external
+            scanners).
+
+
+            /// This is not what you're looking for, see `array_erase`.
+
+            static inline void _array__erase(void* self_contents, uint32_t
+            *size,
+                                            size_t element_size, uint32_t index) {
+              assert(index < *size);
+              char *contents = (char *)self_contents;
+              memmove(contents + index * element_size, contents + (index + 1) * element_size,
+                      (*size - index - 1) * element_size);
+              (*size)--;
+            }
+
+
+            /// This is not what you're looking for, see `array_reserve`.
+
+            static inline void *_array__reserve(void *contents, uint32_t
+            *capacity,
+                                              size_t element_size, uint32_t new_capacity) {
+              void *new_contents = contents;
+              if (new_capacity > *capacity) {
+                if (contents) {
+                  new_contents = ts_realloc(contents, new_capacity * element_size);
+                } else {
+                  new_contents = ts_malloc(new_capacity * element_size);
+                }
+                *capacity = new_capacity;
+              }
+              return new_contents;
+            }
+
+
+            /// This is not what you're looking for, see `array_assign`.
+
+            static inline void *_array__assign(void* self_contents, uint32_t
+            *self_size, uint32_t *self_capacity,
+                                             const void *other_contents, uint32_t other_size, size_t element_size) {
+              void *new_contents = _array__reserve(self_contents, self_capacity, element_size, other_size);
+              *self_size = other_size;
+              memcpy(new_contents, other_contents, *self_size * element_size);
+              return new_contents;
+            }
+
+
+            /// This is not what you're looking for, see `array_swap`.
+
+            static inline void _array__swap(uint32_t *self_size, uint32_t
+            *self_capacity,
+                                           uint32_t *other_size, uint32_t *other_capacity) {
+              uint32_t tmp_size = *self_size;
+              uint32_t tmp_capacity = *self_capacity;
+              *self_size = *other_size;
+              *self_capacity = *other_capacity;
+              *other_size = tmp_size;
+              *other_capacity = tmp_capacity;
+            }
+
+
+            /// This is not what you're looking for, see `array_push` or
+            `array_grow_by`.
+
+            static inline void *_array__grow(void *contents, uint32_t size,
+            uint32_t *capacity,
+                                           uint32_t count, size_t element_size) {
+              void *new_contents = contents;
+              uint32_t new_size = size + count;
+              if (new_size > *capacity) {
+                uint32_t new_capacity = *capacity * 2;
+                if (new_capacity < 8) new_capacity = 8;
+                if (new_capacity < new_size) new_capacity = new_size;
+                new_contents = _array__reserve(contents, capacity, element_size, new_capacity);
+              }
+              return new_contents;
+            }
+
+
+            /// This is not what you're looking for, see `array_splice`.
+
+            static inline void *_array__splice(void *self_contents, uint32_t
+            *size, uint32_t *capacity,
+                                             size_t element_size,
+                                             uint32_t index, uint32_t old_count,
+                                             uint32_t new_count, const void *elements) {
+              uint32_t new_size = *size + new_count - old_count;
+              uint32_t old_end = index + old_count;
+              uint32_t new_end = index + new_count;
+              assert(old_end <= *size);
+
+              void *new_contents = _array__reserve(self_contents, capacity, element_size, new_size);
+
+              char *contents = (char *)new_contents;
+              if (*size > old_end) {
+                memmove(
+                  contents + new_end * element_size,
+                  contents + old_end * element_size,
+                  (*size - old_end) * element_size
+                );
+              }
+              if (new_count > 0) {
+                if (elements) {
+                  memcpy(
+                    (contents + index * element_size),
+                    elements,
+                    new_count * element_size
+                  );
+                } else {
+                  memset(
+                    (contents + index * element_size),
+                    0,
+                    new_count * element_size
+                  );
+                }
+              }
+              *size += new_count - old_count;
+
+              return new_contents;
+            }
+
+
+            /// A binary search routine, based on Rust's
+            `std::slice::binary_search_by`.
+
+            /// This is not what you're looking for, see
+            `array_search_sorted_with` or `array_search_sorted_by`.
+
+            #define _array__search_sorted(self, start, compare, suffix, needle,
+            _index, _exists) \
+              do { \
+                *(_index) = start; \
+                *(_exists) = false; \
+                uint32_t size = (self)->size - *(_index); \
+                if (size == 0) break; \
+                int comparison; \
+                while (size > 1) { \
+                  uint32_t half_size = size / 2; \
+                  uint32_t mid_index = *(_index) + half_size; \
+                  comparison = compare(&((self)->contents[mid_index] suffix), (needle)); \
+                  if (comparison <= 0) *(_index) = mid_index; \
+                  size -= half_size; \
+                } \
+                comparison = compare(&((self)->contents[*(_index)] suffix), (needle)); \
+                if (comparison == 0) *(_exists) = true; \
+                else if (comparison < 0) *(_index) += 1; \
+              } while (0)
+
+            /// Helper macro for the `_sorted_by` routines below. This takes the
+            left (existing)
+
+            /// parameter by reference in order to work with the generic sorting
+            function above.
+
+            #define _compare_int(a, b) ((int)*(a) - (int)(b))
+
+
+            #ifdef _MSC_VER
+
+            #pragma warning(pop)
+
+            #elif defined(__GNUC__) || defined(__clang__)
+
+            #pragma GCC diagnostic pop
+
+            #endif
+
+
+            #ifdef __cplusplus
+
+            }
+
+            #endif
+
+
+            #endif  // TREE_SITTER_ARRAY_H_
+      - index: 300
+        fact:
+          id: sha256:cdddd8f91918d483d5b70282c9d106b4608f141667f4da770c0de5aaf6729283
+          kind: file
+          path: tree-sitter-bsl/src/tree_sitter/parser.h
+          start_line: 1
+          end_line: 287
+          text: >
+            #ifndef TREE_SITTER_PARSER_H_
+
+            #define TREE_SITTER_PARSER_H_
+
+
+            #ifdef __cplusplus
+
+            extern "C" {
+
+            #endif
+
+
+            #include <stdbool.h>
+
+            #include <stdint.h>
+
+            #include <stdlib.h>
+
+
+            #define ts_builtin_sym_error ((TSSymbol)-1)
+
+            #define ts_builtin_sym_end 0
+
+            #define TREE_SITTER_SERIALIZATION_BUFFER_SIZE 1024
+
+
+            #ifndef TREE_SITTER_API_H_
+
+            typedef uint16_t TSStateId;
+
+            typedef uint16_t TSSymbol;
+
+            typedef uint16_t TSFieldId;
+
+            typedef struct TSLanguage TSLanguage;
+
+            typedef struct TSLanguageMetadata {
+              uint8_t major_version;
+              uint8_t minor_version;
+              uint8_t patch_version;
+            } TSLanguageMetadata;
+
+            #endif
+
+
+            typedef struct {
+              TSFieldId field_id;
+              uint8_t child_index;
+              bool inherited;
+            } TSFieldMapEntry;
+
+
+            // Used to index the field and supertype maps.
+
+            typedef struct {
+              uint16_t index;
+              uint16_t length;
+            } TSMapSlice;
+
+
+            typedef struct {
+              bool visible;
+              bool named;
+              bool supertype;
+            } TSSymbolMetadata;
+
+
+            typedef struct TSLexer TSLexer;
+
+
+            struct TSLexer {
+              int32_t lookahead;
+              TSSymbol result_symbol;
+              void (*advance)(TSLexer *, bool);
+              void (*mark_end)(TSLexer *);
+              uint32_t (*get_column)(TSLexer *);
+              bool (*is_at_included_range_start)(const TSLexer *);
+              bool (*eof)(const TSLexer *);
+              void (*log)(const TSLexer *, const char *, ...);
+            };
+
+
+            typedef enum {
+              TSParseActionTypeShift,
+              TSParseActionTypeReduce,
+              TSParseActionTypeAccept,
+              TSParseActionTypeRecover,
+            } TSParseActionType;
+
+
+            typedef union {
+              struct {
+                uint8_t type;
+                TSStateId state;
+                bool extra;
+                bool repetition;
+              } shift;
+              struct {
+                uint8_t type;
+                uint8_t child_count;
+                TSSymbol symbol;
+                int16_t dynamic_precedence;
+                uint16_t production_id;
+              } reduce;
+              uint8_t type;
+            } TSParseAction;
+
+
+            typedef struct {
+              uint16_t lex_state;
+              uint16_t external_lex_state;
+            } TSLexMode;
+
+
+            typedef struct {
+              uint16_t lex_state;
+              uint16_t external_lex_state;
+              uint16_t reserved_word_set_id;
+            } TSLexerMode;
+
+
+            typedef union {
+              TSParseAction action;
+              struct {
+                uint8_t count;
+                bool reusable;
+              } entry;
+            } TSParseActionEntry;
+
+
+            typedef struct {
+              int32_t start;
+              int32_t end;
+            } TSCharacterRange;
+
+
+            struct TSLanguage {
+              uint32_t abi_version;
+              uint32_t symbol_count;
+              uint32_t alias_count;
+              uint32_t token_count;
+              uint32_t external_token_count;
+              uint32_t state_count;
+              uint32_t large_state_count;
+              uint32_t production_id_count;
+              uint32_t field_count;
+              uint16_t max_alias_sequence_length;
+              const uint16_t *parse_table;
+              const uint16_t *small_parse_table;
+              const uint32_t *small_parse_table_map;
+              const TSParseActionEntry *parse_actions;
+              const char * const *symbol_names;
+              const char * const *field_names;
+              const TSMapSlice *field_map_slices;
+              const TSFieldMapEntry *field_map_entries;
+              const TSSymbolMetadata *symbol_metadata;
+              const TSSymbol *public_symbol_map;
+              const uint16_t *alias_map;
+              const TSSymbol *alias_sequences;
+              const TSLexerMode *lex_modes;
+              bool (*lex_fn)(TSLexer *, TSStateId);
+              bool (*keyword_lex_fn)(TSLexer *, TSStateId);
+              TSSymbol keyword_capture_token;
+              struct {
+                const bool *states;
+                const TSSymbol *symbol_map;
+                void *(*create)(void);
+                void (*destroy)(void *);
+                bool (*scan)(void *, TSLexer *, const bool *symbol_whitelist);
+                unsigned (*serialize)(void *, char *);
+                void (*deserialize)(void *, const char *, unsigned);
+              } external_scanner;
+              const TSStateId *primary_state_ids;
+              const char *name;
+              const TSSymbol *reserved_words;
+              uint16_t max_reserved_word_set_size;
+              uint32_t supertype_count;
+              const TSSymbol *supertype_symbols;
+              const TSMapSlice *supertype_map_slices;
+              const TSSymbol *supertype_map_entries;
+              TSLanguageMetadata metadata;
+            };
+
+
+            static inline bool set_contains(const TSCharacterRange *ranges,
+            uint32_t len, int32_t lookahead) {
+              uint32_t index = 0;
+              uint32_t size = len - index;
+              while (size > 1) {
+                uint32_t half_size = size / 2;
+                uint32_t mid_index = index + half_size;
+                const TSCharacterRange *range = &ranges[mid_index];
+                if (lookahead >= range->start && lookahead <= range->end) {
+                  return true;
+                } else if (lookahead > range->end) {
+                  index = mid_index;
+                }
+                size -= half_size;
+              }
+              const TSCharacterRange *range = &ranges[index];
+              return (lookahead >= range->start && lookahead <= range->end);
+            }
+
+
+            /*
+             *  Lexer Macros
+             */
+
+            #ifdef _MSC_VER
+
+            #define UNUSED __pragma(warning(suppress : 4101))
+
+            #else
+
+            #define UNUSED __attribute__((unused))
+
+            #endif
+
+
+            #define START_LEXER()           \
+              bool result = false;          \
+              bool skip = false;            \
+              UNUSED                        \
+              bool eof = false;             \
+              int32_t lookahead;            \
+              goto start;                   \
+              next_state:                   \
+              lexer->advance(lexer, skip);  \
+              start:                        \
+              skip = false;                 \
+              lookahead = lexer->lookahead;
+
+            #define ADVANCE(state_value) \
+              {                          \
+                state = state_value;     \
+                goto next_state;         \
+              }
+
+            #define
+            ADVANCE_MAP(...)                                              \
+              {                                                                   \
+                static const uint16_t map[] = { __VA_ARGS__ };                    \
+                for (uint32_t i = 0; i < sizeof(map) / sizeof(map[0]); i += 2) {  \
+                  if (map[i] == lookahead) {                                      \
+                    state = map[i + 1];                                           \
+                    goto next_state;                                              \
+                  }                                                               \
+                }                                                                 \
+              }
+
+            #define SKIP(state_value) \
+              {                       \
+                skip = true;          \
+                state = state_value;  \
+                goto next_state;      \
+              }
+
+            #define ACCEPT_TOKEN(symbol_value)     \
+              result = true;                       \
+              lexer->result_symbol = symbol_value; \
+              lexer->mark_end(lexer);
+
+            #define END_STATE() return result;
+
+
+            /*
+             *  Parse Table Macros
+             */
+
+            #define SMALL_STATE(id) ((id) - LARGE_STATE_COUNT)
+
+
+            #define STATE(id) id
+
+
+            #define ACTIONS(id) id
+
+
+            #define SHIFT(state_value)            \
+              {{                                  \
+                .shift = {                        \
+                  .type = TSParseActionTypeShift, \
+                  .state = (state_value)          \
+                }                                 \
+              }}
+
+            #define SHIFT_REPEAT(state_value)     \
+              {{                                  \
+                .shift = {                        \
+                  .type = TSParseActionTypeShift, \
+                  .state = (state_value),         \
+                  .repetition = true              \
+                }                                 \
+              }}
+
+            #define SHIFT_EXTRA()                 \
+              {{                                  \
+                .shift = {                        \
+                  .type = TSParseActionTypeShift, \
+                  .extra = true                   \
+                }                                 \
+              }}
+
+            #define REDUCE(symbol_name, children, precedence, prod_id) \
+              {{                                                       \
+                .reduce = {                                            \
+                  .type = TSParseActionTypeReduce,                     \
+                  .symbol = symbol_name,                               \
+                  .child_count = children,                             \
+                  .dynamic_precedence = precedence,                    \
+                  .production_id = prod_id                             \
+                },                                                     \
+              }}
+
+            #define RECOVER()                    \
+              {{                                 \
+                .type = TSParseActionTypeRecover \
+              }}
+
+            #define ACCEPT_INPUT()              \
+              {{                                \
+                .type = TSParseActionTypeAccept \
+              }}
+
+            #ifdef __cplusplus
+
+            }
+
+            #endif
+
+
+            #endif  // TREE_SITTER_PARSER_H_
+      - index: 324
+        fact:
+          id: sha256:ba8051ad1e0603f7ee605cefb010d1cd4d4b238805407e9d9827b82e1cf500ce
+          kind: module
+          path: tree-sitter-bsl/src/tree_sitter
+          text: '{"contract":"missing","sources":["tree-sitter-bsl/src/tree_sitter/alloc.h","tree-sitter-bsl/src/tree_sitter/array.h","tree-sitter-bsl/src/tree_sitter/parser.h"]}'
+  current:
+    metadata:
+      schema_version: 2
+      root: D:\projects\dsh.plugins\dsh-ast-index-search
+      capturedAt: 2026-11-11T20:51:59.431Z
+      kind: launch
+      label: Начальное состояние
+      fingerprint: 1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+      complete: true
+      diagnostics: []
+      evidenceLimitations:
+        - "src/db.rs: текст недоступен или превышен лимит доказательств"
+        - "tree-sitter-bsl/src/parser.c: текст недоступен или превышен лимит
+          доказательств"
+      digest: sha256:00610d9df42de3a0b358e79b8957e32e2dfd11bf4ad05190981cd441988c99bd
+      id: launch-1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+    module_index: 25
+    module:
+      directory: tree-sitter-bsl/src/tree_sitter
+      documentPath: tree-sitter-bsl/src/tree_sitter/arch.yaml
+      document:
+        state: missing
+        text: null
+      files:
+        - path: tree-sitter-bsl/src/tree_sitter/alloc.h
+          hash: 1abdd1201578605b8d05a3001f01ebc0d58826d9
+        - path: tree-sitter-bsl/src/tree_sitter/array.h
+          hash: 56fc8cd470996ded64a5452be25e26dbd2aa682a
+        - path: tree-sitter-bsl/src/tree_sitter/parser.h
+          hash: 858107deb9e4a1ffcd2ed5e6ffe98a5fcab3e1f6
+      sourceFiles: 3
+      fingerprint: 1b54d6ca6313840ba7567b6027ad5f694f7f5ce1c4cd562800b2a9c1593257ce
+    facts:
+      - index: 310
+        fact:
+          id: sha256:a1353895ab5469098049654b08e23ff53bee00241591bf5761e5ed135fa3e124
+          kind: file
+          path: tree-sitter-bsl/src/tree_sitter/alloc.h
+          start_line: 1
+          end_line: 55
+          text: |
+            #ifndef TREE_SITTER_ALLOC_H_
+            #define TREE_SITTER_ALLOC_H_
+
+            #ifdef __cplusplus
+            extern "C" {
+            #endif
+
+            #include <stdbool.h>
+            #include <stdio.h>
+            #include <stdlib.h>
+
+            // Allow clients to override allocation functions
+            #ifdef TREE_SITTER_REUSE_ALLOCATOR
+
+            extern void *(*ts_current_malloc)(size_t size);
+            extern void *(*ts_current_calloc)(size_t count, size_t size);
+            extern void *(*ts_current_realloc)(void *ptr, size_t size);
+            extern void (*ts_current_free)(void *ptr);
+
+            #ifndef ts_malloc
+            #define ts_malloc  ts_current_malloc
+            #endif
+            #ifndef ts_calloc
+            #define ts_calloc  ts_current_calloc
+            #endif
+            #ifndef ts_realloc
+            #define ts_realloc ts_current_realloc
+            #endif
+            #ifndef ts_free
+            #define ts_free    ts_current_free
+            #endif
+
+            #else
+
+            #ifndef ts_malloc
+            #define ts_malloc  malloc
+            #endif
+            #ifndef ts_calloc
+            #define ts_calloc  calloc
+            #endif
+            #ifndef ts_realloc
+            #define ts_realloc realloc
+            #endif
+            #ifndef ts_free
+            #define ts_free    free
+            #endif
+
+            #endif
+
+            #ifdef __cplusplus
+            }
+            #endif
+
+            #endif // TREE_SITTER_ALLOC_H_
+      - index: 311
+        fact:
+          id: sha256:802d3a64c56f9b86f0f53b224543bd68ba70d9699b23f83e5319c3ca0d6318f0
+          kind: file
+          path: tree-sitter-bsl/src/tree_sitter/array.h
+          start_line: 1
+          end_line: 331
+          text: >
+            #ifndef TREE_SITTER_ARRAY_H_
+
+            #define TREE_SITTER_ARRAY_H_
+
+
+            #ifdef __cplusplus
+
+            extern "C" {
+
+            #endif
+
+
+            #include "./alloc.h"
+
+
+            #include <assert.h>
+
+            #include <stdbool.h>
+
+            #include <stdint.h>
+
+            #include <stdlib.h>
+
+            #include <string.h>
+
+
+            #ifdef _MSC_VER
+
+            #pragma warning(push)
+
+            #pragma warning(disable : 4101)
+
+            #elif defined(__GNUC__) || defined(__clang__)
+
+            #pragma GCC diagnostic push
+
+            #pragma GCC diagnostic ignored "-Wunused-variable"
+
+            #endif
+
+
+            #define Array(T)       \
+              struct {             \
+                T *contents;       \
+                uint32_t size;     \
+                uint32_t capacity; \
+              }
+
+            /// Initialize an array.
+
+            #define array_init(self) \
+              ((self)->size = 0, (self)->capacity = 0, (self)->contents = NULL)
+
+            /// Create an empty array.
+
+            #define array_new() \
+              { NULL, 0, 0 }
+
+            /// Get a pointer to the element at a given `index` in the array.
+
+            #define array_get(self, _index) \
+              (assert((uint32_t)(_index) < (self)->size), &(self)->contents[_index])
+
+            /// Get a pointer to the first element in the array.
+
+            #define array_front(self) array_get(self, 0)
+
+
+            /// Get a pointer to the last element in the array.
+
+            #define array_back(self) array_get(self, (self)->size - 1)
+
+
+            /// Clear the array, setting its size to zero. Note that this does
+            not free any
+
+            /// memory allocated for the array's contents.
+
+            #define array_clear(self) ((self)->size = 0)
+
+
+            /// Reserve `new_capacity` elements of space in the array. If
+            `new_capacity` is
+
+            /// less than the array's current capacity, this function has no
+            effect.
+
+            #define array_reserve(self, new_capacity)        \
+              ((self)->contents = _array__reserve(           \
+                (void *)(self)->contents, &(self)->capacity, \
+                array_elem_size(self), new_capacity)         \
+              )
+
+            /// Free any memory allocated for this array. Note that this does
+            not free any
+
+            /// memory allocated for the array's contents.
+
+            #define array_delete(self)                           \
+              do {                                               \
+                if ((self)->contents) ts_free((self)->contents); \
+                (self)->contents = NULL;                         \
+                (self)->size = 0;                                \
+                (self)->capacity = 0;                            \
+              } while (0)
+
+            /// Push a new `element` onto the end of the array.
+
+            #define array_push(self, element)                                 \
+              do {                                                            \
+                (self)->contents = _array__grow(                              \
+                  (void *)(self)->contents, (self)->size, &(self)->capacity,  \
+                  1, array_elem_size(self)                                    \
+                );                                                            \
+               (self)->contents[(self)->size++] = (element);                  \
+              } while(0)
+
+            /// Increase the array's size by `count` elements.
+
+            /// New elements are zero-initialized.
+
+            #define array_grow_by(self,
+            count)                                               \
+              do {                                                                           \
+                if ((count) == 0) break;                                                     \
+                (self)->contents = _array__grow(                                             \
+                  (self)->contents, (self)->size, &(self)->capacity,                         \
+                  count, array_elem_size(self)                                               \
+                );                                                                           \
+                memset((self)->contents + (self)->size, 0, (count) * array_elem_size(self)); \
+                (self)->size += (count);                                                     \
+              } while (0)
+
+            /// Append all elements from one array to the end of another.
+
+            #define array_push_all(self, other) \
+              array_extend((self), (other)->size, (other)->contents)
+
+            /// Append `count` elements to the end of the array, reading their
+            values from the
+
+            /// `contents` pointer.
+
+            #define array_extend(self, count, other_contents)                 \
+              (self)->contents = _array__splice(                              \
+                (void*)(self)->contents, &(self)->size, &(self)->capacity,    \
+                array_elem_size(self), (self)->size, 0, count, other_contents \
+              )
+
+            /// Remove `old_count` elements from the array starting at the given
+            `index`. At
+
+            /// the same index, insert `new_count` new elements, reading their
+            values from the
+
+            /// `new_contents` pointer.
+
+            #define array_splice(self, _index, old_count, new_count,
+            new_contents) \
+              (self)->contents = _array__splice(                                   \
+                (void *)(self)->contents, &(self)->size, &(self)->capacity,        \
+                array_elem_size(self), _index, old_count, new_count, new_contents  \
+              )
+
+            /// Insert one `element` into the array at the given `index`.
+
+            #define array_insert(self, _index, element)                     \
+              (self)->contents = _array__splice(                            \
+                (void *)(self)->contents, &(self)->size, &(self)->capacity, \
+                array_elem_size(self), _index, 0, 1, &(element)             \
+              )
+
+            /// Remove one element from the array at the given `index`.
+
+            #define array_erase(self, _index) \
+              _array__erase((void *)(self)->contents, &(self)->size, array_elem_size(self), _index)
+
+            /// Pop the last element off the array, returning the element by
+            value.
+
+            #define array_pop(self) ((self)->contents[--(self)->size])
+
+
+            /// Assign the contents of one array to another, reallocating if
+            necessary.
+
+            #define array_assign(self,
+            other)                                   \
+              (self)->contents = _array__assign(                                \
+                (void *)(self)->contents, &(self)->size, &(self)->capacity,     \
+                (const void *)(other)->contents, (other)->size, array_elem_size(self) \
+              )
+
+            /// Swap one array with another
+
+            #define array_swap(self,
+            other)                                     \
+              do {                                                              \
+                void *_array_swap_tmp = (void *)(self)->contents;               \
+                (self)->contents = (other)->contents;                           \
+                (other)->contents = _array_swap_tmp;                            \
+                _array__swap(&(self)->size, &(self)->capacity,                  \
+                             &(other)->size, &(other)->capacity);               \
+              } while (0)
+
+            /// Get the size of the array contents
+
+            #define array_elem_size(self) (sizeof *(self)->contents)
+
+
+            /// Search a sorted array for a given `needle` value, using the
+            given `compare`
+
+            /// callback to determine the order.
+
+            ///
+
+            /// If an existing element is found to be equal to `needle`, then
+            the `index`
+
+            /// out-parameter is set to the existing value's index, and the
+            `exists`
+
+            /// out-parameter is set to true. Otherwise, `index` is set to an
+            index where
+
+            /// `needle` should be inserted in order to preserve the sorting,
+            and `exists`
+
+            /// is set to false.
+
+            #define array_search_sorted_with(self, compare, needle, _index,
+            _exists) \
+              _array__search_sorted(self, 0, compare, , needle, _index, _exists)
+
+            /// Search a sorted array for a given `needle` value, using integer
+            comparisons
+
+            /// of a given struct field (specified with a leading dot) to
+            determine the order.
+
+            ///
+
+            /// See also `array_search_sorted_with`.
+
+            #define array_search_sorted_by(self, field, needle, _index, _exists)
+            \
+              _array__search_sorted(self, 0, _compare_int, field, needle, _index, _exists)
+
+            /// Insert a given `value` into a sorted array, using the given
+            `compare`
+
+            /// callback to determine the order.
+
+            #define array_insert_sorted_with(self, compare, value) \
+              do { \
+                unsigned _index, _exists; \
+                array_search_sorted_with(self, compare, &(value), &_index, &_exists); \
+                if (!_exists) array_insert(self, _index, value); \
+              } while (0)
+
+            /// Insert a given `value` into a sorted array, using integer
+            comparisons of
+
+            /// a given struct field (specified with a leading dot) to determine
+            the order.
+
+            ///
+
+            /// See also `array_search_sorted_by`.
+
+            #define array_insert_sorted_by(self, field, value) \
+              do { \
+                unsigned _index, _exists; \
+                array_search_sorted_by(self, field, (value) field, &_index, &_exists); \
+                if (!_exists) array_insert(self, _index, value); \
+              } while (0)
+
+            // Private
+
+
+            // Pointers to individual `Array` fields (rather than the entire
+            `Array` itself)
+
+            // are passed to the various `_array__*` functions below to address
+            strict aliasing
+
+            // violations that arises when the _entire_ `Array` struct is passed
+            as `Array(void)*`.
+
+            //
+
+            // The `Array` type itself was not altered as a solution in order to
+            avoid breakage
+
+            // with existing consumers (in particular, parsers with external
+            scanners).
+
+
+            /// This is not what you're looking for, see `array_erase`.
+
+            static inline void _array__erase(void* self_contents, uint32_t
+            *size,
+                                            size_t element_size, uint32_t index) {
+              assert(index < *size);
+              char *contents = (char *)self_contents;
+              memmove(contents + index * element_size, contents + (index + 1) * element_size,
+                      (*size - index - 1) * element_size);
+              (*size)--;
+            }
+
+
+            /// This is not what you're looking for, see `array_reserve`.
+
+            static inline void *_array__reserve(void *contents, uint32_t
+            *capacity,
+                                              size_t element_size, uint32_t new_capacity) {
+              void *new_contents = contents;
+              if (new_capacity > *capacity) {
+                if (contents) {
+                  new_contents = ts_realloc(contents, new_capacity * element_size);
+                } else {
+                  new_contents = ts_malloc(new_capacity * element_size);
+                }
+                *capacity = new_capacity;
+              }
+              return new_contents;
+            }
+
+
+            /// This is not what you're looking for, see `array_assign`.
+
+            static inline void *_array__assign(void* self_contents, uint32_t
+            *self_size, uint32_t *self_capacity,
+                                             const void *other_contents, uint32_t other_size, size_t element_size) {
+              void *new_contents = _array__reserve(self_contents, self_capacity, element_size, other_size);
+              *self_size = other_size;
+              memcpy(new_contents, other_contents, *self_size * element_size);
+              return new_contents;
+            }
+
+
+            /// This is not what you're looking for, see `array_swap`.
+
+            static inline void _array__swap(uint32_t *self_size, uint32_t
+            *self_capacity,
+                                           uint32_t *other_size, uint32_t *other_capacity) {
+              uint32_t tmp_size = *self_size;
+              uint32_t tmp_capacity = *self_capacity;
+              *self_size = *other_size;
+              *self_capacity = *other_capacity;
+              *other_size = tmp_size;
+              *other_capacity = tmp_capacity;
+            }
+
+
+            /// This is not what you're looking for, see `array_push` or
+            `array_grow_by`.
+
+            static inline void *_array__grow(void *contents, uint32_t size,
+            uint32_t *capacity,
+                                           uint32_t count, size_t element_size) {
+              void *new_contents = contents;
+              uint32_t new_size = size + count;
+              if (new_size > *capacity) {
+                uint32_t new_capacity = *capacity * 2;
+                if (new_capacity < 8) new_capacity = 8;
+                if (new_capacity < new_size) new_capacity = new_size;
+                new_contents = _array__reserve(contents, capacity, element_size, new_capacity);
+              }
+              return new_contents;
+            }
+
+
+            /// This is not what you're looking for, see `array_splice`.
+
+            static inline void *_array__splice(void *self_contents, uint32_t
+            *size, uint32_t *capacity,
+                                             size_t element_size,
+                                             uint32_t index, uint32_t old_count,
+                                             uint32_t new_count, const void *elements) {
+              uint32_t new_size = *size + new_count - old_count;
+              uint32_t old_end = index + old_count;
+              uint32_t new_end = index + new_count;
+              assert(old_end <= *size);
+
+              void *new_contents = _array__reserve(self_contents, capacity, element_size, new_size);
+
+              char *contents = (char *)new_contents;
+              if (*size > old_end) {
+                memmove(
+                  contents + new_end * element_size,
+                  contents + old_end * element_size,
+                  (*size - old_end) * element_size
+                );
+              }
+              if (new_count > 0) {
+                if (elements) {
+                  memcpy(
+                    (contents + index * element_size),
+                    elements,
+                    new_count * element_size
+                  );
+                } else {
+                  memset(
+                    (contents + index * element_size),
+                    0,
+                    new_count * element_size
+                  );
+                }
+              }
+              *size += new_count - old_count;
+
+              return new_contents;
+            }
+
+
+            /// A binary search routine, based on Rust's
+            `std::slice::binary_search_by`.
+
+            /// This is not what you're looking for, see
+            `array_search_sorted_with` or `array_search_sorted_by`.
+
+            #define _array__search_sorted(self, start, compare, suffix, needle,
+            _index, _exists) \
+              do { \
+                *(_index) = start; \
+                *(_exists) = false; \
+                uint32_t size = (self)->size - *(_index); \
+                if (size == 0) break; \
+                int comparison; \
+                while (size > 1) { \
+                  uint32_t half_size = size / 2; \
+                  uint32_t mid_index = *(_index) + half_size; \
+                  comparison = compare(&((self)->contents[mid_index] suffix), (needle)); \
+                  if (comparison <= 0) *(_index) = mid_index; \
+                  size -= half_size; \
+                } \
+                comparison = compare(&((self)->contents[*(_index)] suffix), (needle)); \
+                if (comparison == 0) *(_exists) = true; \
+                else if (comparison < 0) *(_index) += 1; \
+              } while (0)
+
+            /// Helper macro for the `_sorted_by` routines below. This takes the
+            left (existing)
+
+            /// parameter by reference in order to work with the generic sorting
+            function above.
+
+            #define _compare_int(a, b) ((int)*(a) - (int)(b))
+
+
+            #ifdef _MSC_VER
+
+            #pragma warning(pop)
+
+            #elif defined(__GNUC__) || defined(__clang__)
+
+            #pragma GCC diagnostic pop
+
+            #endif
+
+
+            #ifdef __cplusplus
+
+            }
+
+            #endif
+
+
+            #endif  // TREE_SITTER_ARRAY_H_
+      - index: 312
+        fact:
+          id: sha256:cdddd8f91918d483d5b70282c9d106b4608f141667f4da770c0de5aaf6729283
+          kind: file
+          path: tree-sitter-bsl/src/tree_sitter/parser.h
+          start_line: 1
+          end_line: 287
+          text: >
+            #ifndef TREE_SITTER_PARSER_H_
+
+            #define TREE_SITTER_PARSER_H_
+
+
+            #ifdef __cplusplus
+
+            extern "C" {
+
+            #endif
+
+
+            #include <stdbool.h>
+
+            #include <stdint.h>
+
+            #include <stdlib.h>
+
+
+            #define ts_builtin_sym_error ((TSSymbol)-1)
+
+            #define ts_builtin_sym_end 0
+
+            #define TREE_SITTER_SERIALIZATION_BUFFER_SIZE 1024
+
+
+            #ifndef TREE_SITTER_API_H_
+
+            typedef uint16_t TSStateId;
+
+            typedef uint16_t TSSymbol;
+
+            typedef uint16_t TSFieldId;
+
+            typedef struct TSLanguage TSLanguage;
+
+            typedef struct TSLanguageMetadata {
+              uint8_t major_version;
+              uint8_t minor_version;
+              uint8_t patch_version;
+            } TSLanguageMetadata;
+
+            #endif
+
+
+            typedef struct {
+              TSFieldId field_id;
+              uint8_t child_index;
+              bool inherited;
+            } TSFieldMapEntry;
+
+
+            // Used to index the field and supertype maps.
+
+            typedef struct {
+              uint16_t index;
+              uint16_t length;
+            } TSMapSlice;
+
+
+            typedef struct {
+              bool visible;
+              bool named;
+              bool supertype;
+            } TSSymbolMetadata;
+
+
+            typedef struct TSLexer TSLexer;
+
+
+            struct TSLexer {
+              int32_t lookahead;
+              TSSymbol result_symbol;
+              void (*advance)(TSLexer *, bool);
+              void (*mark_end)(TSLexer *);
+              uint32_t (*get_column)(TSLexer *);
+              bool (*is_at_included_range_start)(const TSLexer *);
+              bool (*eof)(const TSLexer *);
+              void (*log)(const TSLexer *, const char *, ...);
+            };
+
+
+            typedef enum {
+              TSParseActionTypeShift,
+              TSParseActionTypeReduce,
+              TSParseActionTypeAccept,
+              TSParseActionTypeRecover,
+            } TSParseActionType;
+
+
+            typedef union {
+              struct {
+                uint8_t type;
+                TSStateId state;
+                bool extra;
+                bool repetition;
+              } shift;
+              struct {
+                uint8_t type;
+                uint8_t child_count;
+                TSSymbol symbol;
+                int16_t dynamic_precedence;
+                uint16_t production_id;
+              } reduce;
+              uint8_t type;
+            } TSParseAction;
+
+
+            typedef struct {
+              uint16_t lex_state;
+              uint16_t external_lex_state;
+            } TSLexMode;
+
+
+            typedef struct {
+              uint16_t lex_state;
+              uint16_t external_lex_state;
+              uint16_t reserved_word_set_id;
+            } TSLexerMode;
+
+
+            typedef union {
+              TSParseAction action;
+              struct {
+                uint8_t count;
+                bool reusable;
+              } entry;
+            } TSParseActionEntry;
+
+
+            typedef struct {
+              int32_t start;
+              int32_t end;
+            } TSCharacterRange;
+
+
+            struct TSLanguage {
+              uint32_t abi_version;
+              uint32_t symbol_count;
+              uint32_t alias_count;
+              uint32_t token_count;
+              uint32_t external_token_count;
+              uint32_t state_count;
+              uint32_t large_state_count;
+              uint32_t production_id_count;
+              uint32_t field_count;
+              uint16_t max_alias_sequence_length;
+              const uint16_t *parse_table;
+              const uint16_t *small_parse_table;
+              const uint32_t *small_parse_table_map;
+              const TSParseActionEntry *parse_actions;
+              const char * const *symbol_names;
+              const char * const *field_names;
+              const TSMapSlice *field_map_slices;
+              const TSFieldMapEntry *field_map_entries;
+              const TSSymbolMetadata *symbol_metadata;
+              const TSSymbol *public_symbol_map;
+              const uint16_t *alias_map;
+              const TSSymbol *alias_sequences;
+              const TSLexerMode *lex_modes;
+              bool (*lex_fn)(TSLexer *, TSStateId);
+              bool (*keyword_lex_fn)(TSLexer *, TSStateId);
+              TSSymbol keyword_capture_token;
+              struct {
+                const bool *states;
+                const TSSymbol *symbol_map;
+                void *(*create)(void);
+                void (*destroy)(void *);
+                bool (*scan)(void *, TSLexer *, const bool *symbol_whitelist);
+                unsigned (*serialize)(void *, char *);
+                void (*deserialize)(void *, const char *, unsigned);
+              } external_scanner;
+              const TSStateId *primary_state_ids;
+              const char *name;
+              const TSSymbol *reserved_words;
+              uint16_t max_reserved_word_set_size;
+              uint32_t supertype_count;
+              const TSSymbol *supertype_symbols;
+              const TSMapSlice *supertype_map_slices;
+              const TSSymbol *supertype_map_entries;
+              TSLanguageMetadata metadata;
+            };
+
+
+            static inline bool set_contains(const TSCharacterRange *ranges,
+            uint32_t len, int32_t lookahead) {
+              uint32_t index = 0;
+              uint32_t size = len - index;
+              while (size > 1) {
+                uint32_t half_size = size / 2;
+                uint32_t mid_index = index + half_size;
+                const TSCharacterRange *range = &ranges[mid_index];
+                if (lookahead >= range->start && lookahead <= range->end) {
+                  return true;
+                } else if (lookahead > range->end) {
+                  index = mid_index;
+                }
+                size -= half_size;
+              }
+              const TSCharacterRange *range = &ranges[index];
+              return (lookahead >= range->start && lookahead <= range->end);
+            }
+
+
+            /*
+             *  Lexer Macros
+             */
+
+            #ifdef _MSC_VER
+
+            #define UNUSED __pragma(warning(suppress : 4101))
+
+            #else
+
+            #define UNUSED __attribute__((unused))
+
+            #endif
+
+
+            #define START_LEXER()           \
+              bool result = false;          \
+              bool skip = false;            \
+              UNUSED                        \
+              bool eof = false;             \
+              int32_t lookahead;            \
+              goto start;                   \
+              next_state:                   \
+              lexer->advance(lexer, skip);  \
+              start:                        \
+              skip = false;                 \
+              lookahead = lexer->lookahead;
+
+            #define ADVANCE(state_value) \
+              {                          \
+                state = state_value;     \
+                goto next_state;         \
+              }
+
+            #define
+            ADVANCE_MAP(...)                                              \
+              {                                                                   \
+                static const uint16_t map[] = { __VA_ARGS__ };                    \
+                for (uint32_t i = 0; i < sizeof(map) / sizeof(map[0]); i += 2) {  \
+                  if (map[i] == lookahead) {                                      \
+                    state = map[i + 1];                                           \
+                    goto next_state;                                              \
+                  }                                                               \
+                }                                                                 \
+              }
+
+            #define SKIP(state_value) \
+              {                       \
+                skip = true;          \
+                state = state_value;  \
+                goto next_state;      \
+              }
+
+            #define ACCEPT_TOKEN(symbol_value)     \
+              result = true;                       \
+              lexer->result_symbol = symbol_value; \
+              lexer->mark_end(lexer);
+
+            #define END_STATE() return result;
+
+
+            /*
+             *  Parse Table Macros
+             */
+
+            #define SMALL_STATE(id) ((id) - LARGE_STATE_COUNT)
+
+
+            #define STATE(id) id
+
+
+            #define ACTIONS(id) id
+
+
+            #define SHIFT(state_value)            \
+              {{                                  \
+                .shift = {                        \
+                  .type = TSParseActionTypeShift, \
+                  .state = (state_value)          \
+                }                                 \
+              }}
+
+            #define SHIFT_REPEAT(state_value)     \
+              {{                                  \
+                .shift = {                        \
+                  .type = TSParseActionTypeShift, \
+                  .state = (state_value),         \
+                  .repetition = true              \
+                }                                 \
+              }}
+
+            #define SHIFT_EXTRA()                 \
+              {{                                  \
+                .shift = {                        \
+                  .type = TSParseActionTypeShift, \
+                  .extra = true                   \
+                }                                 \
+              }}
+
+            #define REDUCE(symbol_name, children, precedence, prod_id) \
+              {{                                                       \
+                .reduce = {                                            \
+                  .type = TSParseActionTypeReduce,                     \
+                  .symbol = symbol_name,                               \
+                  .child_count = children,                             \
+                  .dynamic_precedence = precedence,                    \
+                  .production_id = prod_id                             \
+                },                                                     \
+              }}
+
+            #define RECOVER()                    \
+              {{                                 \
+                .type = TSParseActionTypeRecover \
+              }}
+
+            #define ACCEPT_INPUT()              \
+              {{                                \
+                .type = TSParseActionTypeAccept \
+              }}
+
+            #ifdef __cplusplus
+
+            }
+
+            #endif
+
+
+            #endif  // TREE_SITTER_PARSER_H_
+      - index: 339
+        fact:
+          id: sha256:ba8051ad1e0603f7ee605cefb010d1cd4d4b238805407e9d9827b82e1cf500ce
+          kind: module
+          path: tree-sitter-bsl/src/tree_sitter
+          text: '{"contract":"missing","sources":["tree-sitter-bsl/src/tree_sitter/alloc.h","tree-sitter-bsl/src/tree_sitter/array.h","tree-sitter-bsl/src/tree_sitter/parser.h"]}'
+review_status:
+  self:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    conflict: false
+    coverage:
+      current:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+      change:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+  subtree:
+    current:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 1
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+    change:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 1
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+  explicit_subtree:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.

@@ -1,0 +1,573 @@
+schema_version: 2
+kind: archi
+module_id: directory:tests/fixtures/java/java-main-test
+project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+check_hash: d2ffb45a25f3d5a9c33715349c44918831484fd8085276cb4a6cb7a431e2adef
+input_manifest:
+  domain: archiview/module-check/v1
+  project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+  module_id: directory:tests/fixtures/java/java-main-test
+  baseline:
+    identity:
+      kind: git
+      id: 39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+    state:
+      exists: true
+      directory: tests/fixtures/java/java-main-test
+      self_digest: sha256:75e69cfd596656c12cba66cc4581692db004e1f355ef9ba26146006cf38b571f
+      subtree_digest: sha256:4dd1de5698d1b98d87b2ab5aee318170eeb3b66db58c11289d2c9da0fe1d1225
+  current:
+    exists: true
+    directory: tests/fixtures/java/java-main-test
+    self_digest: sha256:9648aca8e7e607481096db59219936feb598eeec121730933a1a25b7238ac524
+    subtree_digest: sha256:7941c5d7ce34970216260c54b02de257e2d0090570488895d8e171d84b8691ea
+  analyzer:
+    name: archiview-structure
+    version: 1.0.2
+    config_digest: sha256:d4208fd53122193eb2daea0c208071c378c8d7635a8b73431fec88a63f5cd518
+baseline:
+  module_id: directory:tests/fixtures/java/java-main-test
+  directory: tests/fixtures/java/java-main-test
+  parent_id: directory:tests/fixtures/java
+  children: []
+  technical:
+    normalization: archiview/module-state/v1
+    module_id: directory:tests/fixtures/java/java-main-test
+    directory: tests/fixtures/java/java-main-test
+    own_files:
+      - path: tests/fixtures/java/java-main-test/Main.java
+        digest: sha256:6d92bcf404b8c23ed8ed29633bb31e999b64d02e43124e20c03173f0d81cb43b
+        normalization: text-lf/v1
+      - path: tests/fixtures/java/java-main-test/User.java
+        digest: sha256:aabaee2537f20714bb5a21107c650954530f52e172819a89f68fe9af5e3861b7
+        normalization: text-lf/v1
+      - path: tests/fixtures/java/java-main-test/UserService.java
+        digest: sha256:78d979b59cc85632d5ff20771870fcb65dda1f67f6dddb1b159ecc6de775780e
+        normalization: text-lf/v1
+      - path: tests/fixtures/java/java-main-test/pom.xml
+        digest: sha256:ff5e282e97ce6333643270f6f3464cd2bf3b967253b84513e4f88d0f448f1be1
+        normalization: text-lf/v1
+      - path: tests/fixtures/java/java-main-test/tests.yaml
+        digest: sha256:35a28964772dfc7f1db4034b20425b98c7b38f12831dda39115f08281b4b8fe0
+        normalization: text-lf/v1
+    contract: null
+    document_state: missing
+    inherited: []
+  technical_digest: sha256:75e69cfd596656c12cba66cc4581692db004e1f355ef9ba26146006cf38b571f
+  complete: false
+  self:
+    normalization: archiview/module-state/v1
+    module_id: directory:tests/fixtures/java/java-main-test
+    directory: tests/fixtures/java/java-main-test
+    own_files:
+      - path: tests/fixtures/java/java-main-test/Main.java
+        digest: sha256:6d92bcf404b8c23ed8ed29633bb31e999b64d02e43124e20c03173f0d81cb43b
+        normalization: text-lf/v1
+      - path: tests/fixtures/java/java-main-test/User.java
+        digest: sha256:aabaee2537f20714bb5a21107c650954530f52e172819a89f68fe9af5e3861b7
+        normalization: text-lf/v1
+      - path: tests/fixtures/java/java-main-test/UserService.java
+        digest: sha256:78d979b59cc85632d5ff20771870fcb65dda1f67f6dddb1b159ecc6de775780e
+        normalization: text-lf/v1
+      - path: tests/fixtures/java/java-main-test/pom.xml
+        digest: sha256:ff5e282e97ce6333643270f6f3464cd2bf3b967253b84513e4f88d0f448f1be1
+        normalization: text-lf/v1
+      - path: tests/fixtures/java/java-main-test/tests.yaml
+        digest: sha256:35a28964772dfc7f1db4034b20425b98c7b38f12831dda39115f08281b4b8fe0
+        normalization: text-lf/v1
+    contract: null
+    inherited: []
+    children: []
+  self_digest: sha256:71e10d8533b2405e754a7578890b886636bd2e69bd3ad5645b67852a98b35126
+  subtree:
+    self: sha256:75e69cfd596656c12cba66cc4581692db004e1f355ef9ba26146006cf38b571f
+    children: []
+  subtree_digest: sha256:4dd1de5698d1b98d87b2ab5aee318170eeb3b66db58c11289d2c9da0fe1d1225
+  semantic_subtree:
+    self: sha256:71e10d8533b2405e754a7578890b886636bd2e69bd3ad5645b67852a98b35126
+    children: []
+  semantic_subtree_digest: sha256:23ebaff9754d4852503e43034f00c15e40bb59bd72b5e98e9454592d3a25bdc0
+current:
+  module_id: directory:tests/fixtures/java/java-main-test
+  directory: tests/fixtures/java/java-main-test
+  parent_id: directory:tests/fixtures/java
+  children: []
+  technical:
+    normalization: archiview/module-state/v1
+    module_id: directory:tests/fixtures/java/java-main-test
+    directory: tests/fixtures/java/java-main-test
+    own_files:
+      - path: tests/fixtures/java/java-main-test/Main.java
+        digest: sha256:6d92bcf404b8c23ed8ed29633bb31e999b64d02e43124e20c03173f0d81cb43b
+        normalization: text-lf/v1
+      - path: tests/fixtures/java/java-main-test/User.java
+        digest: sha256:aabaee2537f20714bb5a21107c650954530f52e172819a89f68fe9af5e3861b7
+        normalization: text-lf/v1
+      - path: tests/fixtures/java/java-main-test/UserService.java
+        digest: sha256:78d979b59cc85632d5ff20771870fcb65dda1f67f6dddb1b159ecc6de775780e
+        normalization: text-lf/v1
+      - path: tests/fixtures/java/java-main-test/pom.xml
+        digest: sha256:ff5e282e97ce6333643270f6f3464cd2bf3b967253b84513e4f88d0f448f1be1
+        normalization: text-lf/v1
+      - path: tests/fixtures/java/java-main-test/tests.yaml
+        digest: sha256:35a28964772dfc7f1db4034b20425b98c7b38f12831dda39115f08281b4b8fe0
+        normalization: text-lf/v1
+    contract: null
+    document_state: missing
+    inherited:
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+  technical_digest: sha256:9648aca8e7e607481096db59219936feb598eeec121730933a1a25b7238ac524
+  complete: false
+  self:
+    normalization: archiview/module-state/v1
+    module_id: directory:tests/fixtures/java/java-main-test
+    directory: tests/fixtures/java/java-main-test
+    own_files:
+      - path: tests/fixtures/java/java-main-test/Main.java
+        digest: sha256:6d92bcf404b8c23ed8ed29633bb31e999b64d02e43124e20c03173f0d81cb43b
+        normalization: text-lf/v1
+      - path: tests/fixtures/java/java-main-test/User.java
+        digest: sha256:aabaee2537f20714bb5a21107c650954530f52e172819a89f68fe9af5e3861b7
+        normalization: text-lf/v1
+      - path: tests/fixtures/java/java-main-test/UserService.java
+        digest: sha256:78d979b59cc85632d5ff20771870fcb65dda1f67f6dddb1b159ecc6de775780e
+        normalization: text-lf/v1
+      - path: tests/fixtures/java/java-main-test/pom.xml
+        digest: sha256:ff5e282e97ce6333643270f6f3464cd2bf3b967253b84513e4f88d0f448f1be1
+        normalization: text-lf/v1
+      - path: tests/fixtures/java/java-main-test/tests.yaml
+        digest: sha256:35a28964772dfc7f1db4034b20425b98c7b38f12831dda39115f08281b4b8fe0
+        normalization: text-lf/v1
+    contract: null
+    inherited:
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+    children: []
+  self_digest: sha256:2a08b9f4787dc843773572fad3444d7c8bb4a9510cd6570a170c1dfbfb976552
+  subtree:
+    self: sha256:9648aca8e7e607481096db59219936feb598eeec121730933a1a25b7238ac524
+    children: []
+  subtree_digest: sha256:7941c5d7ce34970216260c54b02de257e2d0090570488895d8e171d84b8691ea
+  semantic_subtree:
+    self: sha256:2a08b9f4787dc843773572fad3444d7c8bb4a9510cd6570a170c1dfbfb976552
+    children: []
+  semantic_subtree_digest: sha256:75748ae1786e15ea9fd9b07b9221cf1369b0707d284c4a52f6762acfa50741ee
+change:
+  existence: retained
+  own: false
+  own_code: false
+  own_contract: false
+  inherited_constraints: true
+  descendants: false
+  child_composition: false
+  moved: false
+structure:
+  complete: false
+  diagnostics: []
+  document_state: missing
+publication:
+  generation: 1
+  comparison_key: sha256:dc98b7ce48b2d042cf3c49393d0e9b7ee428318f00b8320bf7aa097e0e220040
+  baseline:
+    metadata:
+      schema_version: 2
+      root: D:\projects\dsh.plugins\dsh-ast-index-search
+      capturedAt: 2026-11-11T20:51:58.911Z
+      kind: git
+      revision: 39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+      label: HEAD
+      fingerprint: ce875f581e3068454f564722f01dcb32cacfc836460278bc610500f4bb86657c
+      complete: true
+      diagnostics: []
+      evidenceLimitations:
+        - "src/db.rs: текст недоступен или превышен лимит доказательств"
+        - "tree-sitter-bsl/src/parser.c: текст недоступен или превышен лимит
+          доказательств"
+      digest: sha256:54c9f4b0a85ec24ae29f73bfc639059b3951d61af510b95989587b970b4ca995
+      id: git-39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+      isHead: true
+    module_index: 19
+    module:
+      directory: tests/fixtures/java/java-main-test
+      documentPath: tests/fixtures/java/java-main-test/arch.yaml
+      document:
+        state: missing
+        text: null
+      files:
+        - path: tests/fixtures/java/java-main-test/Main.java
+          hash: 2b8027d2813a0e6f09043d79faa5f95a27c80a4c
+        - path: tests/fixtures/java/java-main-test/pom.xml
+          hash: 45df03b7936636adab6799ea9ce8b46cfbc23413
+        - path: tests/fixtures/java/java-main-test/tests.yaml
+          hash: a8659877192acbbff5acc7af81f46e69d340cb34
+        - path: tests/fixtures/java/java-main-test/User.java
+          hash: 81be5621b7bd4866ae0f6dfaad6016dc18fd933b
+        - path: tests/fixtures/java/java-main-test/UserService.java
+          hash: 1e3eec1b4764b9bd6659eddfc6343f9ff93dadfd
+      sourceFiles: 3
+      fingerprint: b979204c575b5d7727be314a90ab9d5747e6813c6d21af8a9197a3d1b4662a1a
+    facts:
+      - index: 229
+        fact:
+          id: sha256:2b371786e8880b760a29a1f23d051c2473e7d884a074d84d2b9336e5ff3a4455
+          kind: file
+          path: tests/fixtures/java/java-main-test/Main.java
+          start_line: 1
+          end_line: 8
+          text: |
+            public class Main {
+                public static void main(String[] args) {
+                    UserService service = new UserService();
+                    User user = service.findById(1L);
+                    System.out.println(user.name());
+                }
+            }
+      - index: 230
+        fact:
+          id: sha256:a43fd6ed26b959b96a269fa663173ce686d1bd3c0a4d20a9bf5f3c0a7cb47cb9
+          kind: file
+          path: tests/fixtures/java/java-main-test/User.java
+          start_line: 1
+          end_line: 2
+          text: |
+            public record User(Long id, String name, String email) {}
+      - index: 231
+        fact:
+          id: sha256:718aab69a1264af35457d166632481e4525d12c438aaa087687d9033e13834a3
+          kind: file
+          path: tests/fixtures/java/java-main-test/UserService.java
+          start_line: 1
+          end_line: 23
+          text: |
+            import java.util.List;
+
+            public interface UserRepository {
+                User findById(Long id);
+                User save(User user);
+            }
+
+            public class UserService implements UserRepository {
+                @Override
+                public User findById(Long id) {
+                    return new User(id, "Alice", "alice@example.com");
+                }
+
+                @Override
+                public User save(User user) {
+                    return user;
+                }
+
+                public List<User> findAll() {
+                    return List.of();
+                }
+            }
+      - index: 232
+        fact:
+          id: sha256:75d9b033b35d4830cff26c4a06ada4fd50561f216c55a3c1ee525b4b9830b2cc
+          kind: file
+          path: tests/fixtures/java/java-main-test/pom.xml
+          start_line: 1
+          end_line: 7
+          text: |
+            <?xml version="1.0" encoding="UTF-8"?>
+            <project>
+                <groupId>com.example</groupId>
+                <artifactId>java-main-test</artifactId>
+                <version>1.0.0</version>
+            </project>
+      - index: 233
+        fact:
+          id: sha256:b142cd3f8265673cb6e0090130615b5227e665843b702b48c6d17d9786ee2a39
+          kind: file
+          path: tests/fixtures/java/java-main-test/tests.yaml
+          start_line: 1
+          end_line: 34
+          text: |+
+            - command: [symbol, Main]
+              out:
+                - "Main [class]:"
+
+            - command: [symbol, UserService]
+              out:
+                - "UserService [class]:"
+
+            - command: [symbol, UserRepository]
+              out:
+                - "UserRepository [interface]:"
+
+            - command: [symbol, User]
+              out:
+                - "User [class]:"
+
+            - command: [symbol, findById]
+              out:
+                - "findById [function]:"
+
+            - command: [symbol, findAll]
+              out:
+                - "findAll [function]:"
+
+            - command: [symbol, email]
+              out:
+                - "email [property]:"
+                - "email [function]:"
+
+            - command: [search, UserService]
+              out:
+                - "UserService [class]:"
+
+      - index: 321
+        fact:
+          id: sha256:c19f6923a3799dc194646cccabb309ac460eec7d655403ee27e375eaf7d629ec
+          kind: module
+          path: tests/fixtures/java/java-main-test
+          text: '{"contract":"missing","sources":["tests/fixtures/java/java-main-test/Main.java","tests/fixtures/java/java-main-test/User.java","tests/fixtures/java/java-main-test/UserService.java"]}'
+  current:
+    metadata:
+      schema_version: 2
+      root: D:\projects\dsh.plugins\dsh-ast-index-search
+      capturedAt: 2026-11-11T20:51:59.431Z
+      kind: launch
+      label: Начальное состояние
+      fingerprint: 1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+      complete: true
+      diagnostics: []
+      evidenceLimitations:
+        - "src/db.rs: текст недоступен или превышен лимит доказательств"
+        - "tree-sitter-bsl/src/parser.c: текст недоступен или превышен лимит
+          доказательств"
+      digest: sha256:00610d9df42de3a0b358e79b8957e32e2dfd11bf4ad05190981cd441988c99bd
+      id: launch-1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+    module_index: 22
+    module:
+      directory: tests/fixtures/java/java-main-test
+      documentPath: tests/fixtures/java/java-main-test/arch.yaml
+      document:
+        state: missing
+        text: null
+      files:
+        - path: tests/fixtures/java/java-main-test/Main.java
+          hash: 2b8027d2813a0e6f09043d79faa5f95a27c80a4c
+        - path: tests/fixtures/java/java-main-test/pom.xml
+          hash: 45df03b7936636adab6799ea9ce8b46cfbc23413
+        - path: tests/fixtures/java/java-main-test/tests.yaml
+          hash: a8659877192acbbff5acc7af81f46e69d340cb34
+        - path: tests/fixtures/java/java-main-test/User.java
+          hash: 81be5621b7bd4866ae0f6dfaad6016dc18fd933b
+        - path: tests/fixtures/java/java-main-test/UserService.java
+          hash: 1e3eec1b4764b9bd6659eddfc6343f9ff93dadfd
+      sourceFiles: 3
+      fingerprint: b979204c575b5d7727be314a90ab9d5747e6813c6d21af8a9197a3d1b4662a1a
+    facts:
+      - index: 241
+        fact:
+          id: sha256:2b371786e8880b760a29a1f23d051c2473e7d884a074d84d2b9336e5ff3a4455
+          kind: file
+          path: tests/fixtures/java/java-main-test/Main.java
+          start_line: 1
+          end_line: 8
+          text: |
+            public class Main {
+                public static void main(String[] args) {
+                    UserService service = new UserService();
+                    User user = service.findById(1L);
+                    System.out.println(user.name());
+                }
+            }
+      - index: 242
+        fact:
+          id: sha256:a43fd6ed26b959b96a269fa663173ce686d1bd3c0a4d20a9bf5f3c0a7cb47cb9
+          kind: file
+          path: tests/fixtures/java/java-main-test/User.java
+          start_line: 1
+          end_line: 2
+          text: |
+            public record User(Long id, String name, String email) {}
+      - index: 243
+        fact:
+          id: sha256:718aab69a1264af35457d166632481e4525d12c438aaa087687d9033e13834a3
+          kind: file
+          path: tests/fixtures/java/java-main-test/UserService.java
+          start_line: 1
+          end_line: 23
+          text: |
+            import java.util.List;
+
+            public interface UserRepository {
+                User findById(Long id);
+                User save(User user);
+            }
+
+            public class UserService implements UserRepository {
+                @Override
+                public User findById(Long id) {
+                    return new User(id, "Alice", "alice@example.com");
+                }
+
+                @Override
+                public User save(User user) {
+                    return user;
+                }
+
+                public List<User> findAll() {
+                    return List.of();
+                }
+            }
+      - index: 244
+        fact:
+          id: sha256:75d9b033b35d4830cff26c4a06ada4fd50561f216c55a3c1ee525b4b9830b2cc
+          kind: file
+          path: tests/fixtures/java/java-main-test/pom.xml
+          start_line: 1
+          end_line: 7
+          text: |
+            <?xml version="1.0" encoding="UTF-8"?>
+            <project>
+                <groupId>com.example</groupId>
+                <artifactId>java-main-test</artifactId>
+                <version>1.0.0</version>
+            </project>
+      - index: 245
+        fact:
+          id: sha256:b142cd3f8265673cb6e0090130615b5227e665843b702b48c6d17d9786ee2a39
+          kind: file
+          path: tests/fixtures/java/java-main-test/tests.yaml
+          start_line: 1
+          end_line: 34
+          text: |+
+            - command: [symbol, Main]
+              out:
+                - "Main [class]:"
+
+            - command: [symbol, UserService]
+              out:
+                - "UserService [class]:"
+
+            - command: [symbol, UserRepository]
+              out:
+                - "UserRepository [interface]:"
+
+            - command: [symbol, User]
+              out:
+                - "User [class]:"
+
+            - command: [symbol, findById]
+              out:
+                - "findById [function]:"
+
+            - command: [symbol, findAll]
+              out:
+                - "findAll [function]:"
+
+            - command: [symbol, email]
+              out:
+                - "email [property]:"
+                - "email [function]:"
+
+            - command: [search, UserService]
+              out:
+                - "UserService [class]:"
+
+      - index: 336
+        fact:
+          id: sha256:c19f6923a3799dc194646cccabb309ac460eec7d655403ee27e375eaf7d629ec
+          kind: module
+          path: tests/fixtures/java/java-main-test
+          text: '{"contract":"missing","sources":["tests/fixtures/java/java-main-test/Main.java","tests/fixtures/java/java-main-test/User.java","tests/fixtures/java/java-main-test/UserService.java"]}'
+review_status:
+  self:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    conflict: false
+    coverage:
+      current:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+      change:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+  subtree:
+    current:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 1
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+    change:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 1
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+  explicit_subtree:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.

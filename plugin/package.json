@@ -1,0 +1,34 @@
+{
+  "name": "dsh-ast-index",
+  "version": "0.1.0",
+  "description": "Structural code search for DeepSeek Harness with the ast-index skill and native CLI.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dsh/index.mjs",
+  "exports": {
+    ".": "./dsh/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./dsh/cordis.patch.yml"
+    }
+  },
+  "files": [
+    "dsh/index.mjs",
+    "dsh/cli.mjs",
+    "dsh/cordis.patch.yml",
+    "skills/*/SKILL.md",
+    "skills/*/references/**"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/dsh-skill-filesystem": "0.2.0-rc.2 || 0.2.1-rc.3 || 0.2.2-rc.1"
+  },
+  "optionalDependencies": {
+    "@ast-index/cli-darwin-arm64": "3.56.0",
+    "@ast-index/cli-darwin-x64": "3.56.0",
+    "@ast-index/cli-linux-x64": "3.56.0",
+    "@ast-index/cli-linux-arm64": "3.56.0",
+    "@ast-index/cli-win32-x64": "3.56.0"
+  }
+}

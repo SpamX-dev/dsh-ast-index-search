@@ -1,0 +1,3 @@
+- insert:
+    - id: ast-index
+      name: dsh-ast-index

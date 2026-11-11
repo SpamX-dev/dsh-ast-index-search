@@ -1,0 +1,14 @@
+schema_version: 1
+id: ast-index-deepseek-harness
+title: DeepSeek Harness distribution
+kind: module
+purpose: Deliver the shared ast-index skill and native executable to a DeepSeek Harness session.
+responsibilities:
+  R1: Register the installed skill and its resource directory with the host.
+  R2: Resolve the installed platform dependency and expose its CLI to the agent shell.
+  R3: Verify the published package layout and installation against the shared sources.
+boundaries:
+  B1: The package consumes native binaries supplied by the platform packages and leaves parsing to the CLI.
+invariants:
+  I1: Installed resources resolve relative to the installed package, independently of the source checkout and project being queried.
+  I2: The package manager selects the native distribution using OS and CPU metadata.

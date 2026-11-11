@@ -1,0 +1,293 @@
+schema_version: 2
+kind: archi
+module_id: directory:crates
+project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+check_hash: 8ffa7841fc8b83f8b7f7e61c73384d260ac7609a1b99c35a2e9944c8a1c95573
+input_manifest:
+  domain: archiview/module-check/v1
+  project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+  module_id: directory:crates
+  baseline:
+    identity:
+      kind: git
+      id: 39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+    state:
+      exists: true
+      directory: crates
+      self_digest: sha256:d87e9acc977f2fc54d8f656e8a84a0ed1d4758eaeb1f940e126fc5acdafa7da9
+      subtree_digest: sha256:ef69861a12eb5d76dff42ce4bfff5b672f98868776e92432807f304e6393c0d5
+  current:
+    exists: true
+    directory: crates
+    self_digest: sha256:971278424a1540e5437ec1b80ca5eaa2364471c791d2f212e1377435812106e1
+    subtree_digest: sha256:a9e111785f828dcc03594c0bb573b4d447c906b520b557c18de5e9c4ae240ad9
+  analyzer:
+    name: archiview-structure
+    version: 1.0.2
+    config_digest: sha256:d4208fd53122193eb2daea0c208071c378c8d7635a8b73431fec88a63f5cd518
+baseline:
+  module_id: directory:crates
+  directory: crates
+  parent_id: directory:.
+  children:
+    - directory:crates/ast-index-mcp
+  technical:
+    normalization: archiview/module-state/v1
+    module_id: directory:crates
+    directory: crates
+    own_files: []
+    contract: null
+    document_state: missing
+    inherited: []
+  technical_digest: sha256:d87e9acc977f2fc54d8f656e8a84a0ed1d4758eaeb1f940e126fc5acdafa7da9
+  complete: false
+  self:
+    normalization: archiview/module-state/v1
+    module_id: directory:crates
+    directory: crates
+    own_files: []
+    contract: null
+    inherited: []
+    children:
+      - module_id: directory:crates/ast-index-mcp
+        directory: crates/ast-index-mcp
+        contract: null
+        document_state: missing
+  self_digest: sha256:23dfe840cd2d83cbbbdd757e713a13c38cd26b55b1483b15babe39d86f59d174
+  subtree:
+    self: sha256:d87e9acc977f2fc54d8f656e8a84a0ed1d4758eaeb1f940e126fc5acdafa7da9
+    children:
+      - module_id: directory:crates/ast-index-mcp
+        digest: sha256:2e553d4882e9574697b4aeffed1fe526b83cdcb0589034c002c43641c9529557
+  subtree_digest: sha256:ef69861a12eb5d76dff42ce4bfff5b672f98868776e92432807f304e6393c0d5
+  semantic_subtree:
+    self: sha256:23dfe840cd2d83cbbbdd757e713a13c38cd26b55b1483b15babe39d86f59d174
+    children:
+      - module_id: directory:crates/ast-index-mcp
+        digest: sha256:349831b5c3d859b984a065a90936742d44651e19adfe9693c29edc54fa5e881f
+  semantic_subtree_digest: sha256:b1882ef5308841fa2dc7f81cc58ac470bf25f15ce51ec32abaf1caf464f8abbf
+current:
+  module_id: directory:crates
+  directory: crates
+  parent_id: ast-index-project
+  children:
+    - directory:crates/ast-index-mcp
+  technical:
+    normalization: archiview/module-state/v1
+    module_id: directory:crates
+    directory: crates
+    own_files: []
+    contract: null
+    document_state: missing
+    inherited:
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+  technical_digest: sha256:971278424a1540e5437ec1b80ca5eaa2364471c791d2f212e1377435812106e1
+  complete: false
+  self:
+    normalization: archiview/module-state/v1
+    module_id: directory:crates
+    directory: crates
+    own_files: []
+    contract: null
+    inherited:
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+    children:
+      - module_id: directory:crates/ast-index-mcp
+        directory: crates/ast-index-mcp
+        contract: null
+        document_state: missing
+  self_digest: sha256:681f6b4a04f2fe9a1ac42a8b361e1d2a75d72aec7649aba6efc25f8a8ea2fbe5
+  subtree:
+    self: sha256:971278424a1540e5437ec1b80ca5eaa2364471c791d2f212e1377435812106e1
+    children:
+      - module_id: directory:crates/ast-index-mcp
+        digest: sha256:1abf5af7c06c02eef3dc5a76f6e927bd977cc78fc1a5ed9e15cccfe50910b3f2
+  subtree_digest: sha256:a9e111785f828dcc03594c0bb573b4d447c906b520b557c18de5e9c4ae240ad9
+  semantic_subtree:
+    self: sha256:681f6b4a04f2fe9a1ac42a8b361e1d2a75d72aec7649aba6efc25f8a8ea2fbe5
+    children:
+      - module_id: directory:crates/ast-index-mcp
+        digest: sha256:b6b6451ba444ba4bbc57cc6e56dcabd300996e28950118caacf4591016186c7b
+  semantic_subtree_digest: sha256:93b7a2760a7559199fdf61c0eadf470eaac9ccecd61be4750efc88a63156254b
+change:
+  existence: retained
+  own: false
+  own_code: false
+  own_contract: false
+  inherited_constraints: true
+  descendants: true
+  child_composition: false
+  moved: false
+structure:
+  complete: false
+  diagnostics: []
+  document_state: missing
+publication:
+  generation: 1
+  comparison_key: sha256:dc98b7ce48b2d042cf3c49393d0e9b7ee428318f00b8320bf7aa097e0e220040
+  baseline:
+    metadata:
+      schema_version: 2
+      root: D:\projects\dsh.plugins\dsh-ast-index-search
+      capturedAt: 2026-11-11T20:51:58.911Z
+      kind: git
+      revision: 39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+      label: HEAD
+      fingerprint: ce875f581e3068454f564722f01dcb32cacfc836460278bc610500f4bb86657c
+      complete: true
+      diagnostics: []
+      evidenceLimitations:
+        - "src/db.rs: текст недоступен или превышен лимит доказательств"
+        - "tree-sitter-bsl/src/parser.c: текст недоступен или превышен лимит
+          доказательств"
+      digest: sha256:54c9f4b0a85ec24ae29f73bfc639059b3951d61af510b95989587b970b4ca995
+      id: git-39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+      isHead: true
+    module_index: 3
+    module:
+      directory: crates
+      documentPath: crates/arch.yaml
+      document:
+        state: missing
+        text: null
+      files: []
+      sourceFiles: 0
+      fingerprint: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+    facts:
+      - index: 305
+        fact:
+          id: sha256:75abc7e3c1e92d0828c43475f92ef5e5fe4504a01f42898ec473d928755c03ed
+          kind: module
+          path: crates
+          text: '{"contract":"missing","sources":[]}'
+  current:
+    metadata:
+      schema_version: 2
+      root: D:\projects\dsh.plugins\dsh-ast-index-search
+      capturedAt: 2026-11-11T20:51:59.431Z
+      kind: launch
+      label: Начальное состояние
+      fingerprint: 1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+      complete: true
+      diagnostics: []
+      evidenceLimitations:
+        - "src/db.rs: текст недоступен или превышен лимит доказательств"
+        - "tree-sitter-bsl/src/parser.c: текст недоступен или превышен лимит
+          доказательств"
+      digest: sha256:00610d9df42de3a0b358e79b8957e32e2dfd11bf4ad05190981cd441988c99bd
+      id: launch-1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+    module_index: 3
+    module:
+      directory: crates
+      documentPath: crates/arch.yaml
+      document:
+        state: missing
+        text: null
+      files: []
+      sourceFiles: 0
+      fingerprint: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+    facts:
+      - index: 317
+        fact:
+          id: sha256:75abc7e3c1e92d0828c43475f92ef5e5fe4504a01f42898ec473d928755c03ed
+          kind: module
+          path: crates
+          text: '{"contract":"missing","sources":[]}'
+review_status:
+  self:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    conflict: false
+    coverage:
+      current:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+      change:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+  subtree:
+    current:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 3
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+    change:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 3
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+  explicit_subtree:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.

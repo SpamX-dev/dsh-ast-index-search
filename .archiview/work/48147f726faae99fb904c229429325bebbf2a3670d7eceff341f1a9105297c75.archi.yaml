@@ -1,0 +1,293 @@
+schema_version: 2
+kind: archi
+module_id: directory:tests/fixtures
+project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+check_hash: 2d2adb21b85ee0624fdff38ee2695291668c3fe4ff83180ab1b1c948d36012ec
+input_manifest:
+  domain: archiview/module-check/v1
+  project_id: sha256:fcc10a25a16954310d4d671efd9e49161d27e87aea13f090a96e5c57bf715580
+  module_id: directory:tests/fixtures
+  baseline:
+    identity:
+      kind: git
+      id: 39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+    state:
+      exists: true
+      directory: tests/fixtures
+      self_digest: sha256:f2e6777a25d746e4d82190a21bea2c092cf16aae965d116b5fb88446cf3a5f45
+      subtree_digest: sha256:ff8fe90c6260d1011b3bfba34d7387aadfcb73556712da33df833ab60201fb4b
+  current:
+    exists: true
+    directory: tests/fixtures
+    self_digest: sha256:99b75da1ed92618220749e98a6b485dcc21b8781b9e53a19a363cb977a27c0ca
+    subtree_digest: sha256:85d0833659d8714bd226dcec88c94975eedbb34737d900f936e443465e7c04d6
+  analyzer:
+    name: archiview-structure
+    version: 1.0.2
+    config_digest: sha256:d4208fd53122193eb2daea0c208071c378c8d7635a8b73431fec88a63f5cd518
+baseline:
+  module_id: directory:tests/fixtures
+  directory: tests/fixtures
+  parent_id: directory:tests
+  children:
+    - directory:tests/fixtures/java
+  technical:
+    normalization: archiview/module-state/v1
+    module_id: directory:tests/fixtures
+    directory: tests/fixtures
+    own_files: []
+    contract: null
+    document_state: missing
+    inherited: []
+  technical_digest: sha256:f2e6777a25d746e4d82190a21bea2c092cf16aae965d116b5fb88446cf3a5f45
+  complete: false
+  self:
+    normalization: archiview/module-state/v1
+    module_id: directory:tests/fixtures
+    directory: tests/fixtures
+    own_files: []
+    contract: null
+    inherited: []
+    children:
+      - module_id: directory:tests/fixtures/java
+        directory: tests/fixtures/java
+        contract: null
+        document_state: missing
+  self_digest: sha256:344215c68e5973249e571101ad70ee11f084c31f467b61b7a2f0cbff817c2acd
+  subtree:
+    self: sha256:f2e6777a25d746e4d82190a21bea2c092cf16aae965d116b5fb88446cf3a5f45
+    children:
+      - module_id: directory:tests/fixtures/java
+        digest: sha256:ecf30b3b8f4ed4f0f4139f6106d662774c1702a719681d02a18921f21a1113db
+  subtree_digest: sha256:ff8fe90c6260d1011b3bfba34d7387aadfcb73556712da33df833ab60201fb4b
+  semantic_subtree:
+    self: sha256:344215c68e5973249e571101ad70ee11f084c31f467b61b7a2f0cbff817c2acd
+    children:
+      - module_id: directory:tests/fixtures/java
+        digest: sha256:35fd4c7d915d55c1f75f5ab716cb0fc8d091de41fdc896d64aba32703ab605f6
+  semantic_subtree_digest: sha256:96efdb80f8092161e14d7fa02304cf51d9a1d13298627b6e606e92a2eb95269b
+current:
+  module_id: directory:tests/fixtures
+  directory: tests/fixtures
+  parent_id: directory:tests
+  children:
+    - directory:tests/fixtures/java
+  technical:
+    normalization: archiview/module-state/v1
+    module_id: directory:tests/fixtures
+    directory: tests/fixtures
+    own_files: []
+    contract: null
+    document_state: missing
+    inherited:
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+  technical_digest: sha256:99b75da1ed92618220749e98a6b485dcc21b8781b9e53a19a363cb977a27c0ca
+  complete: false
+  self:
+    normalization: archiview/module-state/v1
+    module_id: directory:tests/fixtures
+    directory: tests/fixtures
+    own_files: []
+    contract: null
+    inherited:
+      - module_id: ast-index-project
+        section: boundaries
+        id: B1
+        text: Language parsing and index storage belong to the Rust engine. Client
+          integration packages consume the public CLI.
+      - module_id: ast-index-project
+        section: invariants
+        id: I1
+        text: Project indexes are scoped to the project being queried.
+    children:
+      - module_id: directory:tests/fixtures/java
+        directory: tests/fixtures/java
+        contract: null
+        document_state: missing
+  self_digest: sha256:690b899813a28c85eb249d2aaa404ae80b30abea7b6c241034970eb802661b7b
+  subtree:
+    self: sha256:99b75da1ed92618220749e98a6b485dcc21b8781b9e53a19a363cb977a27c0ca
+    children:
+      - module_id: directory:tests/fixtures/java
+        digest: sha256:dbbb862d8d153275d2ada29bc9270730d382ba7c4bae62491a334d144e00a35c
+  subtree_digest: sha256:85d0833659d8714bd226dcec88c94975eedbb34737d900f936e443465e7c04d6
+  semantic_subtree:
+    self: sha256:690b899813a28c85eb249d2aaa404ae80b30abea7b6c241034970eb802661b7b
+    children:
+      - module_id: directory:tests/fixtures/java
+        digest: sha256:63386c5a1918f9f3bad36f7acc780a66fc2534bcd45aa63ae25a05e7ccc61233
+  semantic_subtree_digest: sha256:db07b45e6cf3a617c913249c578e8d43c13084453a5cddaf51e87a61d6105dba
+change:
+  existence: retained
+  own: false
+  own_code: false
+  own_contract: false
+  inherited_constraints: true
+  descendants: true
+  child_composition: false
+  moved: false
+structure:
+  complete: false
+  diagnostics: []
+  document_state: missing
+publication:
+  generation: 1
+  comparison_key: sha256:dc98b7ce48b2d042cf3c49393d0e9b7ee428318f00b8320bf7aa097e0e220040
+  baseline:
+    metadata:
+      schema_version: 2
+      root: D:\projects\dsh.plugins\dsh-ast-index-search
+      capturedAt: 2026-11-11T20:51:58.911Z
+      kind: git
+      revision: 39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+      label: HEAD
+      fingerprint: ce875f581e3068454f564722f01dcb32cacfc836460278bc610500f4bb86657c
+      complete: true
+      diagnostics: []
+      evidenceLimitations:
+        - "src/db.rs: текст недоступен или превышен лимит доказательств"
+        - "tree-sitter-bsl/src/parser.c: текст недоступен или превышен лимит
+          доказательств"
+      digest: sha256:54c9f4b0a85ec24ae29f73bfc639059b3951d61af510b95989587b970b4ca995
+      id: git-39b82efb2e93dc4a57ce92d4aa6f2a6c00cedf10
+      isHead: true
+    module_index: 17
+    module:
+      directory: tests/fixtures
+      documentPath: tests/fixtures/arch.yaml
+      document:
+        state: missing
+        text: null
+      files: []
+      sourceFiles: 0
+      fingerprint: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+    facts:
+      - index: 319
+        fact:
+          id: sha256:3813a35979e76a4419214e7444b6f1bea8f47098fa30bf50bf1271a3f41701b2
+          kind: module
+          path: tests/fixtures
+          text: '{"contract":"missing","sources":[]}'
+  current:
+    metadata:
+      schema_version: 2
+      root: D:\projects\dsh.plugins\dsh-ast-index-search
+      capturedAt: 2026-11-11T20:51:59.431Z
+      kind: launch
+      label: Начальное состояние
+      fingerprint: 1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+      complete: true
+      diagnostics: []
+      evidenceLimitations:
+        - "src/db.rs: текст недоступен или превышен лимит доказательств"
+        - "tree-sitter-bsl/src/parser.c: текст недоступен или превышен лимит
+          доказательств"
+      digest: sha256:00610d9df42de3a0b358e79b8957e32e2dfd11bf4ad05190981cd441988c99bd
+      id: launch-1bb4104a25d7699659dc7c22d5ca3948b169818b43674bb95d3948ff88131656
+    module_index: 20
+    module:
+      directory: tests/fixtures
+      documentPath: tests/fixtures/arch.yaml
+      document:
+        state: missing
+        text: null
+      files: []
+      sourceFiles: 0
+      fingerprint: 4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
+    facts:
+      - index: 334
+        fact:
+          id: sha256:3813a35979e76a4419214e7444b6f1bea8f47098fa30bf50bf1271a3f41701b2
+          kind: module
+          path: tests/fixtures
+          text: '{"contract":"missing","sources":[]}'
+review_status:
+  self:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    conflict: false
+    coverage:
+      current:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+      change:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+  subtree:
+    current:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 3
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+    change:
+      status: not_reviewed
+      counts:
+        fresh: 0
+        stale: 0
+        unknown: 0
+        not_reviewed: 3
+      conflict: false
+      current_violation: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+        reasons: []
+  explicit_subtree:
+    current:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.
+    change:
+      status: not_reviewed
+      reasons: []
+      verdict: null
+      review_ids: []
+      conflict: false
+      coverage:
+        status: unavailable
+        limitations:
+          - Содержательная проверка отсутствует.

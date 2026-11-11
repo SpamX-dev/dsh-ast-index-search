@@ -31,7 +31,12 @@ Fast native Rust CLI for structural code search in Android/Kotlin/Java, iOS/Swif
 
 ## Prerequisites
 
-Install the CLI before use:
+In DeepSeek Harness the plugin installs the CLI. In every example below and in
+the references, run `"$DSH_AST_INDEX_BIN"` (Bash) or `& $env:DSH_AST_INDEX_BIN`
+(PowerShell) in place of `ast-index`. For example, use
+`& $env:DSH_AST_INDEX_BIN rebuild` from the project root in PowerShell.
+
+For other hosts, install the CLI if it is not already available:
 
 ```bash
 brew tap defendend/ast-index
